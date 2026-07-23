@@ -6,10 +6,12 @@ export default function HeroLaserSpark() {
       {/* Background video */}
       <video
         src="/images/laser-hero-blt520.mp4"
+        poster="/images/laser-hero-poster.jpg"
         autoPlay
         muted
         loop
         playsInline
+        preload="auto"
         className="w-full h-full object-cover"
       />
 
