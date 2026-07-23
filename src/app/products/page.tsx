@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const productCategories = [
   {
     name: 'Laser Cutting Machines',
-    desc: 'High-speed fiber laser cutting for sheets, tubes, and plates. From 1000W to 6000W.',
+    desc: 'High-speed fiber laser cutting for sheets, tubes, and plates. From 1500W to 6000W.',
     image: '/images/products/3015-single-platform-fiber-cutter.jpg',
     models: ['HQ-1530 Fiber Laser Cutter', 'HQ-3015 Large Format Cutter', 'HQ-6020 Tube & Sheet Cutter', 'HQ-F6025 Fiber Tube Cutter'],
     href: '/products/hq1530',
@@ -131,7 +131,7 @@ export default function ProductsPage() {
                   Fastest path to ROI. High-precision cutting with single platform table for stable performance.
                 </p>
                 <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                  <span>1000W - 3000W</span>
+                  <span>1500W - 6000W</span>
                   <span>|</span>
                   <span>1500x3000mm</span>
                   <span>|</span>
