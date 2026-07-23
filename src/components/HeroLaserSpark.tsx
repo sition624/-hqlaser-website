@@ -24,9 +24,9 @@ export default function HeroLaserSpark() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Spark emission point (45% width, 70% height - where laser hits metal)
-    const emitX = () => canvas.width * 0.45;
-    const emitY = () => canvas.height * 0.70;
+    // Spark emission point (38% width, 68% height - where laser hits metal)
+    const emitX = () => canvas.width * 0.38;
+    const emitY = () => canvas.height * 0.68;
 
     // Resize canvas to match container
     const resize = () => {
@@ -160,14 +160,6 @@ export default function HeroLaserSpark() {
         alt="Fiber Laser Cutting"
         className="w-full h-full object-cover"
         style={{ objectPosition: 'center center' }}
-      />
-
-      {/* Right-side gradient overlay - blends dark machine body into background */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'linear-gradient(to right, transparent 60%, #0A1628 90%, #0A1628 100%)'
-        }}
       />
 
       {/* Spark particle canvas */}
