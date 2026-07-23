@@ -98,8 +98,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Image with Spark Animation */}
-            <div className="relative hidden lg:block">
+            {/* Hero Video */}
+            <div className="relative">
               <HeroLaserSpark />
             </div>
           </div>
