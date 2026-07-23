@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import HeroLaserSpark from '@/components/HeroLaserSpark';
 
 export const metadata: Metadata = {
   title: 'Heqing Laser - Fiber Laser Cutting, Welding, Cleaning & Marking Solutions',
@@ -97,35 +98,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Video */}
+            {/* Hero Image with Spark Animation */}
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster="/images/laser-cutting-base.jpg"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center center', filter: 'brightness(1.15) contrast(1.1) saturate(1.2)' }}
-                >
-                  <source src="/videos/laser-bevel-cutting.webm" type="video/webm" />
-                  <source src="/videos/laser-bevel-cutting.mp4" type="video/mp4" />
-                  {/* Fallback to poster image if video not supported */}
-                  <img
-                    src="/images/laser-cutting-base.jpg"
-                    alt="Heqing Laser Cutting in Action"
-                    className="w-full h-full object-cover"
-                  />
-                </video>
-                {/* Subtle gradient overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/40 via-transparent to-transparent pointer-events-none" />
-                {/* Corner marks */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
-                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30" />
-                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#3B82F6]/30" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30" />
-              </div>
+              <HeroLaserSpark />
             </div>
           </div>
         </div>
