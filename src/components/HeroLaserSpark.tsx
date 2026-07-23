@@ -149,6 +149,7 @@ export default function HeroLaserSpark() {
         src="/images/laser-cutting-hero.jpg"
         alt="Fiber Laser Cutting"
         className="w-full h-full object-cover"
+        style={{ objectPosition: 'left center' }}
       />
 
       {/* Spark particle canvas */}
