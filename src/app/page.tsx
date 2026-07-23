@@ -107,7 +107,7 @@ export default function HomePage() {
                   playsInline
                   poster="/images/laser-cutting-base.jpg"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center center' }}
+                  style={{ objectPosition: 'center center', filter: 'brightness(1.15) contrast(1.1) saturate(1.2)' }}
                 >
                   <source src="/videos/laser-bevel-cutting.webm" type="video/webm" />
                   <source src="/videos/laser-bevel-cutting.mp4" type="video/mp4" />
