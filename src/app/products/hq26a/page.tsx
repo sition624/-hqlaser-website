@@ -55,7 +55,7 @@ export default function HQ26APage() {
                 <span className="w-2 h-2 bg-[#3B82F6] rounded-full" />
                 <span className="text-[#3B82F6] text-sm font-medium">FLAGSHIP PRODUCT</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-black text-white mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">
                 HQ26-A<br />
                 <span className="gradient-text">Air-Cooled</span><br />
                 Laser Welder
@@ -96,7 +96,7 @@ export default function HQ26APage() {
             <div className="w-2 h-8 bg-[#3B82F6]" />
             <h2 className="text-2xl font-bold text-white">Choose Your Model</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {models.map((model, i) => (
               <div key={model.name} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 1 ? 'border-[#3B82F6] glow-blue' : 'border-[#1E3A5F]'}`}>
                 {i === 1 && <div className="text-[#3B82F6] text-xs font-bold uppercase mb-4 tracking-wider">Most Popular</div>}

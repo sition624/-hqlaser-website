@@ -54,7 +54,7 @@ export default function HQ1530Page() {
                 <span className="w-2 h-2 bg-[#00D4FF] rounded-full" />
                 <span className="text-[#00D4FF] text-sm font-medium">BEST SELLER</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-black text-white mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">
                 HQ-1530<br />
                 <span className="gradient-text">Fiber Laser</span><br />
                 Cutter
@@ -95,7 +95,7 @@ export default function HQ1530Page() {
             <div className="w-2 h-8 bg-[#00D4FF]" />
             <h2 className="text-2xl font-bold text-white">Power Options</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {powerOptions.map((opt, i) => (
               <div key={opt.power} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 2 ? 'border-[#00D4FF] glow-cyan' : 'border-[#1E3A5F]'}`}>
                 {i === 2 && <div className="text-[#00D4FF] text-xs font-bold uppercase mb-4 tracking-wider">Recommended</div>}

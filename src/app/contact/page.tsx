@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 hero-gradient" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
               Contact <span className="gradient-text">Us</span>
             </h1>
             <p className="text-lg text-[#CBD5E1] leading-relaxed">
@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}
             <div className="lg:col-span-3">
-              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8">
+              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-4 sm:p-8">
                 <h2 className="text-2xl font-bold text-white mb-8">Send Us a Message</h2>
 
                 {submitted ? (
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8">
+              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-4 sm:p-8">
                 <h3 className="text-lg font-bold text-white mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -186,7 +186,7 @@ export default function ContactPage() {
               </div>
 
               {/* Business Hours */}
-              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8">
+              <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-4 sm:p-8">
                 <h3 className="text-lg font-bold text-white mb-6">Business Hours</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
@@ -205,7 +205,7 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Response */}
-              <div className="bg-gradient-to-br from-[#0A2463]/30 to-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-sm p-8">
+              <div className="bg-gradient-to-br from-[#0A2463]/30 to-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-sm p-4 sm:p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-3 h-3 bg-[#3B82F6] rounded-full animate-pulse" />
                   <span className="text-white font-semibold text-sm">Quick Response Guarantee</span>
@@ -220,21 +220,39 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Map Section */}
       <section className="py-20 bg-[#0F1B2D] border-t border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-2 h-8 bg-[#3B82F6]" />
             <h2 className="text-2xl font-bold text-white">Find Us</h2>
           </div>
-          <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm aspect-[21/9] flex items-center justify-center">
-            <div className="text-center">
-              <svg className="w-16 h-16 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <p className="text-[#94A3B8] text-sm mt-4">Google Map Embed</p>
-              <p className="text-[#666666] text-xs mt-1">Replace with actual Google Maps iframe</p>
+          <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
+            <div className="relative w-full" style={{ paddingBottom: 'min(42.86%, 400px)', minHeight: '280px' }}>
+              <iframe
+                title="Heqing CNC Location"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=117.95%2C36.63%2C118.05%2C36.69&layer=mapnik&marker=36.66%2C118.0"
+                className="absolute inset-0 w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="p-4 sm:p-6 border-t border-[#1E3A5F] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <svg className="w-5 h-5 text-[#3B82F6] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span className="text-[#CBD5E1] text-sm">No. 2 Hualu Road, Zichuan Economic Development Zone, Zibo City, Shandong Province, China</span>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/No.+2+Hualu+Road+Zichuan+Zibo+Shandong+China"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#3B82F6] text-sm font-medium hover:text-[#2563EB] transition-colors whitespace-nowrap"
+              >
+                Open in Google Maps →
+              </a>
             </div>
           </div>
         </div>

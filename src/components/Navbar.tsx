@@ -24,18 +24,18 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#0A2463] rounded-sm flex items-center justify-center border border-[#3B82F6]/30">
-              <span className="text-white font-black text-lg">HQ</span>
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#0A2463] rounded-sm flex items-center justify-center border border-[#3B82F6]/30">
+              <span className="text-white font-black text-sm sm:text-lg">HQ</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-white font-bold text-lg leading-tight tracking-tight">
+              <span className="text-white font-bold text-sm sm:text-lg leading-tight tracking-tight">
                 HEQING
               </span>
-              <span className="text-[#94A3B8] text-[10px] font-medium tracking-[0.2em] uppercase">
+              <span className="text-[#94A3B8] text-[8px] sm:text-[10px] font-medium tracking-[0.2em] uppercase">
                 Laser Technology
               </span>
             </div>

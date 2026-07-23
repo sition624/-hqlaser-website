@@ -252,9 +252,16 @@ body {
 
 .spec-table th,
 .spec-table td {
-  padding: 12px 16px;
+  padding: 10px 12px;
   text-align: left;
   border-bottom: 1px solid #1E3A5F;
+}
+
+@media (min-width: 640px) {
+  .spec-table th,
+  .spec-table td {
+    padding: 12px 16px;
+  }
 }
 
 .spec-table th {

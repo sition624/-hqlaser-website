@@ -58,7 +58,7 @@ export default function HomePage() {
                 <span className="text-[#94A3B8] text-sm font-medium">10+ Years of Laser Excellence</span>
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
                 Precision Laser
                 <br />
                 <span className="gradient-text">Solutions</span>
@@ -81,18 +81,18 @@ export default function HomePage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
+              <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
                 <div>
-                  <div className="text-3xl font-bold text-[#3B82F6]">50+</div>
-                  <div className="text-sm text-[#94A3B8] mt-1">Countries Served</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">50+</div>
+                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Countries Served</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#3B82F6]">5000+</div>
-                  <div className="text-sm text-[#94A3B8] mt-1">Machines Delivered</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">5000+</div>
+                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Machines Delivered</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#3B82F6]">10+</div>
-                  <div className="text-sm text-[#94A3B8] mt-1">Years Experience</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">10+</div>
+                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Years Experience</div>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {productCategories.map((cat) => (
               <Link
                 key={cat.name}
@@ -231,7 +231,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             {[
               { name: 'Automotive', icon: 'M8 17h8M8 17v4h8v-4M8 17l-2-6h12l-2 6M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4' },
               { name: 'Aerospace', icon: 'M12 19l9 2-9-18-9 18 9-2zm0 0v-8' },
@@ -268,7 +268,7 @@ export default function HomePage() {
             <p className="text-[#CBD5E1] text-lg">What our global partners say about us</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 quote: "The HQ26-A welder transformed our production line. No chiller needed means less maintenance and more uptime. Excellent machine.",

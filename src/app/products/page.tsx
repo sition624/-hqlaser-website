@@ -60,7 +60,7 @@ export default function ProductsPage() {
         <div className="absolute inset-0 hero-gradient" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
               Our <span className="gradient-text">Products</span>
             </h1>
             <p className="text-lg text-[#CBD5E1] leading-relaxed">
@@ -79,7 +79,7 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">Featured Products</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* HQ26-A */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
@@ -151,7 +151,7 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">All Product Lines</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
             {productCategories.map((cat) => (
               <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
                 <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
@@ -203,7 +203,7 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">More Products</h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {additionalProducts.map((product) => (
               <Link
                 key={product.name}
