@@ -306,10 +306,17 @@ export default function HomePage() {
           <p className="text-center text-[#94A3B8] text-sm uppercase tracking-wider mb-10">
             Trusted Component Partners
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50">
-            {['RAYCUS', 'CypCut', 'PRECITEC', 'RS-RS', 'HAN\'S LASER'].map((partner) => (
-              <div key={partner} className="text-white font-bold text-xl tracking-wider">
-                {partner}
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 opacity-50">
+            {[
+              { name: 'RAYCUS', size: 'text-2xl' },
+              { name: 'CypCut', size: 'text-xl' },
+              { name: 'PRECITEC', size: 'text-xl' },
+              { name: 'RayTools', size: 'text-xl' },
+              { name: 'MAX', size: 'text-2xl' },
+              { name: "HAN'S LASER", size: 'text-lg' },
+            ].map((partner) => (
+              <div key={partner.name} className={`text-white font-bold tracking-wider ${partner.size}`}>
+                {partner.name}
               </div>
             ))}
           </div>
