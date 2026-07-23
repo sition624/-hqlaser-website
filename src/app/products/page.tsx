@@ -82,7 +82,7 @@ export default function ProductsPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* HQ26-A */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
                   alt="HQ26-A Air-Cooled Laser Welder"
@@ -112,7 +112,7 @@ export default function ProductsPage() {
 
             {/* HQ-1530 */}
             <Link href="/products/hq1530" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                 <img
                   src="/images/products/3015-dual-platform-fiber-cutter.png"
                   alt="HQ-1530 Fiber Laser Cutter"
@@ -154,7 +154,7 @@ export default function ProductsPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {productCategories.map((cat) => (
               <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
-                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                   <img
                     src={cat.image}
                     alt={cat.name}
@@ -210,7 +210,7 @@ export default function ProductsPage() {
                 href={product.href}
                 className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover"
               >
-                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}

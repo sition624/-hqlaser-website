@@ -99,7 +99,7 @@ export default function HomePage() {
 
             {/* Hero Image */}
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
+              <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
                 <img
                   src="/images/products/3015-dual-platform-fiber-cutter.png"
                   alt="Heqing Fiber Laser Cutter"
@@ -136,7 +136,7 @@ export default function HomePage() {
                 href={cat.href}
                 className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden"
               >
-                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                   <img
                     src={cat.image}
                     alt={cat.name}

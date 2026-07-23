@@ -74,7 +74,7 @@ export default function HQ26APage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
                   alt="HQ26-A Air-Cooled Laser Welder"
