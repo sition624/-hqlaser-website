@@ -246,7 +246,7 @@ export default function AboutPage() {
           {/* Certificate Image */}
           <div className="mb-12 bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
             <img
-              src="/images/certificates/certifications.png"
+              src="/images/certificates/certifications.svg"
               alt="Heqing Laser Certifications - CE, ISO 9001, SGS, FDA"
               className="w-full h-auto"
             />
