@@ -216,37 +216,6 @@ export default function HQ26APage() {
         </div>
       </section>
 
-      {/* Downloads */}
-      <section className="py-20 bg-[#0F1B2D] border-y border-[#1E3A5F]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center gap-4 mb-12">
-            <div className="w-2 h-8 bg-[#00D4FF]" />
-            <h2 className="text-2xl font-bold text-white">Downloads</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { name: 'HQ26 Product Catalog', type: 'PDF', size: '4.2 MB' },
-              { name: 'HQ26 Technical Manual', type: 'PDF', size: '12.8 MB' },
-            ].map((doc) => (
-              <div key={doc.name} className="flex items-center justify-between bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center">
-                    <svg className="w-6 h-6 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold text-sm">{doc.name}</div>
-                    <div className="text-[#94A3B8] text-xs">{doc.type} - {doc.size}</div>
-                  </div>
-                </div>
-                <button className="px-4 py-2 border border-[#2A4A6B] text-[#3B82F6] text-sm font-semibold rounded-sm hover:border-[#3B82F6] transition-colors">
-                  Download
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A2463]/20 via-transparent to-[#3B82F6]/10" />
