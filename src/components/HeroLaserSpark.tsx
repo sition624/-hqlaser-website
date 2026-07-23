@@ -53,9 +53,9 @@ export default function HeroLaserSpark() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Emission point: where laser hits the metal (38% width, 62% height)
-    const emitX = () => canvas.width * 0.38;
-    const emitY = () => canvas.height * 0.62;
+    // Emission point: where laser head contacts the sheet metal (center-ish, mid-lower)
+    const emitX = () => canvas.width * 0.5;
+    const emitY = () => canvas.height * 0.55;
 
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
