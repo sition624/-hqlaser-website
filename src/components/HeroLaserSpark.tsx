@@ -41,9 +41,9 @@ export default function HeroLaserSpark() {
 
     // Create a new particle
     const createParticle = (): Particle => {
-      // Angle between -60° and 30° (mostly upward-right)
-      const angle = (-60 + Math.random() * 90) * (Math.PI / 180);
-      const speed = 2 + Math.random() * 4;
+      // Angle between -80° and 60° (wide spread, mostly upward)
+      const angle = (-80 + Math.random() * 140) * (Math.PI / 180);
+      const speed = 3 + Math.random() * 5;
       const maxLife = 30 + Math.random() * 30;
 
       return {
@@ -53,26 +53,26 @@ export default function HeroLaserSpark() {
         vy: Math.sin(angle) * speed,
         life: maxLife,
         maxLife,
-        size: 1 + Math.random() * 2,
+        size: 2 + Math.random() * 3,
       };
     };
 
-    // Get particle color based on life (white -> gold -> orange-red)
+    // Get particle color based on life (bright white -> cyan -> blue)
     const getParticleColor = (life: number, maxLife: number): string => {
       const progress = 1 - life / maxLife; // 0 = new, 1 = dying
 
-      if (progress < 0.3) {
-        // Bright white/cyan
-        const alpha = 0.9 + Math.random() * 0.1;
-        return `rgba(255, 255, 240, ${alpha})`;
-      } else if (progress < 0.6) {
-        // Golden yellow
-        const alpha = 0.7 + Math.random() * 0.2;
-        return `rgba(255, 200, 50, ${alpha})`;
+      if (progress < 0.2) {
+        // Bright white/cyan - very bright
+        const alpha = 0.95 + Math.random() * 0.05;
+        return `rgba(220, 240, 255, ${alpha})`;
+      } else if (progress < 0.5) {
+        // Cyan/blue-white
+        const alpha = 0.8 + Math.random() * 0.15;
+        return `rgba(150, 220, 255, ${alpha})`;
       } else {
-        // Orange-red, fading out
-        const alpha = (1 - progress) * 0.8;
-        return `rgba(255, 100, 30, ${alpha})`;
+        // Blue, fading out
+        const alpha = (1 - progress) * 0.9;
+        return `rgba(80, 160, 255, ${alpha})`;
       }
     };
 
@@ -81,8 +81,8 @@ export default function HeroLaserSpark() {
       const rect = canvas.getBoundingClientRect();
       ctx.clearRect(0, 0, rect.width, rect.height);
 
-      // Generate new particles (maintain 30-40 active)
-      const targetCount = 35;
+      // Generate new particles (maintain 60-80 active)
+      const targetCount = 70;
       const currentCount = particlesRef.current.length;
       if (currentCount < targetCount) {
         const toAdd = Math.min(3, targetCount - currentCount);
@@ -91,7 +91,7 @@ export default function HeroLaserSpark() {
         }
       }
 
-      // Update and draw particles
+      // Update and draw particles with glow
       particlesRef.current = particlesRef.current.filter((p) => {
         // Update position
         p.x += p.vx;
@@ -99,35 +99,45 @@ export default function HeroLaserSpark() {
         p.vy += 0.08; // Gravity
         p.life--;
 
-        // Draw particle
+        // Draw particle with glow
         if (p.life > 0) {
+          const lifeRatio = p.life / p.maxLife;
+          
+          // Set shadow for glow effect
+          ctx.shadowBlur = 20 + lifeRatio * 15;
+          ctx.shadowColor = getParticleColor(p.life, p.maxLife);
+          
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
           ctx.fillStyle = getParticleColor(p.life, p.maxLife);
           ctx.fill();
 
-          // Add glow effect for bright particles
-          if (p.life / p.maxLife > 0.7) {
+          // Extra bright core for new particles
+          if (lifeRatio > 0.8) {
+            ctx.shadowBlur = 30;
             ctx.beginPath();
-            ctx.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
-            const glowAlpha = (p.life / p.maxLife - 0.7) * 0.5;
-            ctx.fillStyle = `rgba(255, 220, 100, ${glowAlpha})`;
+            ctx.arc(p.x, p.y, p.size * 0.6, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${lifeRatio * 0.9})`;
             ctx.fill();
           }
+          
+          // Reset shadow
+          ctx.shadowBlur = 0;
         }
 
         return p.life > 0;
       });
 
-      // Draw spark emission point glow
+      // Draw spark emission point glow (stronger, blue-white)
       const glowX = emitX() / window.devicePixelRatio;
       const glowY = emitY() / window.devicePixelRatio;
-      const gradient = ctx.createRadialGradient(glowX, glowY, 0, glowX, glowY, 15);
-      gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
-      gradient.addColorStop(0.3, 'rgba(100, 200, 255, 0.4)');
-      gradient.addColorStop(1, 'rgba(100, 200, 255, 0)');
+      const gradient = ctx.createRadialGradient(glowX, glowY, 0, glowX, glowY, 25);
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 0.95)');
+      gradient.addColorStop(0.2, 'rgba(180, 220, 255, 0.7)');
+      gradient.addColorStop(0.5, 'rgba(100, 180, 255, 0.4)');
+      gradient.addColorStop(1, 'rgba(80, 160, 255, 0)');
       ctx.beginPath();
-      ctx.arc(glowX, glowY, 15, 0, Math.PI * 2);
+      ctx.arc(glowX, glowY, 25, 0, Math.PI * 2);
       ctx.fillStyle = gradient;
       ctx.fill();
 
@@ -149,7 +159,7 @@ export default function HeroLaserSpark() {
         src="/images/laser-cutting-hero.jpg"
         alt="Fiber Laser Cutting"
         className="w-full h-full object-cover"
-        style={{ objectPosition: '35% center' }}
+        style={{ objectPosition: 'left center' }}
       />
 
       {/* Spark particle canvas */}
