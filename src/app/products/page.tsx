@@ -19,7 +19,7 @@ const productCategories = [
     name: 'Laser Welding Machines',
     desc: 'Handheld & automated laser welders. Revolutionary air-cooled technology.',
     image: '/images/products/hq26a-air-cooled-welder.png',
-    models: ['HQ26-A Air-Cooled Welder', 'HQ-HW Handheld Welder', 'HQ-AW Auto Welding System', 'HQ-CW CNC Welder'],
+    models: ['HQ26-1000W Welder', 'HQ26-1200W Welder', 'HQ26-1500W Welder', 'HQ26-2000W Welder'],
     href: '/products/hq26a',
     accent: '#3B82F6',
   },
@@ -85,7 +85,7 @@ export default function ProductsPage() {
               <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
-                  alt="HQ26-A Air-Cooled Laser Welder"
+                  alt="HQ26 Air-Cooled Laser Welder"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
@@ -95,7 +95,7 @@ export default function ProductsPage() {
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
-                  HQ26-A Air-Cooled Laser Welder
+                  HQ26 Air-Cooled Laser Welder
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
                   No chiller, no water, no hassle. Revolutionary air-cooled technology for portable welding.

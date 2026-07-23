@@ -2,44 +2,50 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'HQ26-A Air-Cooled Laser Welder',
-  description: 'HQ26-A portable air-cooled fiber laser welder. 800W-2000W. No chiller needed.',
+  title: 'HQ26 Air-Cooled Laser Welder | 1000W-2000W | Portable & Lightweight',
+  description: 'HQ26 portable air-cooled fiber laser welding machine. 4 power options: 1000W/1200W/1500W/2000W. Raycus laser source, IP65, no chiller needed.',
 };
 
 const models = [
-  { name: 'HQ26-A08', power: '800W', weight: '28kg', thickness: '0.5-3mm' },
-  { name: 'HQ26-A12', power: '1200W', weight: '32kg', thickness: '0.5-4mm' },
-  { name: 'HQ26-A15', power: '1500W', weight: '35kg', thickness: '0.5-5mm' },
-  { name: 'HQ26-A20', power: '2000W', weight: '40kg', thickness: '0.5-6mm' },
+  { name: 'HQ26-1000W', power: '1000W', thickness: '0.5-3mm', price: 'Contact Us' },
+  { name: 'HQ26-1200W', power: '1200W', thickness: '0.5-4mm', price: 'Contact Us' },
+  { name: 'HQ26-1500W', power: '1500W', thickness: '0.5-5mm', price: 'Contact Us' },
+  { name: 'HQ26-2000W', power: '2000W', thickness: '0.5-6mm', price: 'Contact Us' },
 ];
 
 const specs = [
-  { label: 'Laser Source', value: 'Raycus / MAX / JPT' },
+  { label: 'Model', value: 'HQ26 Series' },
+  { label: 'Laser Source', value: 'Raycus Fiber Laser' },
   { label: 'Wavelength', value: '1064nm' },
+  { label: 'Laser Power Options', value: '1000W / 1200W / 1500W / 2000W' },
   { label: 'Cooling Method', value: 'Air-Cooled (No chiller needed)' },
-  { label: 'Welding Gun', value: 'SUP / Qilin Handheld' },
+  { label: 'Electro-Optical Efficiency', value: '30%+' },
+  { label: 'Laser Diode Lifespan', value: '100,000 hours' },
+  { label: 'Ingress Protection', value: 'IP65' },
+  { label: 'Operating Temperature', value: '-10 ~ 40°C' },
+  { label: 'Welding Gun', value: 'Handheld (ergonomic design)' },
   { label: 'Wire Feeder', value: 'Automatic (0.8-1.6mm)' },
   { label: 'Fiber Length', value: '10m (customizable)' },
   { label: 'Power Supply', value: '220V / 50Hz / 60Hz' },
-  { label: 'Working Temperature', value: '-10 to 45 deg C' },
-  { label: 'Humidity', value: '<= 90% (non-condensing)' },
-  { label: 'Protection Rating', value: 'IP54' },
+  { label: 'Continuous Operation', value: '7×24h' },
+  { label: 'System Stability Rate', value: '99.9%' },
+  { label: 'Response Time', value: '0.1s' },
 ];
 
 const comparisons = [
   { feature: 'Cooling System', air: 'Air-Cooled (Built-in)', water: 'Water Chiller Required' },
-  { feature: 'Weight', air: '28-40kg', water: '80-120kg (with chiller)' },
-  { feature: 'Power Consumption', air: '<= 2.5kW', water: '<= 5kW (with chiller)' },
-  { feature: 'Portability', air: 'Easy to move, one person', water: 'Requires forklift / cart' },
+  { feature: 'Protection Rating', air: 'IP65', water: 'IP54 or lower' },
+  { feature: 'Power Consumption', air: 'Low (no chiller)', water: 'High (chiller + laser)' },
+  { feature: 'Portability', air: 'Caster wheels, carry handles', water: 'Heavy, requires forklift' },
   { feature: 'Maintenance', air: 'Minimal, no water change', water: 'Regular water & filter change' },
-  { feature: 'Operating Temp', air: '-10 to 45 deg C', water: '5 to 35 deg C (chiller limit)' },
+  { feature: 'Operating Temp', air: '-10 ~ 40°C', water: '5 ~ 35°C (chiller limit)' },
   { feature: 'Setup Time', air: '5 minutes', water: '30+ minutes' },
   { feature: 'Outdoor Use', air: 'Yes', water: 'Limited (freezing risk)' },
 ];
 
 const applications = [
-  'Stainless Steel', 'Carbon Steel', 'Aluminum', 'Copper',
-  'Galvanized Sheet', 'Titanium Alloy', 'Sheet Metal', 'Pipe Welding',
+  'Sheet Metal Fabrication', 'Pipe & Tube Welding', 'Doors & Windows',
+  'Hardware Products', 'Kitchen Equipment', 'Advertising Signs',
 ];
 
 export default function HQ26APage() {
@@ -56,17 +62,17 @@ export default function HQ26APage() {
                 <span className="text-[#3B82F6] text-sm font-medium">FLAGSHIP PRODUCT</span>
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">
-                HQ26-A<br />
+                HQ26<br />
                 <span className="gradient-text">Air-Cooled</span><br />
                 Laser Welder
               </h1>
               <p className="text-2xl text-[#00D4FF] font-semibold mb-6">
-                No chiller. No water. No hassle.
+                Lightweight. Maximum Power.
               </p>
               <p className="text-[#CBD5E1] text-lg leading-relaxed mb-8">
-                The HQ26-A revolutionizes handheld laser welding with its innovative air-cooled design.
-                60% lighter than traditional water-cooled welders, with 50% less power consumption.
-                Take it anywhere — indoor, outdoor, on-site.
+                The HQ26 revolutionizes handheld laser welding with its innovative air-cooled design.
+                No external chiller needed — built-in air cooling delivers reliable performance
+                in a portable package. Precise welds, clean finish, engineered for industry.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-primary">Get a Quote</Link>
@@ -77,7 +83,7 @@ export default function HQ26APage() {
               <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
-                  alt="HQ26-A Air-Cooled Laser Welder"
+                  alt="HQ26 Air-Cooled Laser Welder"
                   className="w-full h-full object-contain p-6"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
@@ -98,16 +104,15 @@ export default function HQ26APage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {models.map((model, i) => (
-              <div key={model.name} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 1 ? 'border-[#3B82F6] glow-blue' : 'border-[#1E3A5F]'}`}>
-                {i === 1 && <div className="text-[#3B82F6] text-xs font-bold uppercase mb-4 tracking-wider">Most Popular</div>}
+              <div key={model.name} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 2 ? 'border-[#3B82F6] glow-blue' : 'border-[#1E3A5F]'}`}>
+                {i === 2 && <div className="text-[#3B82F6] text-xs font-bold uppercase mb-4 tracking-wider">Most Popular</div>}
                 <h3 className="text-xl font-bold text-white mb-1">{model.name}</h3>
                 <div className="text-3xl font-black text-[#3B82F6] mb-4">{model.power}</div>
                 <div className="space-y-3 text-sm">
-                  <div className="flex justify-between"><span className="text-[#94A3B8]">Weight</span><span className="text-white font-mono">{model.weight}</span></div>
                   <div className="flex justify-between"><span className="text-[#94A3B8]">Weld Thickness</span><span className="text-white font-mono">{model.thickness}</span></div>
-                  <div className="flex justify-between"><span className="text-[#94A3B8]">Price</span><span className="text-[#3B82F6] font-semibold">Contact Us</span></div>
+                  <div className="flex justify-between"><span className="text-[#94A3B8]">Price</span><span className="text-[#3B82F6] font-semibold">{model.price}</span></div>
                 </div>
-                <Link href="/contact" className={`block text-center mt-6 py-3 rounded-sm font-semibold text-sm transition-colors ${i === 1 ? 'bg-[#3B82F6] text-white hover:bg-[#2563EB]' : 'border border-[#2A4A6B] text-white hover:border-[#3B82F6] hover:text-[#3B82F6]'}`}>
+                <Link href="/contact" className={`block text-center mt-6 py-3 rounded-sm font-semibold text-sm transition-colors ${i === 2 ? 'bg-[#3B82F6] text-white hover:bg-[#2563EB]' : 'border border-[#2A4A6B] text-white hover:border-[#3B82F6] hover:text-[#3B82F6]'}`}>
                   Request Quote
                 </Link>
               </div>
@@ -137,11 +142,12 @@ export default function HQ26APage() {
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-white mb-6">Key Highlights</h3>
               {[
-                { title: 'Raycus Laser Source', desc: 'World-class fiber laser source with 100,000+ hours lifespan. Stable output, high efficiency.' },
-                { title: 'SUP Welding Gun', desc: 'Ergonomic design, lightweight, built-in safety features. Comfortable for all-day operation.' },
-                { title: 'Air-Cooled Design', desc: 'No external chiller needed. Built-in air cooling reduces weight by 60% and power by 50%.' },
-                { title: 'Auto Wire Feeder', desc: 'Integrated automatic wire feeding. Supports 4 wire diameters for versatile welding.' },
-                { title: 'Smart Control Panel', desc: '7-inch touchscreen with preset welding parameters. Easy operation with minimal training.' },
+                { title: 'Raycus Fiber Laser Source', desc: 'Trusted Chinese laser brand. 100,000+ hours diode lifespan, 30%+ electro-optical efficiency. High beam quality for stable, consistent welding.' },
+                { title: 'Air-Cooled for Reliability', desc: 'No external chiller needed. Built-in air cooling system. IP65 protection rating. Operates in -10~40°C environments.' },
+                { title: 'Precise Welds. Clean Finish.', desc: 'Minimal heat affected zone, no discoloration, smooth and clean weld seam. 3-5x faster than TIG welding.' },
+                { title: 'Auto Wire Feeder', desc: 'Integrated automatic wire feeding system. Supports 0.8-1.6mm wire diameters for versatile welding applications.' },
+                { title: 'Intelligent Monitoring System', desc: 'Real-time temperature monitoring, fault alarm with error codes, safety interlock, and welding parameter data recording.' },
+                { title: 'Portable & Lightweight', desc: 'Compact design with caster wheels and carry handles. One person can move it. Setup in 5 minutes.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 bg-[#162032] border border-[#1E3A5F] rounded-sm p-5">
                   <div className="w-10 h-10 bg-[#1A2740] border border-[#3B82F6]/20 rounded-sm flex items-center justify-center shrink-0">
@@ -171,7 +177,7 @@ export default function HQ26APage() {
                 <tr className="border-b border-[#1E3A5F]">
                   <th className="px-6 py-4 text-left text-sm font-semibold text-white">Feature</th>
                   <th className="px-6 py-4 text-center text-sm font-semibold text-[#3B82F6]">
-                    <div className="flex items-center justify-center gap-2"><span className="w-2 h-2 bg-[#3B82F6] rounded-full" />HQ26-A Air-Cooled</div>
+                    <div className="flex items-center justify-center gap-2"><span className="w-2 h-2 bg-[#3B82F6] rounded-full" />HQ26 Air-Cooled</div>
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-semibold text-[#94A3B8]">Traditional Water-Cooled</th>
                 </tr>
@@ -219,8 +225,8 @@ export default function HQ26APage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { name: 'HQ26-A Product Catalog', type: 'PDF', size: '4.2 MB' },
-              { name: 'HQ26-A Technical Manual', type: 'PDF', size: '12.8 MB' },
+              { name: 'HQ26 Product Catalog', type: 'PDF', size: '4.2 MB' },
+              { name: 'HQ26 Technical Manual', type: 'PDF', size: '12.8 MB' },
             ].map((doc) => (
               <div key={doc.name} className="flex items-center justify-between bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6">
                 <div className="flex items-center gap-4">
@@ -247,7 +253,7 @@ export default function HQ26APage() {
         <div className="absolute inset-0 bg-grid" />
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Interested in the <span className="gradient-text">HQ26-A</span>?
+            Interested in the <span className="gradient-text">HQ26</span>?
           </h2>
           <p className="text-[#CBD5E1] text-lg mb-10">
             Get a customized quote with your specific requirements. Our engineers will help you choose the right model.

@@ -20,7 +20,7 @@ const productCategories = [
     name: 'Laser Welding Machines',
     desc: 'Handheld & automated laser welders. Revolutionary air-cooled technology.',
     image: '/images/products/hq26a-air-cooled-welder.png',
-    models: ['HQ26-A Air-Cooled Welder', 'HQ-HW Handheld Welder', 'HQ-AW Auto Welding System', 'HQ-CW CNC Welder'],
+    models: ['HQ26-1000W Welder', 'HQ26-1200W Welder', 'HQ26-1500W Welder', 'HQ26-2000W Welder'],
     href: '/products/hq26a',
     accent: '#3B82F6',
   },
@@ -260,7 +260,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                quote: "The HQ26-A welder transformed our production line. No chiller needed means less maintenance and more uptime. Excellent machine.",
+                quote: "The HQ26 welder transformed our production line. No chiller needed means less maintenance and more uptime. Excellent machine.",
                 name: "Michael Schmidt",
                 role: "Production Manager",
                 company: "Schmidt Metalworks, Germany",

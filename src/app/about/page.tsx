@@ -94,7 +94,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Today, our product range covers fiber laser cutting, welding, cleaning, and marking machines.
-                  Our latest innovation — the HQ26-A air-cooled laser welder — represents a breakthrough
+                  Our latest innovation — the HQ26 air-cooled laser welder — represents a breakthrough
                   in portable welding technology, eliminating the need for external chillers.
                 </p>
               </div>

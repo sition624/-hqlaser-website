@@ -95,7 +95,7 @@ export default function ContactPage() {
                           className="w-full bg-[#0A1628] border border-[#2A4A6B] rounded-sm px-4 py-3 text-white focus:border-[#3B82F6] focus:outline-none focus:ring-1 focus:ring-[#3B82F6] transition-colors"
                         >
                           <option value="">Select a product</option>
-                          <option value="hq26a">HQ26-A Laser Welder</option>
+                          <option value="hq26">HQ26 Laser Welder</option>
                           <option value="hq1530">HQ-1530 Laser Cutter</option>
                           <option value="cleaning">Laser Cleaning Machine</option>
                           <option value="marking">Laser Marking Machine</option>

@@ -70,7 +70,7 @@ export default function Navbar() {
                       href="/products/hq26a"
                       className="block px-4 py-3 text-sm text-white hover:bg-[#1A2740] hover:text-[#3B82F6] transition-colors rounded-sm"
                     >
-                      <div className="font-semibold">HQ26-A Series</div>
+                      <div className="font-semibold">HQ26 Series</div>
                       <div className="text-[#94A3B8] text-xs mt-0.5">Air-Cooled Laser Welder</div>
                     </Link>
                     <Link
@@ -136,7 +136,7 @@ export default function Navbar() {
             </Link>
             <div className="pl-4 space-y-2">
               <Link href="/products/hq26a" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
-                HQ26-A Welder
+                HQ26 Welder
               </Link>
               <Link href="/products/hq1530" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
                 HQ-1530 Cutter
