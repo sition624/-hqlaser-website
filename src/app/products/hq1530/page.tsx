@@ -2,38 +2,46 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'HQ-1530 Fiber Laser Cutter',
-  description: 'HQ-1530 high-speed fiber laser cutting machine. 1000W-3000W. Exchange table for non-stop production.',
+  title: 'HQ-1530 Fiber Laser Cutter | 1000W-6000W | $8,000-$25,000',
+  description: 'HQ-1530 high-speed fiber laser cutting machine. 1500×3000mm working area, dual exchange table, up to 120m/min rapid traverse. 1000W-6000W power options. FOB China price from $8,000.',
 };
 
 const powerOptions = [
-  { power: '1000W', speed: '20m/min', thickness: '0.5-12mm (SS)', price: 'Contact Us' },
-  { power: '1500W', speed: '25m/min', thickness: '0.5-16mm (SS)', price: 'Contact Us' },
-  { power: '2000W', speed: '30m/min', thickness: '0.5-20mm (SS)', price: 'Contact Us' },
-  { power: '3000W', speed: '35m/min', thickness: '0.5-25mm (SS)', price: 'Contact Us' },
+  { power: '1000W', speed: '20 m/min', thickness: '0.5–8mm (SS) / 0.5–10mm (CS)', price: '$8,000–12,000' },
+  { power: '1500W', speed: '25 m/min', thickness: '0.5–10mm (SS) / 0.5–14mm (CS)', price: '$10,000–15,000' },
+  { power: '2000W', speed: '30 m/min', thickness: '0.5–12mm (SS) / 0.5–16mm (CS)', price: '$13,000–18,000' },
+  { power: '3000W', speed: '35 m/min', thickness: '0.5–16mm (SS) / 0.5–20mm (CS)', price: '$18,000–25,000' },
 ];
 
 const specs = [
-  { label: 'Working Area', value: '1500 x 3000mm' },
-  { label: 'Laser Source', value: 'Raycus / IPG / MAX' },
-  { label: 'Laser Power', value: '1000W / 1500W / 2000W / 3000W' },
-  { label: 'Cutting Speed', value: 'Up to 35m/min' },
-  { label: 'Positioning Accuracy', value: '+/- 0.03mm' },
-  { label: 'Repositioning Accuracy', value: '+/- 0.02mm' },
-  { label: 'Max Rapid Speed', value: '60m/min' },
-  { label: 'Work Table', value: 'Exchange Table (Dual)' },
-  { label: 'Control System', value: 'CypCut / PA8000' },
-  { label: 'Cooling', value: 'Water Chiller (CW-5200/6200)' },
-  { label: 'Power Supply', value: '380V / 50Hz / 60Hz' },
-  { label: 'Machine Weight', value: '3500kg' },
+  { label: 'Model', value: 'HQ-1530' },
+  { label: 'Working Area', value: '1500 × 3000mm (5×10 ft)' },
+  { label: 'Laser Source', value: 'Raycus / IPG / MAX Photonics' },
+  { label: 'Laser Power', value: '1000W / 1500W / 2000W / 3000W / 6000W' },
+  { label: 'Laser Wavelength', value: '1064nm' },
+  { label: 'Cutting Speed', value: 'Max 40 m/min' },
+  { label: 'Max Rapid Traverse', value: '120 m/min' },
+  { label: 'Positioning Accuracy', value: '±0.03mm' },
+  { label: 'Repeatability', value: '±0.02mm' },
+  { label: 'Max Cutting Thickness', value: '25mm (MS) / 16mm (SS) / 12mm (AL)' },
+  { label: 'Work Table', value: 'Dual Exchange Table' },
+  { label: 'Control System', value: 'CypCut BC100S / PA8000' },
+  { label: 'Cutting Head', value: 'PRECITEC / Raytools Auto-Focus' },
+  { label: 'Servo Motor', value: 'HIWIN / Yaskawa' },
+  { label: 'Guide Rail', value: 'HIWIN Linear Guide' },
+  { label: 'Cooling', value: 'Water Chiller CW-5200 / CW-6200' },
+  { label: 'Power Supply', value: '380V ± 10% / 50Hz / 60Hz' },
+  { label: 'Machine Weight', value: '≈ 4000 kg' },
+  { label: 'Machine Dimensions', value: '8200 × 4200 × 1800mm' },
 ];
 
 const cuttingSpeeds = [
-  { material: 'Stainless Steel', t1mm: '35', t2mm: '20', t3mm: '14', t6mm: '7', t8mm: '4' },
-  { material: 'Carbon Steel', t1mm: '40', t2mm: '25', t3mm: '18', t6mm: '10', t8mm: '6' },
-  { material: 'Aluminum', t1mm: '30', t2mm: '18', t3mm: '12', t6mm: '5', t8mm: '3' },
-  { material: 'Copper', t1mm: '25', t2mm: '15', t3mm: '10', t6mm: '4', t8mm: '2' },
-  { material: 'Galvanized', t1mm: '35', t2mm: '20', t3mm: '14', t6mm: '7', t8mm: '4' },
+  { material: 'Stainless Steel', t1mm: '40', t2mm: '22', t3mm: '14', t6mm: '6', t8mm: '3.5', t10mm: '2.5', t12mm: '1.8' },
+  { material: 'Carbon Steel', t1mm: '45', t2mm: '28', t3mm: '18', t6mm: '10', t8mm: '6', t10mm: '4', t12mm: '2.5' },
+  { material: 'Aluminum', t1mm: '35', t2mm: '18', t3mm: '12', t6mm: '5', t8mm: '3', t10mm: '2', t12mm: '—' },
+  { material: 'Copper', t1mm: '28', t2mm: '14', t3mm: '8', t6mm: '3', t8mm: '1.5', t10mm: '—', t12mm: '—' },
+  { material: 'Galvanized Steel', t1mm: '38', t2mm: '20', t3mm: '13', t6mm: '5.5', t8mm: '3', t10mm: '2', t12mm: '1.5' },
+  { material: 'Brass', t1mm: '25', t2mm: '12', t3mm: '7', t6mm: '2.5', t8mm: '1.2', t10mm: '—', t12mm: '—' },
 ];
 
 const applications = [
@@ -64,8 +72,8 @@ export default function HQ1530Page() {
               </p>
               <p className="text-[#CBD5E1] text-lg leading-relaxed mb-8">
                 The HQ-1530 delivers industrial-grade cutting precision at an unbeatable price point.
-                With exchange table technology, dual work tables swap in 15 seconds for non-stop production.
-                Cut through steel up to 25mm with 3000W power.
+                With dual exchange tables that swap in 15 seconds for non-stop production, and rapid traverse
+                speed up to 120 m/min. Cut stainless steel up to 16mm and carbon steel up to 25mm with 3000W power.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-primary">Get a Quote</Link>
@@ -102,8 +110,9 @@ export default function HQ1530Page() {
                 <div className="text-3xl font-black text-[#00D4FF] mb-4">{opt.power}</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between"><span className="text-[#94A3B8]">Cutting Speed</span><span className="text-white font-mono">{opt.speed}</span></div>
-                  <div className="flex justify-between"><span className="text-[#94A3B8]">SS Thickness</span><span className="text-white font-mono">{opt.thickness}</span></div>
-                  <div className="flex justify-between"><span className="text-[#94A3B8]">Price</span><span className="text-[#00D4FF] font-semibold">Contact Us</span></div>
+                  <div className="flex justify-between"><span className="text-[#94A3B8]">SS Thickness</span><span className="text-white font-mono">{opt.thickness.split(' / ')[0]}</span></div>
+                  <div className="flex justify-between"><span className="text-[#94A3B8]">CS Thickness</span><span className="text-white font-mono">{opt.thickness.split(' / ')[1]}</span></div>
+                  <div className="flex justify-between"><span className="text-[#94A3B8]">Price Range</span><span className="text-[#00D4FF] font-semibold">{opt.price}</span></div>
                 </div>
                 <Link href="/contact" className={`block text-center mt-6 py-3 rounded-sm font-semibold text-sm transition-colors ${i === 2 ? 'bg-[#00D4FF] text-[#0A1628] hover:bg-[#00B8E6]' : 'border border-[#2A4A6B] text-white hover:border-[#00D4FF] hover:text-[#00D4FF]'}`}>
                   Request Quote
@@ -135,11 +144,12 @@ export default function HQ1530Page() {
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-white mb-6">Core Components</h3>
               {[
-                { title: 'Raycus / IPG Laser Source', desc: 'Premium fiber laser source with 100,000+ hours lifespan. Top-tier beam quality.' },
-                { title: 'CypCut Control System', desc: 'Industry-leading CNC system. Intuitive interface with auto-nesting and path optimization.' },
-                { title: 'Exchange Work Table', desc: 'Dual table design swaps in 15 seconds. Load material while cutting continues. Zero downtime.' },
-                { title: 'PRECITEC Cutting Head', desc: 'Auto-focus laser head with capacitive height sensing. Consistent cut quality at high speed.' },
-                { title: 'HIWIN Servo Motors', desc: 'Japanese precision servo drive system. Smooth acceleration, high positioning accuracy.' },
+                { title: 'Raycus / IPG / MAX Laser Source', desc: 'Premium fiber laser generator with 100,000+ hours lifespan. Electro-optical conversion efficiency up to 30%.' },
+                { title: 'CypCut BC100S Control System', desc: 'Industry-leading CNC controller with auto-nesting, edge detection, and path optimization. Supports DXF/PLT/AI formats.' },
+                { title: 'Dual Exchange Work Table', desc: 'Auto-switching dual pallet system. Table change in 15 seconds. Load/unload while cutting continues — zero downtime.' },
+                { title: 'PRECITEC / Raytools Auto-Focus Head', desc: 'Capacitive height sensing with auto-focus. Maintains optimal focal position for consistent cut quality at high speed.' },
+                { title: 'HIWIN / Yaskawa Servo Drive', desc: 'Japanese precision AC servo motors. Smooth acceleration up to 1.5G, ensuring high dynamic cutting performance.' },
+                { title: 'Raytools Cutting Head', desc: 'QBH connector, collimating/focusing lens protection. Compatible with Raycus, IPG, MAX sources.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 bg-[#162032] border border-[#1E3A5F] rounded-sm p-5">
                   <div className="w-10 h-10 bg-[#1A2740] border border-[#00D4FF]/20 rounded-sm flex items-center justify-center shrink-0">
@@ -161,10 +171,10 @@ export default function HQ1530Page() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Cutting Speed Reference</h2>
-            <p className="text-[#94A3B8]">Speed values in m/min at 2000W power (approximate)</p>
+            <p className="text-[#94A3B8]">Speed values in m/min at 2000W fiber laser power (approximate)</p>
           </div>
           <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden overflow-x-auto">
-            <table className="w-full min-w-[600px]">
+            <table className="w-full min-w-[700px]">
               <thead>
                 <tr className="border-b border-[#1E3A5F]">
                   <th className="px-6 py-4 text-left text-sm font-semibold text-white">Material</th>
@@ -173,6 +183,8 @@ export default function HQ1530Page() {
                   <th className="px-4 py-4 text-center text-sm font-semibold text-[#00D4FF]">3mm</th>
                   <th className="px-4 py-4 text-center text-sm font-semibold text-[#00D4FF]">6mm</th>
                   <th className="px-4 py-4 text-center text-sm font-semibold text-[#00D4FF]">8mm</th>
+                  <th className="px-4 py-4 text-center text-sm font-semibold text-[#00D4FF]">10mm</th>
+                  <th className="px-4 py-4 text-center text-sm font-semibold text-[#00D4FF]">12mm</th>
                 </tr>
               </thead>
               <tbody>
@@ -184,6 +196,8 @@ export default function HQ1530Page() {
                     <td className="px-4 py-4 text-sm text-center text-[#CBD5E1] font-mono">{row.t3mm}</td>
                     <td className="px-4 py-4 text-sm text-center text-[#CBD5E1] font-mono">{row.t6mm}</td>
                     <td className="px-4 py-4 text-sm text-center text-[#CBD5E1] font-mono">{row.t8mm}</td>
+                    <td className="px-4 py-4 text-sm text-center text-[#CBD5E1] font-mono">{row.t10mm}</td>
+                    <td className="px-4 py-4 text-sm text-center text-[#CBD5E1] font-mono">{row.t12mm}</td>
                   </tr>
                 ))}
               </tbody>
