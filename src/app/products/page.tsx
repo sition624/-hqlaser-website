@@ -82,11 +82,11 @@ export default function ProductsPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* HQ26-A */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[16/10] bg-[#1A2740] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
                   alt="HQ26-A Air-Cooled Laser Welder"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#3B82F6] text-white text-xs font-bold uppercase">
@@ -112,11 +112,11 @@ export default function ProductsPage() {
 
             {/* HQ-1530 */}
             <Link href="/products/hq1530" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[16/10] bg-[#1A2740] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
                 <img
                   src="/images/products/3015-dual-platform-fiber-cutter.png"
                   alt="HQ-1530 Fiber Laser Cutter"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#00D4FF] text-[#0A1628] text-xs font-bold uppercase">
@@ -154,11 +154,11 @@ export default function ProductsPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {productCategories.map((cat) => (
               <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
-                <div className="aspect-[16/9] bg-[#1A2740] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
                   <img
                     src={cat.image}
                     alt={cat.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain p-4"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-transparent" />
                 </div>
@@ -210,11 +210,11 @@ export default function ProductsPage() {
                 href={product.href}
                 className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover"
               >
-                <div className="aspect-square bg-[#1A2740] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#162032] via-transparent to-transparent opacity-60" />
                 </div>

@@ -73,11 +73,11 @@ export default function HQ1530Page() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden">
                 <img
                   src="/images/products/3015-dual-platform-fiber-cutter.png"
                   alt="HQ-1530 Fiber Laser Cutter"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-6"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/10 via-transparent to-[#3B82F6]/10" />
                 <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#00D4FF]/30" />

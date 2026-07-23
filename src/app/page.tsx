@@ -99,11 +99,11 @@ export default function HomePage() {
 
             {/* Hero Image */}
             <div className="relative hidden lg:block">
-              <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
+              <div className="aspect-[4/3] bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
                 <img
                   src="/images/products/3015-dual-platform-fiber-cutter.png"
                   alt="Heqing Fiber Laser Cutter"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-6"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
                 {/* Decorative corner marks */}
@@ -136,11 +136,11 @@ export default function HomePage() {
                 href={cat.href}
                 className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden"
               >
-                <div className="aspect-[16/10] bg-[#1A2740] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#0F1B2D] relative overflow-hidden">
                   <img
                     src={cat.image}
                     alt={cat.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#162032] via-transparent to-transparent" />
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundImage: `linear-gradient(to right, ${cat.accent}, #00D4FF)` }} />
