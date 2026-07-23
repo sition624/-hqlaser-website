@@ -1,4 +1,45 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Heqing Laser - Fiber Laser Cutting, Welding, Cleaning & Marking Solutions',
+  description: 'Professional fiber laser equipment manufacturer. Cutting machines, welding machines, cleaning machines, and marking machines for global industrial applications.',
+};
+
+const productCategories = [
+  {
+    name: 'Laser Cutting Machines',
+    desc: 'High-speed fiber laser cutting for sheets, tubes, and plates. From 1000W to 6000W.',
+    image: '/images/products/3015-single-platform-fiber-cutter.jpg',
+    models: ['HQ-1530 Fiber Laser Cutter', 'HQ-3015 Large Format Cutter', 'HQ-6020 Tube & Sheet Cutter', 'HQ-F6025 Fiber Tube Cutter'],
+    href: '/products/hq1530',
+    accent: '#3B82F6',
+  },
+  {
+    name: 'Laser Welding Machines',
+    desc: 'Handheld & automated laser welders. Revolutionary air-cooled technology.',
+    image: '/images/products/hq26a-air-cooled-welder.png',
+    models: ['HQ26-A Air-Cooled Welder', 'HQ-HW Handheld Welder', 'HQ-AW Auto Welding System', 'HQ-CW CNC Welder'],
+    href: '/products/hq26a',
+    accent: '#3B82F6',
+  },
+  {
+    name: 'Laser Cleaning Machines',
+    desc: 'Non-contact surface cleaning. Remove rust, paint, oil, and contaminants.',
+    image: '/images/products/pulse-laser-cleaner.jpg',
+    models: ['HQ-CL100 100W Cleaner', 'HQ-CL200 200W Cleaner', 'HQ-CL300 300W Cleaner', 'HQ-CL500 500W Industrial'],
+    href: '#',
+    accent: '#00D4FF',
+  },
+  {
+    name: 'Laser Marking Machines',
+    desc: 'Permanent marking & engraving for metals, plastics, and more.',
+    image: '/images/products/laser-marking-machine.png',
+    models: ['HQ-M20 Fiber Marker', 'HQ-M30 UV Marker', 'HQ-M50 CO2 Marker', 'HQ-FLY Flying Marker'],
+    href: '#',
+    accent: '#00D4FF',
+  },
+];
 
 export default function HomePage() {
   return (
@@ -56,19 +97,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Image Placeholder */}
+            {/* Hero Image */}
             <div className="relative hidden lg:block">
               <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
+                <img
+                  src="/images/products/3015-dual-platform-fiber-cutter.png"
+                  alt="Heqing Fiber Laser Cutter"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-32 h-32 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-[#94A3B8] text-sm mt-4">Product Hero Image</p>
-                    <p className="text-[#666666] text-xs mt-1">Replace with actual product photo</p>
-                  </div>
-                </div>
                 {/* Decorative corner marks */}
                 <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
                 <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30" />
@@ -93,77 +130,35 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Cutting Machine */}
-            <Link href="/products/hq1530" className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3B82F6] to-[#00D4FF] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">Laser Cutting</h3>
-              <p className="text-[#94A3B8] text-sm mb-4">High-speed fiber laser cutting machines for metal sheets, tubes, and plates.</p>
-              <span className="text-[#3B82F6] text-sm font-semibold flex items-center gap-2">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
-
-            {/* Welding Machine */}
-            <Link href="/products/hq26a" className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3B82F6] to-[#00D4FF] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">Laser Welding</h3>
-              <p className="text-[#94A3B8] text-sm mb-4">Handheld & automated laser welders with air-cooled technology.</p>
-              <span className="text-[#3B82F6] text-sm font-semibold flex items-center gap-2">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
-
-            {/* Cleaning Machine */}
-            <div className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0066FF] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#00D4FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">Laser Cleaning</h3>
-              <p className="text-[#94A3B8] text-sm mb-4">Non-contact rust, paint & contamination removal systems.</p>
-              <span className="text-[#00D4FF] text-sm font-semibold flex items-center gap-2">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </div>
-
-            {/* Marking Machine */}
-            <div className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0066FF] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#00D4FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">Laser Marking</h3>
-              <p className="text-[#94A3B8] text-sm mb-4">Permanent marking & engraving for metals, plastics & more.</p>
-              <span className="text-[#00D4FF] text-sm font-semibold flex items-center gap-2">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </div>
+            {productCategories.map((cat) => (
+              <Link
+                key={cat.name}
+                href={cat.href}
+                className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden"
+              >
+                <div className="aspect-[16/10] bg-[#1A2740] relative overflow-hidden">
+                  <img
+                    src={cat.image}
+                    alt={cat.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#162032] via-transparent to-transparent" />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundImage: `linear-gradient(to right, ${cat.accent}, #00D4FF)` }} />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-2 transition-colors" style={{ ['--hover-color' as string]: cat.accent }}>
+                    <span className="group-hover:text-[#3B82F6] transition-colors">{cat.name.replace(' Machines', '').replace('Laser ', 'Laser ')}</span>
+                  </h3>
+                  <p className="text-[#94A3B8] text-sm mb-4">{cat.desc}</p>
+                  <span className="text-sm font-semibold flex items-center gap-2 transition-colors" style={{ color: cat.accent }}>
+                    Learn More
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -291,7 +286,7 @@ export default function HomePage() {
                 quote: "We've purchased 15 machines over 3 years. Consistent quality, competitive pricing, and their engineers are always responsive.",
                 name: "Carlos Mendez",
                 role: "Procurement Director",
-                company: "Mendez Fabricación, Mexico",
+                company: "Mendez Fabricacion, Mexico",
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8">

@@ -74,15 +74,12 @@ export default function HQ1530Page() {
             </div>
             <div className="relative hidden lg:block">
               <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+                <img
+                  src="/images/products/3015-dual-platform-fiber-cutter.png"
+                  alt="HQ-1530 Fiber Laser Cutter"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/10 via-transparent to-[#3B82F6]/10" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-32 h-32 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
-                    </svg>
-                    <p className="text-[#94A3B8] text-sm mt-4">HQ-1530 Product Image</p>
-                  </div>
-                </div>
                 <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#00D4FF]/30" />
                 <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#00D4FF]/30" />
               </div>

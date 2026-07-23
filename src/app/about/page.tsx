@@ -28,6 +28,16 @@ const certifications = [
   { name: 'FDA Registration', desc: 'Registered with US FDA for laser products' },
 ];
 
+const shippingPhotos = [
+  { src: '/images/factory/shipping-1.jpg', alt: 'Machine shipping preparation 1' },
+  { src: '/images/factory/shipping-2.jpg', alt: 'Machine shipping preparation 2' },
+  { src: '/images/factory/shipping-3.jpg', alt: 'Machine shipping preparation 3' },
+  { src: '/images/factory/shipping-4.jpg', alt: 'Machine loading for delivery' },
+  { src: '/images/factory/shipping-5.jpg', alt: 'Container loading' },
+  { src: '/images/factory/shipping-6.jpg', alt: 'Machine packed for shipping' },
+  { src: '/images/factory/shipping-7.jpg', alt: 'Final inspection before shipping' },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -89,12 +99,62 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm aspect-[4/3] flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-24 h-24 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <p className="text-[#94A3B8] text-sm mt-4">Factory / Team Photo</p>
+            <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden aspect-[4/3]">
+              <img
+                src="/images/factory/workshop-overview.jpg"
+                alt="Heqing Factory Workshop Overview"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Factory & Production */}
+      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-2 h-8 bg-[#00D4FF]" />
+            <h2 className="text-3xl font-bold text-white">Factory & Production</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/factory/production-line.jpg"
+                  alt="Production Line"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-white font-semibold text-sm">Production Line</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Modern assembly line with strict quality control</p>
+              </div>
+            </div>
+            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/factory/worker-assembly.jpg"
+                  alt="Worker Assembly"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-white font-semibold text-sm">Assembly Workshop</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Skilled technicians assembling laser equipment</p>
+              </div>
+            </div>
+            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/factory/worker-welding.jpg"
+                  alt="Worker Welding"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-white font-semibold text-sm">Welding Station</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Precision welding for machine frame construction</p>
               </div>
             </div>
           </div>
@@ -102,7 +162,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
+      <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-2 h-8 bg-[#00D4FF]" />
@@ -110,7 +170,7 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {milestones.map((m) => (
-              <div key={m.year} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6 card-hover">
+              <div key={m.year} className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-6 card-hover">
                 <div className="text-2xl font-black text-[#3B82F6] mb-2">{m.year}</div>
                 <p className="text-[#CBD5E1] text-sm">{m.event}</p>
               </div>
@@ -120,7 +180,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-[#0A1628]">
+      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Why Choose <span className="gradient-text">Heqing</span></h2>
@@ -135,7 +195,7 @@ export default function AboutPage() {
               { title: 'Custom Solutions', desc: 'OEM/ODM services available. Custom work areas, power configurations, and automation integration.' },
               { title: 'Fast Production', desc: 'Standard models ship in 7-15 days. Custom configurations in 20-30 days. No compromise on quality.' },
             ].map((item) => (
-              <div key={item.title} className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 card-hover">
+              <div key={item.title} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8 card-hover">
                 <div className="w-12 h-12 bg-[#1A2740] border border-[#3B82F6]/20 rounded-sm flex items-center justify-center mb-6">
                   <svg className="w-6 h-6 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
@@ -149,6 +209,32 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Shipping Gallery */}
+      <section className="py-24 bg-[#0A1628]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-2 h-8 bg-[#3B82F6]" />
+            <h2 className="text-3xl font-bold text-white">Shipping & Delivery</h2>
+          </div>
+          <p className="text-[#94A3B8] mb-8 max-w-2xl">
+            Every machine is carefully packaged and inspected before shipping. We deliver to ports worldwide with professional logistics partners.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {shippingPhotos.map((photo, i) => (
+              <div key={i} className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Certifications */}
       <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -156,6 +242,16 @@ export default function AboutPage() {
             <div className="w-2 h-8 bg-[#3B82F6]" />
             <h2 className="text-3xl font-bold text-white">Certifications</h2>
           </div>
+
+          {/* Certificate Image */}
+          <div className="mb-12 bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
+            <img
+              src="/images/certificates/certifications.png"
+              alt="Heqing Laser Certifications - CE, ISO 9001, SGS, FDA"
+              className="w-full h-auto"
+            />
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert) => (
               <div key={cert.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6 text-center card-hover">

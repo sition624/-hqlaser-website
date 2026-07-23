@@ -75,15 +75,12 @@ export default function HQ26APage() {
             </div>
             <div className="relative hidden lg:block">
               <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+                <img
+                  src="/images/products/hq26a-air-cooled-welder.png"
+                  alt="HQ26-A Air-Cooled Laser Welder"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-32 h-32 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <p className="text-[#94A3B8] text-sm mt-4">HQ26-A Product Image</p>
-                  </div>
-                </div>
                 <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
                 <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30" />
               </div>
