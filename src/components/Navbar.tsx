@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#222222]'
+          ? 'bg-[#0A1628]/90 backdrop-blur-lg border-b border-[#1E3A5F]'
           : 'bg-transparent'
       }`}
     >
@@ -28,14 +28,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#FFD60A] rounded-sm flex items-center justify-center">
-              <span className="text-[#0a0a0a] font-black text-lg">HQ</span>
+            <div className="w-10 h-10 bg-[#0A2463] rounded-sm flex items-center justify-center border border-[#3B82F6]/30">
+              <span className="text-white font-black text-lg">HQ</span>
             </div>
             <div className="flex flex-col">
               <span className="text-white font-bold text-lg leading-tight tracking-tight">
                 HEQING
               </span>
-              <span className="text-[#A0A0A0] text-[10px] font-medium tracking-[0.2em] uppercase">
+              <span className="text-[#94A3B8] text-[10px] font-medium tracking-[0.2em] uppercase">
                 Laser Technology
               </span>
             </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="nav-link text-sm font-medium text-white hover:text-[#FFD60A] transition-colors">
+            <Link href="/" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
               Home
             </Link>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
             >
               <Link
                 href="/products"
-                className="nav-link text-sm font-medium text-white hover:text-[#FFD60A] transition-colors flex items-center gap-1"
+                className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors flex items-center gap-1"
               >
                 Products
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,25 +64,25 @@ export default function Navbar() {
               </Link>
 
               {dropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-[#111111] border border-[#222222] rounded-sm shadow-2xl">
+                <div className="absolute top-full left-0 mt-2 w-64 bg-[#162032] border border-[#1E3A5F] rounded-sm shadow-2xl shadow-black/40">
                   <div className="p-2">
                     <Link
                       href="/products/hq26a"
-                      className="block px-4 py-3 text-sm text-white hover:bg-[#1a1a1a] hover:text-[#FFD60A] transition-colors rounded-sm"
+                      className="block px-4 py-3 text-sm text-white hover:bg-[#1A2740] hover:text-[#3B82F6] transition-colors rounded-sm"
                     >
                       <div className="font-semibold">HQ26-A Series</div>
-                      <div className="text-[#A0A0A0] text-xs mt-0.5">Air-Cooled Laser Welder</div>
+                      <div className="text-[#94A3B8] text-xs mt-0.5">Air-Cooled Laser Welder</div>
                     </Link>
                     <Link
                       href="/products/hq1530"
-                      className="block px-4 py-3 text-sm text-white hover:bg-[#1a1a1a] hover:text-[#FFD60A] transition-colors rounded-sm"
+                      className="block px-4 py-3 text-sm text-white hover:bg-[#1A2740] hover:text-[#3B82F6] transition-colors rounded-sm"
                     >
                       <div className="font-semibold">HQ-1530 Series</div>
-                      <div className="text-[#A0A0A0] text-xs mt-0.5">Fiber Laser Cutter</div>
+                      <div className="text-[#94A3B8] text-xs mt-0.5">Fiber Laser Cutter</div>
                     </Link>
                     <Link
                       href="/products"
-                      className="block px-4 py-3 text-sm text-[#FFD60A] hover:bg-[#1a1a1a] transition-colors rounded-sm border-t border-[#222222] mt-1 pt-3"
+                      className="block px-4 py-3 text-sm text-[#3B82F6] hover:bg-[#1A2740] transition-colors rounded-sm border-t border-[#1E3A5F] mt-1 pt-3"
                     >
                       View All Products →
                     </Link>
@@ -91,10 +91,10 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/about" className="nav-link text-sm font-medium text-white hover:text-[#FFD60A] transition-colors">
+            <Link href="/about" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="nav-link text-sm font-medium text-white hover:text-[#FFD60A] transition-colors">
+            <Link href="/contact" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
               Contact
             </Link>
           </div>
@@ -126,7 +126,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0a0a0a] border-t border-[#222222]">
+        <div className="lg:hidden bg-[#0A1628] border-t border-[#1E3A5F]">
           <div className="px-6 py-6 space-y-4">
             <Link href="/" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>
               Home
@@ -135,10 +135,10 @@ export default function Navbar() {
               Products
             </Link>
             <div className="pl-4 space-y-2">
-              <Link href="/products/hq26a" className="block text-[#A0A0A0] text-sm py-1" onClick={() => setMobileOpen(false)}>
+              <Link href="/products/hq26a" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
                 HQ26-A Welder
               </Link>
-              <Link href="/products/hq1530" className="block text-[#A0A0A0] text-sm py-1" onClick={() => setMobileOpen(false)}>
+              <Link href="/products/hq1530" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
                 HQ-1530 Cutter
               </Link>
             </div>

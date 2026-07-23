@@ -6,15 +6,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center hero-gradient bg-grid overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute top-20 right-10 w-96 h-96 bg-[#FFD60A]/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-10 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-[#00D4FF]/5 rounded-full blur-3xl" />
         
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1a1a1a] border border-[#333333] rounded-sm mb-8">
-                <span className="w-2 h-2 bg-[#FFD60A] rounded-full animate-pulse" />
-                <span className="text-[#A0A0A0] text-sm font-medium">10+ Years of Laser Excellence</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A2740] border border-[#1E3A5F] rounded-sm mb-8">
+                <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse" />
+                <span className="text-[#94A3B8] text-sm font-medium">10+ Years of Laser Excellence</span>
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
@@ -25,7 +25,7 @@ export default function HomePage() {
                 for Industry
               </h1>
               
-              <p className="text-lg text-[#A0A0A0] leading-relaxed mb-10 max-w-lg">
+              <p className="text-lg text-[#CBD5E1] leading-relaxed mb-10 max-w-lg">
                 From cutting to welding, cleaning to marking — we deliver high-performance 
                 fiber laser equipment built for demanding industrial applications worldwide.
               </p>
@@ -40,40 +40,40 @@ export default function HomePage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-[#222222]">
+              <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
                 <div>
-                  <div className="text-3xl font-bold text-[#FFD60A]">50+</div>
-                  <div className="text-sm text-[#A0A0A0] mt-1">Countries Served</div>
+                  <div className="text-3xl font-bold text-[#3B82F6]">50+</div>
+                  <div className="text-sm text-[#94A3B8] mt-1">Countries Served</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#FFD60A]">5000+</div>
-                  <div className="text-sm text-[#A0A0A0] mt-1">Machines Delivered</div>
+                  <div className="text-3xl font-bold text-[#3B82F6]">5000+</div>
+                  <div className="text-sm text-[#94A3B8] mt-1">Machines Delivered</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#FFD60A]">10+</div>
-                  <div className="text-sm text-[#A0A0A0] mt-1">Years Experience</div>
+                  <div className="text-3xl font-bold text-[#3B82F6]">10+</div>
+                  <div className="text-sm text-[#94A3B8] mt-1">Years Experience</div>
                 </div>
               </div>
             </div>
 
             {/* Hero Image Placeholder */}
             <div className="relative hidden lg:block">
-              <div className="aspect-square bg-[#111111] border border-[#222222] rounded-sm overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD60A]/10 via-transparent to-[#00D4FF]/10" />
+              <div className="aspect-square bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <svg className="w-32 h-32 mx-auto text-[#333333]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-32 h-32 mx-auto text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <p className="text-[#666666] text-sm mt-4">Product Hero Image</p>
-                    <p className="text-[#444444] text-xs mt-1">Replace with actual product photo</p>
+                    <p className="text-[#94A3B8] text-sm mt-4">Product Hero Image</p>
+                    <p className="text-[#666666] text-xs mt-1">Replace with actual product photo</p>
                   </div>
                 </div>
                 {/* Decorative corner marks */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#FFD60A]/30" />
-                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#FFD60A]/30" />
-                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#FFD60A]/30" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#FFD60A]/30" />
+                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
+                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30" />
+                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#3B82F6]/30" />
+                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30" />
               </div>
             </div>
           </div>
@@ -81,29 +81,29 @@ export default function HomePage() {
       </section>
 
       {/* Product Categories */}
-      <section className="py-24 bg-[#0a0a0a]">
+      <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Product <span className="gradient-text">Lines</span>
             </h2>
-            <p className="text-[#A0A0A0] text-lg max-w-2xl mx-auto">
+            <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
               Comprehensive laser solutions for every industrial application
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Cutting Machine */}
-            <Link href="/products/hq1530" className="card-hover group bg-[#111111] border border-[#222222] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFD60A] to-[#FF9500] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1a1a1a] border border-[#333333] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Link href="/products/hq1530" className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3B82F6] to-[#00D4FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FFD60A] transition-colors">Laser Cutting</h3>
-              <p className="text-[#A0A0A0] text-sm mb-4">High-speed fiber laser cutting machines for metal sheets, tubes, and plates.</p>
-              <span className="text-[#FFD60A] text-sm font-semibold flex items-center gap-2">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">Laser Cutting</h3>
+              <p className="text-[#94A3B8] text-sm mb-4">High-speed fiber laser cutting machines for metal sheets, tubes, and plates.</p>
+              <span className="text-[#3B82F6] text-sm font-semibold flex items-center gap-2">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -112,16 +112,16 @@ export default function HomePage() {
             </Link>
 
             {/* Welding Machine */}
-            <Link href="/products/hq26a" className="card-hover group bg-[#111111] border border-[#222222] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FFD60A] to-[#FF9500] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1a1a1a] border border-[#333333] rounded-sm flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Link href="/products/hq26a" className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3B82F6] to-[#00D4FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FFD60A] transition-colors">Laser Welding</h3>
-              <p className="text-[#A0A0A0] text-sm mb-4">Handheld & automated laser welders with air-cooled technology.</p>
-              <span className="text-[#FFD60A] text-sm font-semibold flex items-center gap-2">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">Laser Welding</h3>
+              <p className="text-[#94A3B8] text-sm mb-4">Handheld & automated laser welders with air-cooled technology.</p>
+              <span className="text-[#3B82F6] text-sm font-semibold flex items-center gap-2">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -130,15 +130,15 @@ export default function HomePage() {
             </Link>
 
             {/* Cleaning Machine */}
-            <div className="card-hover group bg-[#111111] border border-[#222222] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0088CC] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1a1a1a] border border-[#333333] rounded-sm flex items-center justify-center mb-6">
+            <div className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0066FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-[#00D4FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">Laser Cleaning</h3>
-              <p className="text-[#A0A0A0] text-sm mb-4">Non-contact rust, paint & contamination removal systems.</p>
+              <p className="text-[#94A3B8] text-sm mb-4">Non-contact rust, paint & contamination removal systems.</p>
               <span className="text-[#00D4FF] text-sm font-semibold flex items-center gap-2">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,15 +148,15 @@ export default function HomePage() {
             </div>
 
             {/* Marking Machine */}
-            <div className="card-hover group bg-[#111111] border border-[#222222] rounded-sm p-8 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0088CC] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 bg-[#1a1a1a] border border-[#333333] rounded-sm flex items-center justify-center mb-6">
+            <div className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00D4FF] to-[#0066FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="w-14 h-14 bg-[#1A2740] border border-[#2A4A6B] rounded-sm flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-[#00D4FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">Laser Marking</h3>
-              <p className="text-[#A0A0A0] text-sm mb-4">Permanent marking & engraving for metals, plastics & more.</p>
+              <p className="text-[#94A3B8] text-sm mb-4">Permanent marking & engraving for metals, plastics & more.</p>
               <span className="text-[#00D4FF] text-sm font-semibold flex items-center gap-2">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,69 +169,69 @@ export default function HomePage() {
       </section>
 
       {/* Core Advantages */}
-      <section className="py-24 bg-[#111111] border-y border-[#222222]">
+      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Why <span className="gradient-text">Heqing</span>
             </h2>
-            <p className="text-[#A0A0A0] text-lg max-w-2xl mx-auto">
+            <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
               Trusted by manufacturers across 50+ countries
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1a1a1a] border border-[#FFD60A]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Best Value</h3>
-              <p className="text-[#A0A0A0] text-sm">Factory-direct pricing with premium quality components. Maximum ROI for your investment.</p>
+              <p className="text-[#94A3B8] text-sm">Factory-direct pricing with premium quality components. Maximum ROI for your investment.</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1a1a1a] border border-[#FFD60A]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Fast Delivery</h3>
-              <p className="text-[#A0A0A0] text-sm">Standard models ship within 7-15 days. Custom configurations in 20-30 days.</p>
+              <p className="text-[#94A3B8] text-sm">Standard models ship within 7-15 days. Custom configurations in 20-30 days.</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1a1a1a] border border-[#FFD60A]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Global Service</h3>
-              <p className="text-[#A0A0A0] text-sm">Engineers available in 50+ countries. Remote support & on-site installation.</p>
+              <p className="text-[#94A3B8] text-sm">Engineers available in 50+ countries. Remote support & on-site installation.</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1a1a1a] border border-[#FFD60A]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#FFD60A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-white mb-2">10+ Years</h3>
-              <p className="text-[#A0A0A0] text-sm">A decade of laser equipment manufacturing excellence and innovation.</p>
+              <p className="text-[#94A3B8] text-sm">A decade of laser equipment manufacturing excellence and innovation.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Industries */}
-      <section className="py-24 bg-[#0a0a0a]">
+      <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Industries We <span className="gradient-text-cyan">Serve</span>
+              Industries We <span className="gradient-text">Serve</span>
             </h2>
-            <p className="text-[#A0A0A0] text-lg max-w-2xl mx-auto">
+            <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
               Our laser solutions power manufacturing across diverse sectors
             </p>
           </div>
@@ -247,14 +247,14 @@ export default function HomePage() {
             ].map((industry) => (
               <div
                 key={industry.name}
-                className="group bg-[#111111] border border-[#222222] rounded-sm p-6 text-center card-hover"
+                className="group bg-[#162032] border border-[#1E3A5F] rounded-sm p-6 text-center card-hover"
               >
-                <div className="w-12 h-12 mx-auto mb-4 bg-[#1a1a1a] rounded-sm flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[#00D4FF] group-hover:text-[#FFD60A] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 mx-auto mb-4 bg-[#1A2740] rounded-sm flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#3B82F6] group-hover:text-[#00D4FF] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={industry.icon} />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-[#A0A0A0] group-hover:text-white transition-colors">
+                <span className="text-sm font-medium text-[#94A3B8] group-hover:text-white transition-colors">
                   {industry.name}
                 </span>
               </div>
@@ -264,13 +264,13 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-[#111111] border-y border-[#222222]">
+      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Client <span className="gradient-text">Testimonials</span>
             </h2>
-            <p className="text-[#A0A0A0] text-lg">What our global partners say about us</p>
+            <p className="text-[#CBD5E1] text-lg">What our global partners say about us</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -294,21 +294,21 @@ export default function HomePage() {
                 company: "Mendez Fabricación, Mexico",
               },
             ].map((testimonial, i) => (
-              <div key={i} className="bg-[#0a0a0a] border border-[#222222] rounded-sm p-8">
+              <div key={i} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8">
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="w-5 h-5 text-[#FFD60A]" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={j} className="w-5 h-5 text-[#3B82F6]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
-                <p className="text-[#A0A0A0] text-sm leading-relaxed mb-6 italic">
+                <p className="text-[#CBD5E1] text-sm leading-relaxed mb-6 italic">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
-                <div className="border-t border-[#222222] pt-4">
+                <div className="border-t border-[#1E3A5F] pt-4">
                   <div className="text-white font-semibold text-sm">{testimonial.name}</div>
-                  <div className="text-[#666666] text-xs mt-1">{testimonial.role}</div>
-                  <div className="text-[#FFD60A] text-xs mt-0.5">{testimonial.company}</div>
+                  <div className="text-[#94A3B8] text-xs mt-1">{testimonial.role}</div>
+                  <div className="text-[#3B82F6] text-xs mt-0.5">{testimonial.company}</div>
                 </div>
               </div>
             ))}
@@ -317,9 +317,9 @@ export default function HomePage() {
       </section>
 
       {/* Partners */}
-      <section className="py-16 bg-[#0a0a0a]">
+      <section className="py-16 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-[#666666] text-sm uppercase tracking-wider mb-10">
+          <p className="text-center text-[#94A3B8] text-sm uppercase tracking-wider mb-10">
             Trusted Component Partners
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-50">
@@ -334,7 +334,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FFD60A]/5 via-transparent to-[#00D4FF]/5" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A2463]/20 via-transparent to-[#3B82F6]/10" />
         <div className="absolute inset-0 bg-grid" />
         
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
@@ -343,7 +343,7 @@ export default function HomePage() {
             <br />
             <span className="gradient-text">Production Line?</span>
           </h2>
-          <p className="text-[#A0A0A0] text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-[#CBD5E1] text-lg mb-10 max-w-2xl mx-auto">
             Get a customized quote within 24 hours. Our engineers will help you find 
             the perfect laser solution for your specific application.
           </p>

@@ -32,13 +32,16 @@ src/
 ```
 
 ## Design System
-- **Background**: #0a0a0a (primary), #111111 (cards), #1a1a1a (elevated)
-- **Accent Yellow**: #FFD60A (CTA, highlights)
-- **Accent Cyan**: #00D4FF (tech accents)
-- **Text**: #FFFFFF (primary), #A0A0A0 (secondary), #666666 (muted)
+- **Background**: #0A1628 (primary), #0F1B2D (sections), #162032 (cards), #1A2740 (elevated)
+- **Accent Navy**: #0A2463 (brand color, logo match)
+- **Accent Blue**: #3B82F6 (CTA, highlights, interactive)
+- **Accent Bright Blue**: #0066FF (links, active states)
+- **Accent Cyan**: #00D4FF (tech accents, data visualization)
+- **Text**: #FFFFFF (primary), #CBD5E1 (secondary), #94A3B8 (muted)
+- **Border**: #1E3A5F (subtle), #2A4A6B (interactive)
 - **Font**: Inter (headings/body), JetBrains Mono (specs/data)
 - **Border Radius**: 2-4px (sharp, industrial)
-- **Custom classes**: .btn-primary, .btn-outline, .card-hover, .gradient-text, .bg-grid, .spec-table
+- **Custom classes**: .btn-primary, .btn-outline, .card-hover, .gradient-text, .bg-grid, .spec-table, .glow-blue, .glow-cyan, .hero-gradient
 
 ## Build & Dev Commands
 - `pnpm dev` - Start dev server

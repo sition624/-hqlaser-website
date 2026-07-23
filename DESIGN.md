@@ -2,24 +2,27 @@
 
 ## Brand & Visual Direction
 - **Brand**: Heqing Laser / HQ Laser
-- **Tone**: Dark industrial tech — precision engineering meets premium manufacturing
-- **Anchor imagery**: A CNC-machined titanium panel under cold workshop spotlights, with amber warning stripes and cyan status LEDs glowing against matte black surfaces
-- **Reference brands**: TRUMPF, Bodor, HSG, IPG Photonics
+- **Logo Colors**: Navy Blue (#0A2463) + White (#FFFFFF)
+- **Tone**: Navy industrial tech —沉稳、专业、高端、国际化
+- **Anchor imagery**: A precision-engineered navy blue control panel with illuminated blue LED indicators, brushed steel surfaces, and subtle geometric patterns under cool workshop lighting
+- **Reference brands**: TRUMPF, IPG Photonics, Bodor, HSG
 
 ## Design Tokens
 
 ### Color Palette
-- **Background Primary**: `#0a0a0a` (near-black, workshop floor)
-- **Background Secondary**: `#111111` (elevated surfaces, cards)
-- **Background Tertiary**: `#1a1a1a` (hover states, active elements)
-- **Accent Yellow**: `#FFD60A` (primary CTA, warning stripes, energy)
-- **Accent Orange**: `#FF9500` (secondary accent, gradients)
-- **Accent Cyan**: `#00D4FF` (tech highlights, data visualization, precision)
+- **Background Primary**: `#0A1628` (deep navy, workshop atmosphere)
+- **Background Secondary**: `#0F1B2D` (elevated sections)
+- **Background Tertiary**: `#162032` (cards, elevated surfaces)
+- **Background Card**: `#1A2740` (hover states, active elements)
+- **Accent Navy**: `#0A2463` (primary brand color, main CTA buttons)
+- **Accent Blue**: `#3B82F6` (highlights, hover states, interactive elements)
+- **Accent Bright Blue**: `#0066FF` (links, active indicators)
+- **Accent Cyan**: `#00D4FF` (tech accents, data visualization, subtle highlights)
 - **Text Primary**: `#FFFFFF` (headings, key content)
-- **Text Secondary**: `#A0A0A0` (body text, descriptions)
-- **Text Muted**: `#666666` (captions, labels)
-- **Border**: `#222222` (subtle dividers)
-- **Border Light**: `#333333` (interactive borders)
+- **Text Secondary**: `#CBD5E1` (body text, descriptions)
+- **Text Muted**: `#94A3B8` (captions, labels)
+- **Border**: `#1E3A5F` (subtle dividers, navy-toned)
+- **Border Light**: `#2A4A6B` (interactive borders)
 
 ### Typography
 - **Headings**: Inter (700/800/900 weight) — bold, industrial, uppercase for hero
@@ -39,21 +42,23 @@
 - **Images**: 2px
 
 ### Shadows & Effects
-- **Card Glow**: `0 0 40px rgba(255, 214, 10, 0.05)` (subtle warm glow on hover)
-- **Cyan Glow**: `0 0 20px rgba(0, 212, 255, 0.15)` (tech accent)
+- **Card Glow**: `0 0 40px rgba(59, 130, 246, 0.06)` (subtle blue glow on hover)
+- **Blue Glow**: `0 0 20px rgba(59, 130, 246, 0.15)` (tech accent)
 - **Grid Pattern**: Subtle 1px grid lines at 5% opacity as background texture
+- **Nav**: Frosted glass effect with navy backdrop blur
 
 ## Interaction & Motion
-- **Hover**: Cards lift 4px with glow increase, 200ms ease
-- **CTA Buttons**: Yellow fill with black text, hover brightens to `#FFE44D`
+- **Hover**: Cards lift 4px with blue glow increase, 200ms ease
+- **CTA Buttons**: Blue fill with white text, hover brightens
 - **Scroll**: Smooth, sections fade-in-up on scroll
-- **Nav**: Fixed top, background transitions from transparent to solid on scroll
+- **Nav**: Fixed top, background transitions from transparent to navy glass on scroll
 - **Transitions**: All 200-300ms ease-out, no bouncy animations
 
 ## Design Constraints (DO NOT)
 - No rounded corners > 8px (too soft/consumer)
-- No colorful gradients (keep monochrome + accent)
+- No warm gradients (keep cool blue tones)
 - No playful illustrations (use technical SVG icons only)
 - No stock photos of people smiling at machines
-- No light mode (dark only)
+- No light mode (dark navy only)
 - No decorative elements without functional purpose
+- No yellow/orange accents (conflicts with brand identity)
