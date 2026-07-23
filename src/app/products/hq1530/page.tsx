@@ -2,28 +2,27 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'HQ-1530 Fiber Laser Cutter | 1000W-6000W | $8,000-$25,000',
-  description: 'HQ-1530 high-speed fiber laser cutting machine. 1500×3000mm working area, dual exchange table, up to 120m/min rapid traverse. 1000W-6000W power options. FOB China price from $8,000.',
+  title: 'HQ-1530 Fiber Laser Cutter | 1500W-6000W | $10,000-$45,000',
+  description: 'HQ-1530 high-speed fiber laser cutting machine. 1500×3000mm working area, dual exchange table, up to 120m/min rapid traverse. 1500W/3000W/6000W power options. FOB China price from $10,000.',
 };
 
 const powerOptions = [
-  { power: '1000W', speed: '20 m/min', thickness: '0.5–8mm (SS) / 0.5–10mm (CS)', price: '$8,000–12,000' },
   { power: '1500W', speed: '25 m/min', thickness: '0.5–10mm (SS) / 0.5–14mm (CS)', price: '$10,000–15,000' },
-  { power: '2000W', speed: '30 m/min', thickness: '0.5–12mm (SS) / 0.5–16mm (CS)', price: '$13,000–18,000' },
   { power: '3000W', speed: '35 m/min', thickness: '0.5–16mm (SS) / 0.5–20mm (CS)', price: '$18,000–25,000' },
+  { power: '6000W', speed: '40 m/min', thickness: '0.5–25mm (SS) / 0.5–30mm (CS)', price: '$30,000–45,000' },
 ];
 
 const specs = [
   { label: 'Model', value: 'HQ-1530' },
   { label: 'Working Area', value: '1500 × 3000mm (5×10 ft)' },
   { label: 'Laser Source', value: 'Raycus / IPG / MAX Photonics' },
-  { label: 'Laser Power', value: '1000W / 1500W / 2000W / 3000W / 6000W' },
+  { label: 'Laser Power', value: '1500W / 3000W / 6000W' },
   { label: 'Laser Wavelength', value: '1064nm' },
   { label: 'Cutting Speed', value: 'Max 40 m/min' },
   { label: 'Max Rapid Traverse', value: '120 m/min' },
   { label: 'Positioning Accuracy', value: '±0.03mm' },
   { label: 'Repeatability', value: '±0.02mm' },
-  { label: 'Max Cutting Thickness', value: '25mm (MS) / 16mm (SS) / 12mm (AL)' },
+  { label: 'Max Cutting Thickness', value: '30mm (MS) / 25mm (SS) / 16mm (AL)' },
   { label: 'Work Table', value: 'Dual Exchange Table' },
   { label: 'Control System', value: 'CypCut BC100S / PA8000' },
   { label: 'Cutting Head', value: 'PRECITEC / Raytools Auto-Focus' },
@@ -73,7 +72,8 @@ export default function HQ1530Page() {
               <p className="text-[#CBD5E1] text-lg leading-relaxed mb-8">
                 The HQ-1530 delivers industrial-grade cutting precision at an unbeatable price point.
                 With dual exchange tables that swap in 15 seconds for non-stop production, and rapid traverse
-                speed up to 120 m/min. Cut stainless steel up to 16mm and carbon steel up to 25mm with 3000W power.
+                speed up to 120 m/min. Available in 1500W, 3000W, and 6000W — cut stainless steel up to 25mm
+                and carbon steel up to 30mm.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-primary">Get a Quote</Link>
@@ -103,10 +103,10 @@ export default function HQ1530Page() {
             <div className="w-2 h-8 bg-[#00D4FF]" />
             <h2 className="text-2xl font-bold text-white">Power Options</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {powerOptions.map((opt, i) => (
-              <div key={opt.power} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 2 ? 'border-[#00D4FF] glow-cyan' : 'border-[#1E3A5F]'}`}>
-                {i === 2 && <div className="text-[#00D4FF] text-xs font-bold uppercase mb-4 tracking-wider">Recommended</div>}
+              <div key={opt.power} className={`bg-[#0A1628] border rounded-sm p-6 card-hover ${i === 1 ? 'border-[#00D4FF] glow-cyan' : 'border-[#1E3A5F]'}`}>
+                {i === 1 && <div className="text-[#00D4FF] text-xs font-bold uppercase mb-4 tracking-wider">Most Popular</div>}
                 <div className="text-3xl font-black text-[#00D4FF] mb-4">{opt.power}</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between"><span className="text-[#94A3B8]">Cutting Speed</span><span className="text-white font-mono">{opt.speed}</span></div>
@@ -114,7 +114,7 @@ export default function HQ1530Page() {
                   <div className="flex justify-between"><span className="text-[#94A3B8]">CS Thickness</span><span className="text-white font-mono">{opt.thickness.split(' / ')[1]}</span></div>
                   <div className="flex justify-between"><span className="text-[#94A3B8]">Price Range</span><span className="text-[#00D4FF] font-semibold">{opt.price}</span></div>
                 </div>
-                <Link href="/contact" className={`block text-center mt-6 py-3 rounded-sm font-semibold text-sm transition-colors ${i === 2 ? 'bg-[#00D4FF] text-[#0A1628] hover:bg-[#00B8E6]' : 'border border-[#2A4A6B] text-white hover:border-[#00D4FF] hover:text-[#00D4FF]'}`}>
+                <Link href="/contact" className={`block text-center mt-6 py-3 rounded-sm font-semibold text-sm transition-colors ${i === 1 ? 'bg-[#00D4FF] text-[#0A1628] hover:bg-[#00B8E6]' : 'border border-[#2A4A6B] text-white hover:border-[#00D4FF] hover:text-[#00D4FF]'}`}>
                   Request Quote
                 </Link>
               </div>
