@@ -99,7 +99,7 @@ export default function HomePage() {
             </div>
 
             {/* Hero Video */}
-            <div className="relative">
+            <div className="relative w-full">
               <HeroLaserSpark />
             </div>
           </div>
