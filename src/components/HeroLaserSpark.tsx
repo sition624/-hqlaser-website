@@ -5,7 +5,7 @@ export default function HeroLaserSpark() {
     <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
       {/* Background video */}
       <video
-        src="/images/laser-hero-blt421.mp4"
+        src="/images/laser-hero-blt520.mp4"
         autoPlay
         muted
         loop
