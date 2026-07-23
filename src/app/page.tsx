@@ -56,7 +56,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A2740] border border-[#1E3A5F] rounded-sm mb-8">
                 <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse" />
-                <span className="text-[#94A3B8] text-sm font-medium">10+ Years of Laser Excellence</span>
+                <span className="text-[#94A3B8] text-sm font-medium">10+ Years of Industry Expertise</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
