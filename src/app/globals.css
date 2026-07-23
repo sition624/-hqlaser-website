@@ -356,3 +356,54 @@ body {
 .spark-5 { animation: spark-float-5 1.5s ease-out infinite; animation-delay: 0.3s; }
 .spark-6 { animation: spark-float-6 1.0s ease-out infinite; animation-delay: 0.5s; }
 .spark-7 { animation: spark-float-7 1.6s ease-out infinite; animation-delay: 0.15s; }
+
+/* ============================================
+   Hero Laser Cutting Animation (v2)
+   ============================================ */
+
+/* Cutting head moves left-right across the image */
+@keyframes cutting-head-move {
+  0% {
+    left: 20%;
+  }
+  50% {
+    left: 75%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+/* Laser beam rapid pulse */
+@keyframes laser-beam-pulse {
+  0% {
+    opacity: 0.8;
+    box-shadow: 0 0 6px rgba(59,130,246,0.6), 0 0 16px rgba(0,212,255,0.3);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(59,130,246,1), 0 0 30px rgba(0,212,255,0.6), 0 0 50px rgba(59,130,246,0.3);
+  }
+}
+
+/* Focal point glow pulse */
+@keyframes focal-glow {
+  0% {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Status indicator blink */
+@keyframes status-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}

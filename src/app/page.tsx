@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import HeroLaserAnimation from '@/components/HeroLaserAnimation';
 
 export const metadata: Metadata = {
   title: 'Heqing Laser - Fiber Laser Cutting, Welding, Cleaning & Marking Solutions',
@@ -97,37 +98,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Image with Laser Effect */}
+            {/* Hero Image with Laser Cutting Animation */}
             <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden relative">
-                <img
-                  src="/images/laser-cutting-hero.jpg"
-                  alt="Heqing Fiber Laser Cutter in Action"
-                  className="w-full h-full object-cover hero-image-breathe"
-                />
-                {/* Dark overlay for depth - below laser effects */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-[#0A1628]/20 z-[5]" />
-                {/* Laser beam - visible above overlay */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[3px] h-[65%] bg-gradient-to-b from-[#3B82F6]/0 via-[#3B82F6]/90 to-[#00D4FF] laser-beam z-10" />
-                {/* Laser impact glow */}
-                <div className="absolute top-[63%] left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#00D4FF]/40 blur-md laser-beam z-10" />
-                <div className="absolute top-[64%] left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-white/70 blur-sm laser-beam z-10" />
-                {/* Spark particles container */}
-                <div className="absolute top-[62%] left-1/2 -translate-x-1/2 w-0 h-0 z-20">
-                  <div className="spark spark-1" />
-                  <div className="spark spark-2" />
-                  <div className="spark spark-3" />
-                  <div className="spark spark-4" />
-                  <div className="spark spark-5" />
-                  <div className="spark spark-6" />
-                  <div className="spark spark-7" />
-                </div>
-                {/* Corner marks */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30 z-10" />
-                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30 z-10" />
-                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#3B82F6]/30 z-10" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30 z-10" />
-              </div>
+              <HeroLaserAnimation />
             </div>
           </div>
         </div>
