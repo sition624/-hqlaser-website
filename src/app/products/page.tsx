@@ -128,14 +128,14 @@ export default function ProductsPage() {
                   HQ-1530 Fiber Laser Cutter
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
-                  Fastest path to ROI. High-precision cutting with exchange table for non-stop production.
+                  Fastest path to ROI. High-precision cutting with single platform table for stable performance.
                 </p>
                 <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
                   <span>1000W - 3000W</span>
                   <span>|</span>
                   <span>1500x3000mm</span>
                   <span>|</span>
-                  <span>Exchange Table</span>
+                  <span>Single Platform</span>
                 </div>
               </div>
             </Link>

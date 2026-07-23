@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'HQ-1530 Fiber Laser Cutter | 1500W-6000W | $10,000-$45,000',
-  description: 'HQ-1530 high-speed fiber laser cutting machine. 1500×3000mm working area, dual exchange table, up to 120m/min rapid traverse. 1500W/3000W/6000W power options. FOB China price from $10,000.',
+  description: 'HQ-1530 high-speed fiber laser cutting machine. 1500×3000mm working area, single platform table, up to 120m/min rapid traverse. 1500W/3000W/6000W power options. FOB China price from $10,000.',
 };
 
 const powerOptions = [
@@ -23,14 +23,14 @@ const specs = [
   { label: 'Positioning Accuracy', value: '±0.03mm' },
   { label: 'Repeatability', value: '±0.02mm' },
   { label: 'Max Cutting Thickness', value: '30mm (MS) / 25mm (SS) / 16mm (AL)' },
-  { label: 'Work Table', value: 'Dual Exchange Table' },
+  { label: 'Work Table', value: 'Single Platform Table' },
   { label: 'Control System', value: 'CypCut BC100S / PA8000' },
   { label: 'Cutting Head', value: 'PRECITEC / Raytools Auto-Focus' },
   { label: 'Servo Motor', value: 'HIWIN / Yaskawa' },
   { label: 'Guide Rail', value: 'HIWIN Linear Guide' },
   { label: 'Cooling', value: 'Water Chiller CW-5200 / CW-6200' },
   { label: 'Power Supply', value: '380V ± 10% / 50Hz / 60Hz' },
-  { label: 'Machine Weight', value: '≈ 4000 kg' },
+  { label: 'Machine Weight', value: '≈ 3000 kg' },
   { label: 'Machine Dimensions', value: '8200 × 4200 × 1800mm' },
 ];
 
@@ -71,7 +71,7 @@ export default function HQ1530Page() {
               </p>
               <p className="text-[#CBD5E1] text-lg leading-relaxed mb-8">
                 The HQ-1530 delivers industrial-grade cutting precision at an unbeatable price point.
-                With dual exchange tables that swap in 15 seconds for non-stop production, and rapid traverse
+                With a rigid single platform work table for stable cutting performance, and rapid traverse
                 speed up to 120 m/min. Available in 1500W, 3000W, and 6000W — cut stainless steel up to 25mm
                 and carbon steel up to 30mm.
               </p>
@@ -83,7 +83,7 @@ export default function HQ1530Page() {
             <div className="relative hidden lg:block">
               <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
                 <img
-                  src="/images/products/3015-dual-platform-fiber-cutter.png"
+                  src="/images/products/3015-single-platform-fiber-cutter.jpg"
                   alt="HQ-1530 Fiber Laser Cutter"
                   className="w-full h-full object-contain p-6"
                 />
@@ -146,7 +146,7 @@ export default function HQ1530Page() {
               {[
                 { title: 'Raycus / IPG / MAX Laser Source', desc: 'Premium fiber laser generator with 100,000+ hours lifespan. Electro-optical conversion efficiency up to 30%.' },
                 { title: 'CypCut BC100S Control System', desc: 'Industry-leading CNC controller with auto-nesting, edge detection, and path optimization. Supports DXF/PLT/AI formats.' },
-                { title: 'Dual Exchange Work Table', desc: 'Auto-switching dual pallet system. Table change in 15 seconds. Load/unload while cutting continues — zero downtime.' },
+                { title: 'Single Platform Work Table', desc: 'Heavy-duty steel welded platform with blade table. High rigidity and stability for precise cutting. Easy slag cleaning and maintenance.' },
                 { title: 'PRECITEC / Raytools Auto-Focus Head', desc: 'Capacitive height sensing with auto-focus. Maintains optimal focal position for consistent cut quality at high speed.' },
                 { title: 'HIWIN / Yaskawa Servo Drive', desc: 'Japanese precision AC servo motors. Smooth acceleration up to 1.5G, ensuring high dynamic cutting performance.' },
                 { title: 'Raytools Cutting Head', desc: 'QBH connector, collimating/focusing lens protection. Compatible with Raycus, IPG, MAX sources.' },
