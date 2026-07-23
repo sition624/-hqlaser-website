@@ -1,16 +1,43 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
+
 export default function HeroLaserSpark() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detect mobile on mount
+    setIsMobile(window.innerWidth < 1024);
+
+    // Manually trigger play for mobile browsers
+    const video = videoRef.current;
+    if (video) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Silent fail - some browsers block autoplay
+        });
+      }
+    }
+  }, []);
+
+  const videoSrc = isMobile
+    ? '/images/laser-hero-blt520-mobile.mp4'
+    : '/images/laser-hero-blt520.mp4';
+
   return (
     <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
       {/* Background video */}
       <video
-        src="/images/laser-hero-blt520.mp4"
+        ref={videoRef}
+        src={videoSrc}
         poster="/images/laser-hero-poster.jpg"
         autoPlay
         muted
         loop
         playsInline
+        webkit-playsinline="true"
         preload="auto"
         className="w-full h-full object-cover"
       />
