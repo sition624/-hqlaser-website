@@ -330,20 +330,23 @@ body {
 
 .laser-beam {
   animation: laser-pulse 2s ease-in-out infinite, laser-glow 2s ease-in-out infinite;
+  will-change: opacity, box-shadow;
 }
 
 .hero-image-breathe {
   animation: hero-breathe 4s ease-in-out infinite;
+  will-change: filter;
 }
 
 .spark {
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: radial-gradient(circle, #FFD700, #FF8C00);
-  box-shadow: 0 0 4px 1px rgba(255, 200, 0, 0.6);
+  box-shadow: 0 0 6px 2px rgba(255, 200, 0, 0.8);
   pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .spark-1 { animation: spark-float-1 1.2s ease-out infinite; animation-delay: 0s; }

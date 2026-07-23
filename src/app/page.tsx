@@ -105,28 +105,28 @@ export default function HomePage() {
                   alt="Heqing Fiber Laser Cutter in Action"
                   className="w-full h-full object-cover hero-image-breathe"
                 />
-                {/* Dark overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-[#0A1628]/20" />
-                {/* Laser beam */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-[65%] bg-gradient-to-b from-[#3B82F6]/0 via-[#3B82F6]/80 to-[#00D4FF] laser-beam" />
+                {/* Dark overlay for depth - below laser effects */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-[#0A1628]/20 z-[5]" />
+                {/* Laser beam - visible above overlay */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[3px] h-[65%] bg-gradient-to-b from-[#3B82F6]/0 via-[#3B82F6]/90 to-[#00D4FF] laser-beam z-10" />
                 {/* Laser impact glow */}
-                <div className="absolute top-[63%] left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#00D4FF]/30 blur-md laser-beam" />
-                <div className="absolute top-[64%] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white/60 blur-sm laser-beam" />
-                {/* Spark particles */}
-                <div className="absolute top-[62%] left-1/2 -translate-x-1/2">
-                  <div className="spark spark-1" style={{ left: '0px', top: '0px' }} />
-                  <div className="spark spark-2" style={{ left: '2px', top: '2px' }} />
-                  <div className="spark spark-3" style={{ left: '-2px', top: '1px' }} />
-                  <div className="spark spark-4" style={{ left: '1px', top: '3px' }} />
-                  <div className="spark spark-5" style={{ left: '-1px', top: '-1px' }} />
-                  <div className="spark spark-6" style={{ left: '3px', top: '0px' }} />
-                  <div className="spark spark-7" style={{ left: '-3px', top: '2px' }} />
+                <div className="absolute top-[63%] left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#00D4FF]/40 blur-md laser-beam z-10" />
+                <div className="absolute top-[64%] left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-white/70 blur-sm laser-beam z-10" />
+                {/* Spark particles container */}
+                <div className="absolute top-[62%] left-1/2 -translate-x-1/2 w-0 h-0 z-20">
+                  <div className="spark spark-1" />
+                  <div className="spark spark-2" />
+                  <div className="spark spark-3" />
+                  <div className="spark spark-4" />
+                  <div className="spark spark-5" />
+                  <div className="spark spark-6" />
+                  <div className="spark spark-7" />
                 </div>
                 {/* Corner marks */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
-                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30" />
-                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#3B82F6]/30" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30" />
+                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30 z-10" />
+                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#3B82F6]/30 z-10" />
+                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#3B82F6]/30 z-10" />
+                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30 z-10" />
               </div>
             </div>
           </div>
