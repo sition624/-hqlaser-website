@@ -226,7 +226,7 @@ export default function HQ1530Page() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary text-base px-10 py-4">Request a Quote</Link>
-            <a href="https://wa.me/8618800000000" className="btn-outline text-base px-10 py-4">WhatsApp Us</a>
+            <a href="https://wa.me/8618953316699" className="btn-outline text-base px-10 py-4">WhatsApp Us</a>
           </div>
         </div>
       </section>

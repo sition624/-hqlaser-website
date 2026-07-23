@@ -68,19 +68,19 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-[#94A3B8] text-sm">Shandong, China<br/>Heqing CNC Equipment Co., Ltd</span>
+                <span className="text-[#94A3B8] text-sm">No. 2 Hualu Road, Zichuan Economic Development Zone,<br/>Zibo City, Shandong Province, China</span>
               </li>
               <li className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#3B82F6] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-[#94A3B8] text-sm">info@heqinglaser.com</span>
+                <span className="text-[#94A3B8] text-sm">rays@heqingcnc.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#3B82F6] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-[#94A3B8] text-sm">+86 188-XXXX-XXXX</span>
+                <span className="text-[#94A3B8] text-sm">+86 189 5331 6699</span>
               </li>
             </ul>
           </div>
@@ -89,7 +89,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-[#1E3A5F] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#94A3B8] text-sm">
-            © 2024 Heqing CNC Equipment Co., Ltd. All rights reserved.
+            © 2024 Shandong Heqing CNC Equipment Co., Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-[#94A3B8] text-sm hover:text-[#CBD5E1] transition-colors">Privacy Policy</a>

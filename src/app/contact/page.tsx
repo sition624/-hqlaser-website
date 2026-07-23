@@ -138,8 +138,8 @@ export default function ContactPage() {
                     <div>
                       <div className="text-white font-semibold text-sm">Address</div>
                       <div className="text-[#94A3B8] text-sm mt-1">
-                        Shandong Province, China<br />
-                        Heqing CNC Equipment Co., Ltd.
+                        No. 2 Hualu Road, Zichuan Economic Development Zone,<br />
+                        Zibo City, Shandong Province, China
                       </div>
                     </div>
                   </div>
@@ -152,8 +152,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-white font-semibold text-sm">Email</div>
-                      <div className="text-[#94A3B8] text-sm mt-1">info@heqinglaser.com</div>
-                      <div className="text-[#94A3B8] text-sm">sales@heqinglaser.com</div>
+                      <div className="text-[#94A3B8] text-sm mt-1">rays@heqingcnc.com</div>
+                      <div className="text-[#94A3B8] text-sm">sition@heqingcnc.com</div>
                     </div>
                   </div>
 
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-white font-semibold text-sm">Phone</div>
-                      <div className="text-[#94A3B8] text-sm mt-1">+86 188-XXXX-XXXX</div>
+                      <div className="text-[#94A3B8] text-sm mt-1">+86 189 5331 6699</div>
                     </div>
                   </div>
 
@@ -177,8 +177,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-white font-semibold text-sm">WhatsApp</div>
-                      <a href="https://wa.me/8618800000000" className="text-[#3B82F6] text-sm mt-1 hover:text-[#2563EB] transition-colors block">
-                        +86 188-XXXX-XXXX
+                      <a href="https://wa.me/8618953316699" className="text-[#3B82F6] text-sm mt-1 hover:text-[#2563EB] transition-colors block">
+                        +86 189 5331 6699
                       </a>
                     </div>
                   </div>
