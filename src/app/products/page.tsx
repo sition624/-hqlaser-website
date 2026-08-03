@@ -41,6 +41,45 @@ const productCategories = [
   },
 ];
 
+const productLines = [
+  {
+    name: "Laser Cutting",
+    models: [
+      "3015 Single Platform",
+      "3015 Exchange Table",
+      "4020 Single Platform",
+      "4020 Exchange Table",
+      "Precision Cutting Machine",
+      "Ground Rail Cutting Machine",
+    ],
+  },
+  {
+    name: "Laser Welding",
+    models: [
+      "Air-Cooled Welding Machine",
+      "Water-Cooled Welding Machine",
+      "QCW Welding Machine",
+    ],
+  },
+  {
+    name: "Laser Cleaning",
+    models: [
+      "Pulse Cleaning Machine",
+      "Continuous Cleaning Machine",
+      "Handheld Cleaning Machine",
+    ],
+  },
+  {
+    name: "Laser Marking",
+    models: [
+      "Desktop Marking Machine",
+      "Cabinet Marking Machine",
+      "Flying Marking Machine",
+      "Handheld Marking Machine",
+    ],
+  },
+];
+
 const additionalProducts = [
   { name: '3015 Sheet & Tube Cutter', image: '/images/products/3015-sheet-tube-cutter.png', href: '/contact' },
   { name: '4020 Enclosed Fiber Cutter', image: '/images/products/4020-enclosed-fiber-cutter.png', href: '/contact' },
@@ -181,17 +220,16 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">All Product Lines</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {productCategories.map((cat) => (
-              <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: cat.accent }} />
-                  <h3 className="text-lg font-bold text-white">{cat.name}</h3>
-                </div>
-                <ul className="space-y-2">
-                  {cat.models.map((model) => (
-                    <li key={model} className="flex items-center gap-3 text-sm text-[#94A3B8]">
-                      <svg className="w-4 h-4 shrink-0" style={{ color: cat.accent }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {productLines.map((line) => (
+              <div key={line.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6">
+                <h3 className="text-lg font-bold text-white mb-4 pb-3 border-b border-[#1E3A5F]">
+                  {line.name}
+                </h3>
+                <ul className="space-y-2.5">
+                  {line.models.map((model) => (
+                    <li key={model} className="flex items-center gap-2.5 text-sm text-[#94A3B8]">
+                      <svg className="w-3.5 h-3.5 shrink-0 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                       {model}
