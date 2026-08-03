@@ -119,48 +119,34 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-2 h-8 bg-[#00D4FF]" />
-            <h2 className="text-3xl font-bold text-white">Factory & Production</h2>
+            <h2 className="text-3xl font-bold text-white">Production Process</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/images/factory/factory-production.jpg"
-                  alt="Factory Production"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            {[
+              { img: '/images/factory/welding.jpg', label: 'Welding', cn: '焊接' },
+              { img: '/images/factory/tempering.jpg', label: 'Tempering', cn: '回火' },
+              { img: '/images/factory/milling.jpg', label: 'Milling', cn: '铣削' },
+              { img: '/images/factory/painting.jpg', label: 'Painting', cn: '喷漆' },
+              { img: '/images/factory/bending.jpg', label: 'Bending', cn: '折弯' },
+              { img: '/images/factory/powder-coating.jpg', label: 'Powder Coating', cn: '喷塑' },
+              { img: '/images/factory/assembly.jpg', label: 'Assembly', cn: '装配' },
+              { img: '/images/factory/aging.jpg', label: 'Aging Test', cn: '老化' },
+            ].map((process) => (
+              <div key={process.label} className="relative group overflow-hidden rounded-sm">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={process.img}
+                    alt={process.label}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3">
+                  <p className="text-white font-semibold text-xs sm:text-sm">{process.cn}</p>
+                  <p className="text-[#CBD5E1] text-[10px] sm:text-xs">{process.label}</p>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Factory Production</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Modern production facility with advanced equipment</p>
-              </div>
-            </div>
-            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/images/factory/quality-comparison.jpg"
-                  alt="Quality Comparison"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Quality Comparison</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Superior craftsmanship vs standard market quality</p>
-              </div>
-            </div>
-            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src="/images/factory/technical-team.jpg"
-                  alt="Technical Team"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Technical Team</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Expert engineers with deep industry experience</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
