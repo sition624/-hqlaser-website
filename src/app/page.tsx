@@ -56,7 +56,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A2740] border border-[#1E3A5F] rounded-sm mb-8">
                 <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse" />
-                <span className="text-[#94A3B8] text-sm font-medium">10+ Years of Industry Expertise</span>
+                <span className="text-[#94A3B8] text-sm font-medium">6+ Years of Industry Expertise</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
@@ -82,17 +82,21 @@ export default function HomePage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">50+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">80+</div>
                   <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Countries Served</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">5000+</div>
-                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Machines Delivered</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">2640+</div>
+                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Clients Served</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">10+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">18</div>
+                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Patents Held</div>
+                </div>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">6+</div>
                   <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Years Experience</div>
                 </div>
               </div>
