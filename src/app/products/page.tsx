@@ -45,55 +45,60 @@ const productLines = [
   {
     name: "Laser Cutting",
     models: [
+      "3015 Sheet & Tube",
       "3015 Single Platform",
       "3015 Exchange Table",
-      "4020 Single Platform",
-      "4020 Exchange Table",
+      "4020 Enclosed Exchange Table",
       "Precision Cutting Machine",
       "Ground Rail Cutting Machine",
+      "Horizontal Tube Cutting Machine",
+      "Side-Mount Tube Cutting Machine",
     ],
   },
   {
     name: "Laser Welding",
     models: [
-      "Air-Cooled Welding Machine",
-      "Water-Cooled Welding Machine",
-      "QCW Welding Machine",
+      "Air-Cooled",
+      "QCW",
+      "Water-Cooled",
     ],
   },
   {
     name: "Laser Cleaning",
     models: [
-      "Pulse Cleaning Machine",
-      "Continuous Cleaning Machine",
-      "Handheld Cleaning Machine",
+      "Pulse",
+      "Continuous",
+      "Handheld",
     ],
   },
   {
     name: "Laser Marking",
     models: [
-      "Desktop Marking Machine",
-      "Cabinet Marking Machine",
-      "Flying Marking Machine",
-      "Handheld Marking Machine",
+      "Desktop",
+      "Cabinet",
+      "Flying",
+      "Handheld",
     ],
   },
 ];
 
 const moreProducts = [
+  { name: "3015 Sheet & Tube Cutter", desc: "Integrated sheet and tube cutting in one machine. Versatile for mixed production needs.", image: "/images/products/3015-sheet-tube-cutter.png" },
   { name: "3015 Exchange Table Cutter", desc: "Dual-table exchange for continuous production. Maximize uptime with automatic pallet switching.", image: "/images/products/3015-dual-platform-fiber-cutter.png" },
-  { name: "4020 Single Platform Cutter", desc: "Large format 4000×2000mm cutting area for oversized sheets and plates.", image: "/images/products/4020-enclosed-fiber-cutter.png" },
-  { name: "4020 Exchange Table Cutter", desc: "Large format with dual exchange tables. High throughput for heavy-duty production.", image: null },
+  { name: "4020 Enclosed Exchange Table Cutter", desc: "Large format 4000×2000mm with full enclosure. Safe, high-throughput production.", image: "/images/products/4020-enclosed-fiber-cutter.png" },
   { name: "Precision Laser Cutter", desc: "High-precision cutting for thin sheets. ±0.02mm repeatability for fine parts.", image: "/images/products/precision-laser-cutter.jpg" },
   { name: "Ground Rail Cutting Machine", desc: "Gantry-type ground rail design for extra-large workpieces. Stable and heavy-duty.", image: "/images/products/gantry-fiber-cutter.png" },
-  { name: "Water-Cooled Welding Machine", desc: "Water-cooled laser source for high-power continuous welding. 1500W–3000W.", image: null },
+  { name: "Horizontal Tube Cutting Machine", desc: "Simple horizontal design for tube and pipe cutting. Cost-effective solution.", image: "/images/products/horizontal-tube-cutter.png" },
+  { name: "Side-Mount Tube Cutting Machine", desc: "Dual-card side-mount design for efficient tube processing. High stability.", image: "/images/products/side-hung-tube-cutter.png" },
   { name: "QCW Welding Machine", desc: "Quasi-continuous wave laser for thin materials. Minimal heat distortion, clean welds.", image: "/images/products/qcw-welder.jpg" },
+  { name: "Water-Cooled Welding Machine", desc: "Water-cooled laser source for high-power continuous welding. 1500W–3000W.", image: null },
   { name: "Continuous Laser Cleaning Machine", desc: "High-power continuous laser for heavy-duty rust and coating removal.", image: null },
   { name: "Handheld Laser Cleaning Machine", desc: "Portable handheld design for on-site cleaning. Flexible and easy to operate.", image: null },
   { name: "Desktop Laser Marking Machine", desc: "Compact benchtop design for small parts marking. High precision and speed.", image: "/images/products/laser-marking-machine.png" },
   { name: "Cabinet Laser Marking Machine", desc: "Enclosed cabinet design with safety interlock. Ideal for production lines.", image: null },
   { name: "Flying Laser Marking Machine", desc: "Online flying mark for conveyor belt production. High-speed dynamic focusing.", image: null },
   { name: "Handheld Laser Marking Machine", desc: "Portable handheld marker for large or fixed workpieces. Flexible positioning.", image: null },
+  { name: "Nitrogen Generator", desc: "On-site nitrogen supply for laser cutting assist gas. Reduce operating costs.", image: "/images/products/nitrogen-generator.jpg" },
 ];
 
 export default function ProductsPage() {
