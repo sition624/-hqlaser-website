@@ -173,7 +173,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* All Categories */}
+      {/* All Product Lines */}
       <section className="py-20 bg-[#0F1B2D] border-t border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
@@ -181,79 +181,24 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">All Product Lines</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {productCategories.map((cat) => (
-              <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
-                <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
-                  <img
-                    src={cat.image}
-                    alt={cat.name}
-                    className="w-full h-full object-contain p-4"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-transparent" />
+              <div key={cat.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: cat.accent }} />
+                  <h3 className="text-lg font-bold text-white">{cat.name}</h3>
                 </div>
-                <div className="p-8">
-                  <div className="flex items-start justify-between mb-6">
-                    <h3 className="text-xl font-bold text-white">{cat.name}</h3>
-                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: cat.accent }} />
-                  </div>
-                  <p className="text-[#94A3B8] text-sm mb-6">{cat.desc}</p>
-                  <ul className="space-y-3 mb-6">
-                    {cat.models.map((model) => (
-                      <li key={model} className="flex items-center gap-3 text-sm text-[#94A3B8]">
-                        <svg className="w-4 h-4 shrink-0" style={{ color: cat.accent }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                        {model}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={cat.href}
-                    className="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
-                    style={{ color: cat.accent }}
-                  >
-                    View Details
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                </div>
+                <ul className="space-y-2">
+                  {cat.models.map((model) => (
+                    <li key={model} className="flex items-center gap-3 text-sm text-[#94A3B8]">
+                      <svg className="w-4 h-4 shrink-0" style={{ color: cat.accent }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      {model}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Products Gallery */}
-      <section className="py-20 bg-[#0A1628]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center gap-4 mb-12">
-            <div className="w-2 h-8 bg-[#3B82F6]" />
-            <h2 className="text-2xl font-bold text-white">More Products</h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-            {additionalProducts.map((product) => (
-              <Link
-                key={product.name}
-                href={product.href}
-                className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover"
-              >
-                <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#162032] via-transparent to-transparent opacity-60" />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold text-white group-hover:text-[#3B82F6] transition-colors">
-                    {product.name}
-                  </h3>
-                </div>
-              </Link>
             ))}
           </div>
         </div>
