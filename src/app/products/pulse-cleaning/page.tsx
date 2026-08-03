@@ -4,31 +4,34 @@ import { ArrowRight, Zap, Shield, Droplets, Clock, Gauge, CheckCircle, Download,
 
 export const metadata: Metadata = {
   title: 'Pulsed Laser Cleaning Machine | HQ Laser',
-  description: 'Non-contact pulsed laser cleaning machine for rust removal, paint stripping, oxide cleaning. 100W-500W options. No chemicals, no damage to substrate.',
+  description: 'Non-contact pulsed laser cleaning machine with JPT laser source and Guoyuan scanning system. 100W-300W options, 9 cleaning modes, <1mm precision. No chemicals, no damage to substrate.',
 };
 
 const models = [
-  { power: '100W', model: 'HQ-CL100', price: '$5,000 - $8,000', desc: 'Light-duty cleaning, ideal for small workshops and precision work.' },
-  { power: '200W', model: 'HQ-CL200', price: '$8,000 - $12,000', desc: 'Medium-duty cleaning, balanced performance for most industrial applications.' },
-  { power: '300W', model: 'HQ-CL300', price: '$12,000 - $18,000', desc: 'Heavy-duty cleaning, high efficiency for large surface areas.' },
-  { power: '500W', model: 'HQ-CL500', price: '$18,000 - $28,000', desc: 'Industrial-grade cleaning, maximum power for demanding applications.' },
+  { power: '100W', model: 'HQ-LC100', desc: 'Single-mode 1.5mJ pulse energy. Ideal for precision cleaning and small workshops.' },
+  { power: '200W', model: 'HQ-LC200', desc: 'Single-mode 2mJ / multi-mode 5mJ. Balanced performance for most industrial applications.' },
+  { power: '300W', model: 'HQ-LC300', desc: 'Single-mode 2mJ / multi-mode 5mJ or 15mJ. Heavy-duty cleaning for large surface areas.' },
 ];
 
 const specs = [
-  { label: 'Laser Type', value: 'Pulsed Fiber Laser' },
-  { label: 'Laser Power', value: '100W / 200W / 300W / 500W' },
+  { label: 'Laser Brand', value: 'JPT (杰普特)' },
+  { label: 'Scanning System', value: 'Guoyuan (国源)' },
+  { label: 'Laser Power', value: '100W / 200W / 300W' },
   { label: 'Wavelength', value: '1064nm' },
-  { label: 'Pulse Frequency', value: '20 - 200 kHz' },
-  { label: 'Pulse Width', value: '< 100ns' },
-  { label: 'Cleaning Area', value: 'Up to 500mm × 500mm' },
-  { label: 'Cleaning Speed', value: 'Up to 15 m²/h (500W)' },
+  { label: 'Pulse Width', value: '2 ~ 500ns' },
+  { label: 'Pulse Frequency', value: '1 ~ 4000kHz' },
+  { label: 'Single Pulse Energy', value: '100W: 1.5mJ (SM) | 200W: 2mJ (SM) / 5mJ (MM) | 300W: 2mJ (SM) / 5mJ (MM) / 15mJ (MM)' },
+  { label: 'Scan Width', value: '0 - 100mm (adjustable)' },
+  { label: 'Cleaning Precision', value: '< 1mm' },
+  { label: 'Scan Speed', value: '< 12m/s' },
+  { label: 'Cleaning Modes', value: '9 modes: Line, Rectangle×2, Circle, Sine, Spiral, Free, Ring, Rotation' },
+  { label: 'Focal Length', value: 'Standard 160mm (210mm / 254mm / 330mm / 420mm optional)' },
   { label: 'Cooling', value: 'Air-Cooled' },
-  { label: 'Control System', value: 'Touch Screen + Handheld Scanner' },
-  { label: 'Power Supply', value: 'AC 220V / 50Hz / 60Hz' },
-  { label: 'Protection', value: 'IP65' },
-  { label: 'Laser Source Brand', value: 'Raycus / MAX' },
-  { label: 'Laser Lifespan', value: '100,000+ hours' },
-  { label: 'Machine Weight', value: '≈ 80 - 150kg (varies by model)' },
+  { label: 'Power Supply', value: '100 ~ 240V / 50 ~ 60Hz' },
+  { label: 'Safety Level', value: 'Class Ⅳ' },
+  { label: 'Temperature Protection', value: '1 zone' },
+  { label: 'Machine Size', value: '300 × 680 × 650mm' },
+  { label: 'Net Weight', value: '46 ~ 50kg' },
 ];
 
 const features = [
@@ -95,10 +98,10 @@ export default function PulseCleaningPage() {
                 No chemicals, no damage to substrate. Environmentally friendly and highly efficient.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">100W - 500W</span>
-                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">Air-Cooled</span>
-                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">Non-Contact</span>
-                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">IP65</span>
+                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">100W - 300W</span>
+                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">JPT Laser</span>
+                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">9 Cleaning Modes</span>
+                <span className="px-3 py-1 bg-[#0A2463]/50 border border-[#1E3A5F] text-[#3B82F6] text-sm rounded">&lt;1mm Precision</span>
               </div>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
@@ -151,7 +154,7 @@ export default function PulseCleaningPage() {
             <div className="w-2 h-8 bg-[#3B82F6]" />
             <h2 className="text-2xl font-bold text-white">Power Options</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {models.map((m, i) => (
               <div key={i} className="card-hover relative bg-[#162032] border border-[#1E3A5F] rounded p-6 text-center">
                 {i === 2 && (
@@ -162,7 +165,6 @@ export default function PulseCleaningPage() {
                 <div className="text-3xl font-black text-white mb-1">{m.power}</div>
                 <div className="text-sm text-[#94A3B8] mb-3">{m.model}</div>
                 <p className="text-sm text-[#CBD5E1] mb-4 leading-relaxed">{m.desc}</p>
-                <div className="text-lg font-bold text-[#3B82F6] mb-4">{m.price}</div>
                 <Link
                   href="/contact"
                   className={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${
