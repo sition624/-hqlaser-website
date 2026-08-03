@@ -160,7 +160,7 @@ export default function HomePage() {
               Why <span className="gradient-text">Heqing</span>
             </h2>
             <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
-              Trusted by manufacturers across 50+ countries
+              Trusted by manufacturers across 80+ countries
             </p>
           </div>
 
@@ -168,11 +168,31 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Best Value</h3>
-              <p className="text-[#94A3B8] text-sm">Factory-direct pricing with premium quality components. Maximum ROI for your investment.</p>
+              <h3 className="text-lg font-bold text-white mb-2">18 Patents</h3>
+              <p className="text-[#94A3B8] text-sm">Independent R&D with 18 technology patents. Continuous innovation in laser equipment design.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">80+ Countries</h3>
+              <p className="text-[#94A3B8] text-sm">Products exported to 80+ countries and regions. Global service network with local support.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Quality Control</h3>
+              <p className="text-[#94A3B8] text-sm">6-step inspection process. Laser power meter, spectrometer, interferometer testing.</p>
             </div>
 
             <div className="text-center">
@@ -184,25 +204,59 @@ export default function HomePage() {
               <h3 className="text-lg font-bold text-white mb-2">Fast Delivery</h3>
               <p className="text-[#94A3B8] text-sm">Standard models ship within 7-15 days. Custom configurations in 20-30 days.</p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Global Service</h3>
-              <p className="text-[#94A3B8] text-sm">Engineers available in 50+ countries. Remote support & on-site installation.</p>
-            </div>
+      {/* Quality Control Process */}
+      <section className="py-24 bg-[#0A1628]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Quality <span className="gradient-text">Control</span>
+            </h2>
+            <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
+              6-step inspection process ensures every machine meets international standards
+            </p>
+          </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { step: '01', title: 'Raw Material Inspection', desc: 'All incoming materials undergo strict quality checks before entering production.' },
+              { step: '02', title: 'Component Testing', desc: 'Laser source, cutting head, and key components tested with precision instruments.' },
+              { step: '03', title: 'Assembly Inspection', desc: 'Each assembly stage verified by quality engineers with detailed documentation.' },
+              { step: '04', title: 'Performance Testing', desc: 'Laser power meter, spectrometer, and interferometer validation of output quality.' },
+              { step: '05', title: 'Aging Test', desc: '72-hour continuous operation test to ensure long-term stability and reliability.' },
+              { step: '06', title: 'Final Inspection', desc: 'Comprehensive pre-shipment check including safety, precision, and packaging.' },
+            ].map((item) => (
+              <div key={item.step} className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 card-hover">
+                <div className="text-5xl font-bold text-[#3B82F6]/20 mb-4">{item.step}</div>
+                <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-[#94A3B8] text-sm leading-relaxed">{item.desc}</p>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">10+ Years</h3>
-              <p className="text-[#94A3B8] text-sm">A decade of laser equipment manufacturing excellence and innovation.</p>
+            ))}
+          </div>
+
+          {/* Testing Equipment */}
+          <div className="mt-16 bg-[#162032] border border-[#1E3A5F] rounded-sm p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Testing Equipment</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { name: 'Laser Power Meter', desc: 'Precise output measurement' },
+                { name: 'Spectrometer', desc: 'Wavelength analysis' },
+                { name: 'Interferometer', desc: 'Beam quality testing' },
+                { name: 'Collimator', desc: 'Optical alignment' },
+              ].map((equip) => (
+                <div key={equip.name} className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-3 bg-[#1A2740] border border-[#3B82F6]/20 rounded-sm flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    </svg>
+                  </div>
+                  <div className="text-white font-semibold text-sm mb-1">{equip.name}</div>
+                  <div className="text-[#94A3B8] text-xs">{equip.desc}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

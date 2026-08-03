@@ -213,6 +213,66 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Quality Control & Testing Process */}
+      <section className="py-24 bg-[#0A1628]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-2 h-8 bg-[#00D4FF]" />
+            <h2 className="text-3xl font-bold text-white">Quality Control & Testing</h2>
+          </div>
+          <p className="text-[#94A3B8] mb-12 max-w-3xl">
+            Every HQ Laser machine undergoes a rigorous 6-stage quality inspection process before shipping.
+            Our testing center is equipped with laser power meters, spectrometers, interferometers, and collimators
+            to ensure every product meets the highest standards.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
+            {[
+              { step: '01', title: 'Raw Material Inspection', desc: 'All incoming materials undergo strict quality checks. Only certified components from approved suppliers enter production.' },
+              { step: '02', title: 'Component Testing', desc: 'Individual components including laser sources, control systems, and optics are tested before assembly.' },
+              { step: '03', title: 'Assembly Inspection', desc: 'In-process quality checks at each assembly stage. Precision alignment and calibration of all optical components.' },
+              { step: '04', title: 'Performance Testing', desc: 'Full power testing with laser power meters and spectrometers. Cutting/welding samples to verify performance specifications.' },
+              { step: '05', title: 'Aging Test', desc: '72-hour continuous burn-in testing under full load. Stress testing of all systems to ensure long-term reliability.' },
+              { step: '06', title: 'Final Inspection', desc: 'Comprehensive final check including safety systems, software calibration, packaging inspection, and documentation review.' },
+            ].map((item) => (
+              <div key={item.step} className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-6 card-hover">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#0A2463] rounded-sm flex items-center justify-center">
+                    <span className="text-[#3B82F6] font-bold text-sm">{item.step}</span>
+                  </div>
+                  <h3 className="text-white font-semibold text-sm">{item.title}</h3>
+                </div>
+                <p className="text-[#94A3B8] text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Testing Equipment */}
+          <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8">
+            <h3 className="text-xl font-bold text-white mb-6">Testing Equipment & Instruments</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { name: 'Laser Power Meter', desc: 'Precise measurement of laser output power and stability' },
+                { name: 'Spectrometer', desc: 'Wavelength analysis and beam quality verification' },
+                { name: 'Interferometer', desc: 'Optical path alignment and beam profile analysis' },
+                { name: 'Collimator', desc: 'Beam collimation and focus quality testing' },
+              ].map((item) => (
+                <div key={item.name} className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-[#0A2463] rounded-sm flex items-center justify-center shrink-0">
+                    <svg className="w-4 h-4 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold text-sm">{item.name}</h4>
+                    <p className="text-[#94A3B8] text-xs mt-1">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Shipping Gallery */}
       <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -239,21 +299,57 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Certifications & Patents */}
       <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-2 h-8 bg-[#3B82F6]" />
-            <h2 className="text-3xl font-bold text-white">Certifications</h2>
+            <h2 className="text-3xl font-bold text-white">Certifications & Patents</h2>
           </div>
 
-          {/* Certificate Image */}
-          <div className="mb-12 bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
-            <img
-              src="/images/certificates/certifications.svg"
-              alt="Heqing Laser Certifications - CE, ISO 9001, SGS, FDA"
-              className="w-full h-auto"
-            />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {/* Certificate Images */}
+            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
+              <div className="p-6 border-b border-[#1E3A5F]">
+                <h3 className="text-lg font-bold text-white">Quality Certifications</h3>
+                <p className="text-[#94A3B8] text-sm mt-1">ISO 9001, CE, TÜV Rheinland Certified</p>
+              </div>
+              <div className="p-6">
+                <img
+                  src="/images/certificates/certifications.svg"
+                  alt="Heqing Laser Certifications - CE, ISO 9001, TÜV Rheinland"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Patents */}
+            <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6">
+              <h3 className="text-lg font-bold text-white mb-6">18 Patents Held</h3>
+              <div className="space-y-4">
+                {[
+                  { type: 'Utility Models', count: '12', desc: 'Laser cutting head designs, cooling systems, machine structures' },
+                  { type: 'Design Patents', count: '4', desc: 'Product appearance designs, user interface layouts' },
+                  { type: 'Invention Patents', count: '2', desc: 'Novel laser processing methods and control algorithms' },
+                ].map((item) => (
+                  <div key={item.type} className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#0A2463] rounded-sm flex items-center justify-center shrink-0">
+                      <span className="text-[#3B82F6] font-bold text-lg">{item.count}</span>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold text-sm">{item.type}</h4>
+                      <p className="text-[#94A3B8] text-xs mt-1">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 pt-6 border-t border-[#1E3A5F]">
+                <p className="text-[#CBD5E1] text-sm">
+                  Our R&D center continuously innovates in laser processing technology,
+                  holding 18 patents covering machine design, control systems, and processing methods.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
