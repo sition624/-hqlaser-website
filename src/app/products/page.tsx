@@ -44,41 +44,23 @@ const productCategories = [
 const productLines = [
   {
     name: "Laser Cutting",
-    models: [
-      "3015 Sheet & Tube",
-      "3015 Single Platform",
-      "3015 Exchange Table",
-      "4020 Enclosed Exchange Table",
-      "Precision Cutting Machine",
-      "Ground Rail Cutting Machine",
-      "Horizontal Tube Cutting Machine",
-      "Side-Mount Tube Cutting Machine",
-    ],
+    desc: "Sheet metal fabrication, tube & pipe processing, automotive parts, kitchenware manufacturing, advertising signage, and precision component cutting for diverse industrial applications.",
   },
   {
     name: "Laser Welding",
-    models: [
-      "Air-Cooled",
-      "QCW",
-    ],
+    desc: "Stainless steel fabrication, carbon steel structures, aluminum alloy joining, copper & brass welding, hardware products, door & window frames, and kitchen equipment manufacturing.",
   },
   {
     name: "Laser Cleaning",
-    models: [
-      "Pulse",
-    ],
+    desc: "Rust removal, paint stripping, oil & grease cleaning, mold restoration, weld preparation, surface pretreatment, and heritage artifact restoration without chemicals or abrasives.",
   },
   {
     name: "Laser Marking",
-    models: [
-      "Desktop",
-    ],
+    desc: "Serial number & barcode marking, logo engraving, QR code labeling, date & batch coding, anti-counterfeiting marks, and permanent identification on metals, plastics, and ceramics.",
   },
   {
     name: "Supporting Equipment",
-    models: [
-      "Nitrogen Generator",
-    ],
+    desc: "On-site nitrogen generation for laser cutting assist gas, reducing gas costs by up to 60%. Integrated PSA technology delivers 99.999% purity nitrogen for consistent cutting quality.",
   },
 ];
 
@@ -253,22 +235,15 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">All Product Lines</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {productLines.map((line) => (
               <div key={line.name} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-6">
                 <h3 className="text-lg font-bold text-white mb-4 pb-3 border-b border-[#1E3A5F]">
                   {line.name}
                 </h3>
-                <ul className="space-y-2.5">
-                  {line.models.map((model) => (
-                    <li key={model} className="flex items-center gap-2.5 text-sm text-[#94A3B8]">
-                      <svg className="w-3.5 h-3.5 shrink-0 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                      {model}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-[#94A3B8] leading-relaxed">
+                  {line.desc}
+                </p>
               </div>
             ))}
           </div>
