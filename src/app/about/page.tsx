@@ -284,28 +284,79 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Shipping Gallery */}
+      {/* Shipping Process Flow */}
       <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-2 h-8 bg-[#3B82F6]" />
             <h2 className="text-3xl font-bold text-white">Shipping & Delivery</h2>
           </div>
-          <p className="text-[#94A3B8] mb-8 max-w-2xl">
-            Every machine is carefully packaged and inspected before shipping. We deliver to ports worldwide with professional logistics partners.
+          <p className="text-[#94A3B8] mb-12 max-w-2xl">
+            Every machine undergoes a standardized shipping process to ensure safe delivery to your facility.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-            {shippingPhotos.map((photo, i) => (
-              <div key={i} className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover group">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+
+          {/* Process Flow */}
+          <div className="relative">
+            {/* Connection Line (desktop) */}
+            <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-[#1E3A5F] via-[#3B82F6] to-[#1E3A5F]" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Step 1 */}
+              <div className="relative">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full bg-[#162032] border-2 border-[#3B82F6] flex items-center justify-center mb-6 relative z-10">
+                    <svg className="w-12 h-12 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="text-[#3B82F6] text-sm font-bold font-mono mb-2">STEP 01</div>
+                  <h3 className="text-white font-bold text-lg mb-2">Final Inspection</h3>
+                  <p className="text-[#94A3B8] text-sm">72-hour burn-in test and quality verification before packaging</p>
                 </div>
               </div>
-            ))}
+
+              {/* Step 2 */}
+              <div className="relative">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full bg-[#162032] border-2 border-[#3B82F6] flex items-center justify-center mb-6 relative z-10">
+                    <svg className="w-12 h-12 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                  </div>
+                  <div className="text-[#3B82F6] text-sm font-bold font-mono mb-2">STEP 02</div>
+                  <h3 className="text-white font-bold text-lg mb-2">Professional Packaging</h3>
+                  <p className="text-[#94A3B8] text-sm">Wooden crate packaging with moisture-proof and shock-proof protection</p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full bg-[#162032] border-2 border-[#3B82F6] flex items-center justify-center mb-6 relative z-10">
+                    <svg className="w-12 h-12 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                    </svg>
+                  </div>
+                  <div className="text-[#3B82F6] text-sm font-bold font-mono mb-2">STEP 03</div>
+                  <h3 className="text-white font-bold text-lg mb-2">Container Loading</h3>
+                  <p className="text-[#94A3B8] text-sm">Professional forklift loading with secure fastening in container</p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full bg-[#162032] border-2 border-[#3B82F6] flex items-center justify-center mb-6 relative z-10">
+                    <svg className="w-12 h-12 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="text-[#3B82F6] text-sm font-bold font-mono mb-2">STEP 04</div>
+                  <h3 className="text-white font-bold text-lg mb-2">Global Delivery</h3>
+                  <p className="text-[#94A3B8] text-sm">Shipped to 80+ countries with professional logistics partners</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
