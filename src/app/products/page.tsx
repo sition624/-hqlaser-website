@@ -258,19 +258,19 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">More Products</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {moreProducts.map((product) => (
               <Link
                 key={product.name}
                 href="/contact"
-                className="group bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden hover:border-[#3B82F6]/40 transition-all duration-200"
+                className="group bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden hover:border-[#3B82F6]/40 transition-all duration-200 flex flex-col"
               >
                 <div className="aspect-[4/3] bg-[#162032] flex items-center justify-center overflow-hidden">
                   {product.image ? (
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                     />
                   ) : (
                     <svg className="w-16 h-16 text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,16 +278,16 @@ export default function ProductsPage() {
                     </svg>
                   )}
                 </div>
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold text-white group-hover:text-[#00D4FF] transition-colors mb-1">
+                <div className="p-5 flex flex-col flex-1">
+                  <h3 className="text-sm font-semibold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-xs text-[#94A3B8] mb-3 line-clamp-2">
+                  <p className="text-xs text-[#94A3B8] leading-relaxed mb-4 line-clamp-2 flex-1">
                     {product.desc}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-xs font-medium text-[#3B82F6]">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#3B82F6] mt-auto">
                     Inquire Now
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
