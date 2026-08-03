@@ -397,7 +397,7 @@ export default function AboutPage() {
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden">
               <div className="p-6 border-b border-[#1E3A5F]">
                 <h3 className="text-lg font-bold text-white">Quality Certifications</h3>
-                <p className="text-[#94A3B8] text-sm mt-1">ISO 9001, CE, TÜV Rheinland Certified</p>
+                <p className="text-[#94A3B8] text-sm mt-1">ISO, CE, FDA</p>
               </div>
               <div className="p-6">
                 <img
