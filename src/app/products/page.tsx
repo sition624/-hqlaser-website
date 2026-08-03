@@ -106,13 +106,13 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* HQ26 Welder */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 <img
                   src="/images/products/hq26a-air-cooled-welder.png"
                   alt="HQ26 Air-Cooled Laser Welder"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#3B82F6] text-white text-xs font-bold uppercase">
                   Best Seller
                 </div>
@@ -136,13 +136,13 @@ export default function ProductsPage() {
 
             {/* HQ-1530 Cutter */}
             <Link href="/products/hq1530" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 <img
                   src="/images/products/3015-single-platform-fiber-cutter.jpg"
                   alt="HQ-1530 Fiber Laser Cutter"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#00D4FF] text-[#0A1628] text-xs font-bold uppercase">
                   Hot Sale
                 </div>
@@ -166,13 +166,13 @@ export default function ProductsPage() {
 
             {/* Pulse Cleaning */}
             <Link href="/products/pulse-cleaning" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 <img
                   src="/images/products/pulse-laser-cleaner.jpg"
                   alt="HQ Pulsed Laser Cleaning Machine"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#00D4FF] text-[#0A1628] text-xs font-bold uppercase">
                   New
                 </div>
@@ -196,13 +196,13 @@ export default function ProductsPage() {
 
             {/* Nitrogen Generator */}
             <Link href="/products/nitrogen-generator" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+              <div className="aspect-[4/3] bg-white relative overflow-hidden">
                 <img
                   src="/images/products/nitrogen-generator.jpg"
                   alt="HQ-N2 Nitrogen Generator"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-[#0A2463] text-white text-xs font-bold uppercase">
                   Supporting
                 </div>
@@ -265,7 +265,7 @@ export default function ProductsPage() {
                 href="/contact"
                 className="group bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden hover:border-[#3B82F6]/40 transition-all duration-200 flex flex-col"
               >
-                <div className="aspect-[4/3] bg-[#162032] flex items-center justify-center overflow-hidden">
+                <div className="aspect-[4/3] bg-white flex items-center justify-center overflow-hidden">
                   {product.image ? (
                     <img
                       src={product.image}
