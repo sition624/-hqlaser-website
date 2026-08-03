@@ -12,74 +12,75 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "HQ-N2 Nitrogen Generator | Heqing Laser",
+  title: "Nitrogen Generator | Laser Cutting Assist Gas",
   description:
-    "On-site nitrogen gas generation for laser cutting assist gas. Reduce operating costs by 60% compared to liquid nitrogen. Purity 99.999%, flow 5-60 Nm³/h.",
+    "PSA nitrogen generator for laser cutting assist gas. On-site nitrogen production with 99.999% purity. Simple operation, low maintenance, 8-10 year service life.",
 };
 
 const nitrogenSpecs = [
-  { label: "Nitrogen Purity", value: "99.999%" },
-  { label: "Flow Rate Range", value: "5 – 60 Nm³/h" },
-  { label: "Output Pressure", value: "0.6 – 1.3 MPa" },
-  { label: "Dew Point", value: "≤ -40°C" },
-  { label: "Air Compressor", value: "Integrated / External" },
-  { label: "Power Supply", value: "380V / 50Hz / 3-Phase" },
-  { label: "Power Consumption", value: "3.5 – 22 kW" },
-  { label: "Noise Level", value: "≤ 72 dB(A)" },
-  { label: "Cooling Method", value: "Air-Cooled" },
-  { label: "Control System", value: "PLC + Touch Screen" },
-  { label: "Molecular Sieve", value: "CMS Carbon Sieve" },
-  { label: "Service Life", value: "≥ 10 Years" },
+  { label: "Technology", value: "PSA (Pressure Swing Adsorption)" },
+  { label: "Nitrogen Purity", value: "Adjustable up to 99.999%" },
+  { label: "Output Pressure", value: "0.6 MPa" },
+  { label: "Compressed Air Pressure", value: "0.6 – 0.8 MPa" },
+  { label: "Air Dew Point", value: "< -10°C" },
+  { label: "Air Quality", value: "Oil-free & Water-free" },
+  { label: "Oil Content", value: "< 0.01 PPM" },
+  { label: "Power Supply", value: "220V / 50Hz" },
+  { label: "Power Consumption", value: "80W" },
+  { label: "Ambient Temperature", value: "5 – 40°C (Optimal 20-25°C)" },
+  { label: "Molecular Sieve", value: "High-Performance CMS Carbon Sieve" },
+  { label: "Service Life", value: "8 – 10 Years" },
+  { label: "Warranty", value: "12 Months" },
 ];
 
 const keyFeatures = [
   {
     icon: Gauge,
-    title: "High Purity 99.999%",
-    desc: "Premium CMS carbon molecular sieve delivers ultra-high purity nitrogen, meeting the strictest laser cutting requirements for clean, oxide-free edges.",
+    title: "PSA Technology",
+    desc: "Pressure Swing Adsorption with high-performance CMS carbon molecular sieve. Dual-tower design works alternately to continuously produce nitrogen.",
   },
   {
     icon: Zap,
-    title: "Cost Savings 60%",
-    desc: "Generate nitrogen on-site instead of purchasing liquid nitrogen cylinders. Typical ROI within 12-18 months. Eliminate delivery delays and supply chain risks.",
+    title: "Adjustable Purity",
+    desc: "Nitrogen purity can be adjusted according to actual needs. Up to 99.999% for high-purity applications. Factory pre-set to customer requirements.",
   },
   {
     icon: Shield,
-    title: "Reliable & Stable",
-    desc: "Industrial-grade PLC control system with automatic pressure regulation. Dual-tower PSA design ensures continuous gas supply with automatic switching.",
+    title: "Safe & Inert",
+    desc: "Nitrogen is colorless, odorless, non-toxic, non-flammable, non-explosive. Molecular structure is very stable and difficult to react chemically with other substances.",
   },
   {
     icon: Thermometer,
-    title: "Low Dew Point ≤-40°C",
-    desc: "Advanced drying system removes moisture to prevent condensation in gas lines. Protects laser cutting head optics and ensures consistent cut quality.",
+    title: "Simple Operation",
+    desc: "Connect compressed air, turn on power, press start. Nitrogen pressure rises to 0.6 MPa. Simple process flow, convenient maintenance.",
   },
   {
     icon: Wind,
-    title: "Compact & Integrated",
-    desc: "All-in-one design with integrated air compressor, dryer, and nitrogen generator. Small footprint, easy installation, plug-and-play operation.",
+    title: "Compact Design",
+    desc: "Small footprint, low investment. Easy to install with good air circulation. Oil-water separator and precision filter included.",
   },
   {
     icon: Droplets,
-    title: "Smart Monitoring",
-    desc: "Touch screen HMI displays real-time purity, pressure, flow rate, and system status. Remote monitoring capability with alarm notifications.",
+    title: "Long Service Life",
+    desc: "8-10 years under normal operation. 12-month warranty. Replace activated carbon every 3-6 months, carbon molecular sieve every 3-6 years.",
   },
 ];
 
 const applications = [
   {
-    icon: "🔩",
-    title: "Fiber Laser Cutting",
-    desc: "Primary assist gas for cutting stainless steel, aluminum, and non-ferrous metals. Produces clean, oxide-free edges ready for welding or painting.",
+    icon: "Laser",
+    title: "Laser Cutting Assist Gas",
+    desc: "Primary assist gas for fiber laser cutting machines. Produces clean, oxide-free edges on stainless steel, aluminum, and non-ferrous metals.",
   },
   {
-    icon: "⚙️",
-    title: "Metal Fabrication",
-    desc: "Shielding gas for laser welding and heat treatment processes. Prevents oxidation and maintains material properties during thermal processing.",
+    icon: "Weld",
+    title: "Laser Welding Shielding",
+    desc: "Shielding gas for laser welding processes. Prevents oxidation and maintains material properties during thermal processing.",
   },
   {
-    icon: "🏭",
-    title: "Industrial Production",
-    desc: "General-purpose nitrogen supply for purging, blanketing, and inert atmosphere applications across manufacturing facilities.",
+    icon: "Factory",
+    title: "Industrial Protection",
+    desc: "Protective gas for heat treatment, purging, blanketing, and inert atmosphere applications. Widely used across manufacturing facilities.",
   },
 ];
 
@@ -98,9 +99,10 @@ export default function NitrogenGeneratorPage() {
                 HQ-N2 Nitrogen Generator
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-[#CBD5E1]">
-                On-site nitrogen gas generation for laser cutting assist gas.
-                Reduce operating costs by up to 60% compared to purchasing
-                liquid nitrogen. Purity up to 99.999%, flow rate 5-60 Nm³/h.
+                PSA nitrogen generator using high-performance CMS carbon
+                molecular sieve. Produces nitrogen on-site for laser cutting
+                assist gas. Simple operation, low maintenance, 8-10 year service
+                life. Purity adjustable up to 99.999%.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
