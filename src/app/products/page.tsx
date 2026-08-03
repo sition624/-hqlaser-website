@@ -60,24 +60,24 @@ const productLines = [
     models: [
       "Air-Cooled",
       "QCW",
-      "Water-Cooled",
     ],
   },
   {
     name: "Laser Cleaning",
     models: [
       "Pulse",
-      "Continuous",
-      "Handheld",
     ],
   },
   {
     name: "Laser Marking",
     models: [
       "Desktop",
-      "Cabinet",
-      "Flying",
-      "Handheld",
+    ],
+  },
+  {
+    name: "Supporting Equipment",
+    models: [
+      "Nitrogen Generator",
     ],
   },
 ];
@@ -91,14 +91,7 @@ const moreProducts = [
   { name: "Horizontal Tube Cutting Machine", desc: "Simple horizontal design for tube and pipe cutting. Cost-effective solution.", image: "/images/products/horizontal-tube-cutter.png" },
   { name: "Side-Mount Tube Cutting Machine", desc: "Dual-card side-mount design for efficient tube processing. High stability.", image: "/images/products/side-hung-tube-cutter.png" },
   { name: "QCW Welding Machine", desc: "Quasi-continuous wave laser for thin materials. Minimal heat distortion, clean welds.", image: "/images/products/qcw-welder.jpg" },
-  { name: "Water-Cooled Welding Machine", desc: "Water-cooled laser source for high-power continuous welding. 1500W–3000W.", image: null },
-  { name: "Continuous Laser Cleaning Machine", desc: "High-power continuous laser for heavy-duty rust and coating removal.", image: null },
-  { name: "Handheld Laser Cleaning Machine", desc: "Portable handheld design for on-site cleaning. Flexible and easy to operate.", image: null },
   { name: "Desktop Laser Marking Machine", desc: "Compact benchtop design for small parts marking. High precision and speed.", image: "/images/products/laser-marking-machine.png" },
-  { name: "Cabinet Laser Marking Machine", desc: "Enclosed cabinet design with safety interlock. Ideal for production lines.", image: null },
-  { name: "Flying Laser Marking Machine", desc: "Online flying mark for conveyor belt production. High-speed dynamic focusing.", image: null },
-  { name: "Handheld Laser Marking Machine", desc: "Portable handheld marker for large or fixed workpieces. Flexible positioning.", image: null },
-  { name: "Nitrogen Generator", desc: "On-site nitrogen supply for laser cutting assist gas. Reduce operating costs.", image: "/images/products/nitrogen-generator.jpg" },
 ];
 
 export default function ProductsPage() {
@@ -128,7 +121,7 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">Featured Products</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* HQ26 Welder */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
@@ -143,7 +136,7 @@ export default function ProductsPage() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
                   HQ26 Air-Cooled Laser Welder
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
@@ -173,7 +166,7 @@ export default function ProductsPage() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
                   HQ-1530 Fiber Laser Cutter
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
@@ -203,7 +196,7 @@ export default function ProductsPage() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
                   Pulsed Laser Cleaning Machine
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
@@ -215,6 +208,36 @@ export default function ProductsPage() {
                   <span>Air-Cooled</span>
                   <span>|</span>
                   <span>Non-Contact</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Nitrogen Generator */}
+            <Link href="/products/nitrogen-generator" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
+              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+                <img
+                  src="/images/products/nitrogen-generator.jpg"
+                  alt="HQ-N2 Nitrogen Generator"
+                  className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4 px-3 py-1 bg-[#0A2463] text-white text-xs font-bold uppercase">
+                  Supporting
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
+                  HQ-N2 Nitrogen Generator
+                </h3>
+                <p className="text-[#94A3B8] text-sm mb-4">
+                  On-site nitrogen generation for laser cutting assist gas. Cut gas costs by 60%.
+                </p>
+                <div className="flex items-center gap-3 text-xs text-[#94A3B8]">
+                  <span>99.999%</span>
+                  <span>|</span>
+                  <span>5-60 Nm³/h</span>
+                  <span>|</span>
+                  <span>Integrated</span>
                 </div>
               </div>
             </Link>

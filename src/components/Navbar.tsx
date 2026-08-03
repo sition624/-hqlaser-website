@@ -88,6 +88,13 @@ export default function Navbar() {
                       <div className="text-[#94A3B8] text-xs mt-0.5">Pulsed Laser Cleaning Machine</div>
                     </Link>
                     <Link
+                      href="/products/nitrogen-generator"
+                      className="block px-4 py-3 text-sm text-white hover:bg-[#1A2740] hover:text-[#3B82F6] transition-colors rounded-sm"
+                    >
+                      <div className="font-semibold">N₂ Generator</div>
+                      <div className="text-[#94A3B8] text-xs mt-0.5">Nitrogen Generator for Laser Cutting</div>
+                    </Link>
+                    <Link
                       href="/products"
                       className="block px-4 py-3 text-sm text-[#3B82F6] hover:bg-[#1A2740] transition-colors rounded-sm border-t border-[#1E3A5F] mt-1 pt-3"
                     >
@@ -150,6 +157,9 @@ export default function Navbar() {
               </Link>
               <Link href="/products/pulse-cleaning" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
                 Pulse Cleaning
+              </Link>
+              <Link href="/products/nitrogen-generator" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
+                N₂ Generator
               </Link>
             </div>
             <Link href="/about" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>
