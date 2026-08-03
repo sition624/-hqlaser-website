@@ -80,15 +80,20 @@ const productLines = [
   },
 ];
 
-const additionalProducts = [
-  { name: '3015 Sheet & Tube Cutter', image: '/images/products/3015-sheet-tube-cutter.png', href: '/contact' },
-  { name: '4020 Enclosed Fiber Cutter', image: '/images/products/4020-enclosed-fiber-cutter.png', href: '/contact' },
-  { name: 'Gantry Fiber Laser Cutter', image: '/images/products/gantry-fiber-cutter.png', href: '/contact' },
-  { name: 'Precision Laser Cutter', image: '/images/products/precision-laser-cutter.jpg', href: '/contact' },
-  { name: 'Horizontal Tube Cutter', image: '/images/products/horizontal-tube-cutter.png', href: '/contact' },
-  { name: 'Side-Hung Tube Cutter', image: '/images/products/side-hung-tube-cutter.png', href: '/contact' },
-  { name: 'QCW Laser Welder', image: '/images/products/qcw-welder.jpg', href: '/contact' },
-  { name: 'Nitrogen Generator', image: '/images/products/nitrogen-generator.jpg', href: '/contact' },
+const moreProducts = [
+  { name: "3015 Exchange Table Cutter", desc: "Dual-table exchange for continuous production. Maximize uptime with automatic pallet switching.", image: "/images/products/3015-dual-platform-fiber-cutter.png" },
+  { name: "4020 Single Platform Cutter", desc: "Large format 4000×2000mm cutting area for oversized sheets and plates.", image: "/images/products/4020-enclosed-fiber-cutter.png" },
+  { name: "4020 Exchange Table Cutter", desc: "Large format with dual exchange tables. High throughput for heavy-duty production.", image: null },
+  { name: "Precision Laser Cutter", desc: "High-precision cutting for thin sheets. ±0.02mm repeatability for fine parts.", image: "/images/products/precision-laser-cutter.jpg" },
+  { name: "Ground Rail Cutting Machine", desc: "Gantry-type ground rail design for extra-large workpieces. Stable and heavy-duty.", image: "/images/products/gantry-fiber-cutter.png" },
+  { name: "Water-Cooled Welding Machine", desc: "Water-cooled laser source for high-power continuous welding. 1500W–3000W.", image: null },
+  { name: "QCW Welding Machine", desc: "Quasi-continuous wave laser for thin materials. Minimal heat distortion, clean welds.", image: "/images/products/qcw-welder.jpg" },
+  { name: "Continuous Laser Cleaning Machine", desc: "High-power continuous laser for heavy-duty rust and coating removal.", image: null },
+  { name: "Handheld Laser Cleaning Machine", desc: "Portable handheld design for on-site cleaning. Flexible and easy to operate.", image: null },
+  { name: "Desktop Laser Marking Machine", desc: "Compact benchtop design for small parts marking. High precision and speed.", image: "/images/products/laser-marking-machine.png" },
+  { name: "Cabinet Laser Marking Machine", desc: "Enclosed cabinet design with safety interlock. Ideal for production lines.", image: null },
+  { name: "Flying Laser Marking Machine", desc: "Online flying mark for conveyor belt production. High-speed dynamic focusing.", image: null },
+  { name: "Handheld Laser Marking Machine", desc: "Portable handheld marker for large or fixed workpieces. Flexible positioning.", image: null },
 ];
 
 export default function ProductsPage() {
@@ -237,6 +242,54 @@ export default function ProductsPage() {
                   ))}
                 </ul>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* More Products - Inquiry */}
+      <section className="py-20 bg-[#0A1628] border-t border-[#1E3A5F]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-2 h-8 bg-[#3B82F6]" />
+            <h2 className="text-2xl font-bold text-white">More Products</h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {moreProducts.map((product) => (
+              <Link
+                key={product.name}
+                href="/contact"
+                className="group bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm overflow-hidden hover:border-[#3B82F6]/40 transition-all duration-200"
+              >
+                <div className="aspect-[4/3] bg-[#162032] flex items-center justify-center overflow-hidden">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <svg className="w-16 h-16 text-[#2A4A6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  )}
+                </div>
+                <div className="p-4">
+                  <h3 className="text-sm font-semibold text-white group-hover:text-[#00D4FF] transition-colors mb-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-xs text-[#94A3B8] mb-3 line-clamp-2">
+                    {product.desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-xs font-medium text-[#3B82F6]">
+                    Inquire Now
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
