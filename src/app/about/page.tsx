@@ -105,8 +105,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden aspect-[4/3]">
               <img
-                src="/images/factory/workshop-overview.jpg"
-                alt="Heqing Factory Workshop Overview"
+                src="/images/factory/company-overview.png"
+                alt="HQ Laser Company Overview"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -125,40 +125,40 @@ export default function AboutPage() {
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/production-line.jpg"
-                  alt="Production Line"
+                  src="/images/factory/factory-production.png"
+                  alt="Factory Production"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Production Line</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Modern assembly line with strict quality control</p>
+                <h3 className="text-white font-semibold text-sm">Factory Production</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Modern production facility with advanced equipment</p>
               </div>
             </div>
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/worker-assembly.jpg"
-                  alt="Worker Assembly"
+                  src="/images/factory/quality-comparison.png"
+                  alt="Quality Comparison"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Assembly Workshop</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Skilled technicians assembling laser equipment</p>
+                <h3 className="text-white font-semibold text-sm">Quality Comparison</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Superior craftsmanship vs standard market quality</p>
               </div>
             </div>
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/worker-welding.jpg"
-                  alt="Worker Welding"
+                  src="/images/factory/technical-team.png"
+                  alt="Technical Team"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-white font-semibold text-sm">Welding Station</h3>
-                <p className="text-[#94A3B8] text-xs mt-1">Precision welding for machine frame construction</p>
+                <h3 className="text-white font-semibold text-sm">Technical Team</h3>
+                <p className="text-[#94A3B8] text-xs mt-1">Expert engineers with deep industry experience</p>
               </div>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function AboutPage() {
               </div>
               <div className="p-6">
                 <img
-                  src="/images/certificates/certifications.svg"
+                  src="/images/factory/certifications.png"
                   alt="Heqing Laser Certifications - CE, ISO 9001, TÜV Rheinland"
                   className="w-full h-auto"
                 />
