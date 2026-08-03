@@ -40,11 +40,9 @@ const milestones = [
 ];
 
 const certifications = [
-  { name: 'CE Certification', desc: 'European Conformity - Full compliance with EU safety standards' },
-  { name: 'ISO 9001', desc: 'Quality Management System certified' },
-  { name: 'FDA Registration', desc: 'Registered with US FDA for laser products' },
-  { name: 'TÜV Rheinland', desc: 'German TÜV Rheinland certified for product safety' },
-  { name: '18 Patents', desc: 'Authorized invention and utility model patents' },
+  { name: 'ISO', desc: 'International Organization for Standardization' },
+  { name: 'CE', desc: 'European Conformity' },
+  { name: 'FDA', desc: 'US Food and Drug Administration' },
 ];
 
 const shippingPhotos = [
