@@ -121,8 +121,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden aspect-[4/3]">
               <img
-                src="/images/factory/workshop-floor.png"
-                alt="HQ Laser Company Overview"
+                src="/images/factory/building-exterior.png"
+                alt="HQ Laser Factory Building - Shandong Heqing"
                 className="w-full h-full object-cover"
               />
             </div>
