@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import HeroLaserSpark from '@/components/HeroLaserSpark';
+import ProductSchema from '@/components/ProductSchema';
+
+const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
 
 export const metadata: Metadata = {
   title: 'Heqing Laser - Fiber Laser Cutting, Welding, Cleaning & Marking Solutions',
@@ -45,6 +48,7 @@ const productCategories = [
 export default function HomePage() {
   return (
     <>
+      <ProductSchema siteUrl={siteUrl} />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center hero-gradient bg-grid overflow-hidden">
         {/* Decorative elements */}

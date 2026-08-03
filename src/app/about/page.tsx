@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import OrganizationSchema from '@/components/OrganizationSchema';
+
+const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
 
 export const metadata: Metadata = {
   title: 'About Us | HQ Laser',
@@ -58,6 +61,7 @@ const shippingPhotos = [
 export default function AboutPage() {
   return (
     <>
+      <OrganizationSchema siteUrl={siteUrl} />
       {/* Hero */}
       <section className="pt-32 pb-20 bg-grid relative">
         <div className="absolute inset-0 hero-gradient" />
