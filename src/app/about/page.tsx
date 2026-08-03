@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/factory-production.png"
+                  src="/images/factory/factory-production.jpg"
                   alt="Factory Production"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -138,7 +138,7 @@ export default function AboutPage() {
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/quality-comparison.png"
+                  src="/images/factory/quality-comparison.jpg"
                   alt="Quality Comparison"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -151,7 +151,7 @@ export default function AboutPage() {
             <div className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/factory/technical-team.png"
+                  src="/images/factory/technical-team.jpg"
                   alt="Technical Team"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
