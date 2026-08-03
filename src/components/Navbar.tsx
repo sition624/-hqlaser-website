@@ -81,6 +81,13 @@ export default function Navbar() {
                       <div className="text-[#94A3B8] text-xs mt-0.5">Fiber Laser Cutter</div>
                     </Link>
                     <Link
+                      href="/products/pulse-cleaning"
+                      className="block px-4 py-3 text-sm text-white hover:bg-[#1A2740] hover:text-[#3B82F6] transition-colors rounded-sm"
+                    >
+                      <div className="font-semibold">Pulse Cleaning Series</div>
+                      <div className="text-[#94A3B8] text-xs mt-0.5">Pulsed Laser Cleaning Machine</div>
+                    </Link>
+                    <Link
                       href="/products"
                       className="block px-4 py-3 text-sm text-[#3B82F6] hover:bg-[#1A2740] transition-colors rounded-sm border-t border-[#1E3A5F] mt-1 pt-3"
                     >
@@ -140,6 +147,9 @@ export default function Navbar() {
               </Link>
               <Link href="/products/hq1530" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
                 HQ-1530 Cutter
+              </Link>
+              <Link href="/products/pulse-cleaning" className="block text-[#94A3B8] text-sm py-1" onClick={() => setMobileOpen(false)}>
+                Pulse Cleaning
               </Link>
             </div>
             <Link href="/about" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>

@@ -28,7 +28,7 @@ const productCategories = [
     desc: 'Non-contact surface cleaning. Remove rust, paint, oil, and contaminants.',
     image: '/images/products/pulse-laser-cleaner.jpg',
     models: ['HQ-CL100 100W Cleaner', 'HQ-CL200 200W Cleaner', 'HQ-CL300 300W Cleaner', 'HQ-CL500 500W Industrial'],
-    href: '#',
+    href: '/products/pulse-cleaning',
     accent: '#00D4FF',
   },
   {
@@ -36,20 +36,20 @@ const productCategories = [
     desc: 'Permanent marking & engraving for metals, plastics, and more.',
     image: '/images/products/laser-marking-machine.png',
     models: ['HQ-M20 Fiber Marker', 'HQ-M30 UV Marker', 'HQ-M50 CO2 Marker', 'HQ-FLY Flying Marker'],
-    href: '#',
+    href: '/contact',
     accent: '#00D4FF',
   },
 ];
 
 const additionalProducts = [
-  { name: '3015 Sheet & Tube Cutter', image: '/images/products/3015-sheet-tube-cutter.png', href: '#' },
-  { name: '4020 Enclosed Fiber Cutter', image: '/images/products/4020-enclosed-fiber-cutter.png', href: '#' },
-  { name: 'Gantry Fiber Laser Cutter', image: '/images/products/gantry-fiber-cutter.png', href: '#' },
-  { name: 'Precision Laser Cutter', image: '/images/products/precision-laser-cutter.jpg', href: '/products/hq1530' },
-  { name: 'Horizontal Tube Cutter', image: '/images/products/horizontal-tube-cutter.png', href: '#' },
-  { name: 'Side-Hung Tube Cutter', image: '/images/products/side-hung-tube-cutter.png', href: '#' },
-  { name: 'QCW Laser Welder', image: '/images/products/qcw-welder.jpg', href: '/products/hq26a' },
-  { name: 'Nitrogen Generator', image: '/images/products/nitrogen-generator.jpg', href: '#' },
+  { name: '3015 Sheet & Tube Cutter', image: '/images/products/3015-sheet-tube-cutter.png', href: '/contact' },
+  { name: '4020 Enclosed Fiber Cutter', image: '/images/products/4020-enclosed-fiber-cutter.png', href: '/contact' },
+  { name: 'Gantry Fiber Laser Cutter', image: '/images/products/gantry-fiber-cutter.png', href: '/contact' },
+  { name: 'Precision Laser Cutter', image: '/images/products/precision-laser-cutter.jpg', href: '/contact' },
+  { name: 'Horizontal Tube Cutter', image: '/images/products/horizontal-tube-cutter.png', href: '/contact' },
+  { name: 'Side-Hung Tube Cutter', image: '/images/products/side-hung-tube-cutter.png', href: '/contact' },
+  { name: 'QCW Laser Welder', image: '/images/products/qcw-welder.jpg', href: '/contact' },
+  { name: 'Nitrogen Generator', image: '/images/products/nitrogen-generator.jpg', href: '/contact' },
 ];
 
 export default function ProductsPage() {
@@ -79,8 +79,8 @@ export default function ProductsPage() {
             <h2 className="text-2xl font-bold text-white">Featured Products</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* HQ26-A */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* HQ26 Welder */}
             <Link href="/products/hq26a" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                 <img
@@ -93,15 +93,15 @@ export default function ProductsPage() {
                   Best Seller
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#3B82F6] transition-colors mb-2">
                   HQ26 Air-Cooled Laser Welder
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
                   No chiller, no water, no hassle. Revolutionary air-cooled technology for portable welding.
                 </p>
-                <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                  <span>800W - 2000W</span>
+                <div className="flex items-center gap-3 text-xs text-[#94A3B8]">
+                  <span>1000W - 2000W</span>
                   <span>|</span>
                   <span>Air-Cooled</span>
                   <span>|</span>
@@ -110,11 +110,11 @@ export default function ProductsPage() {
               </div>
             </Link>
 
-            {/* HQ-1530 */}
+            {/* HQ-1530 Cutter */}
             <Link href="/products/hq1530" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
               <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                 <img
-                  src="/images/products/3015-dual-platform-fiber-cutter.png"
+                  src="/images/products/3015-single-platform-fiber-cutter.jpg"
                   alt="HQ-1530 Fiber Laser Cutter"
                   className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
@@ -123,19 +123,49 @@ export default function ProductsPage() {
                   Hot Sale
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
                   HQ-1530 Fiber Laser Cutter
                 </h3>
                 <p className="text-[#94A3B8] text-sm mb-4">
                   Fastest path to ROI. High-precision cutting with single platform table for stable performance.
                 </p>
-                <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
+                <div className="flex items-center gap-3 text-xs text-[#94A3B8]">
                   <span>1500W - 6000W</span>
                   <span>|</span>
                   <span>1500x3000mm</span>
                   <span>|</span>
                   <span>Single Platform</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Pulse Cleaning */}
+            <Link href="/products/pulse-cleaning" className="group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
+              <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
+                <img
+                  src="/images/products/pulse-laser-cleaner.jpg"
+                  alt="HQ Pulsed Laser Cleaning Machine"
+                  className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#162032]/80 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4 px-3 py-1 bg-[#00D4FF] text-[#0A1628] text-xs font-bold uppercase">
+                  New
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#00D4FF] transition-colors mb-2">
+                  Pulsed Laser Cleaning Machine
+                </h3>
+                <p className="text-[#94A3B8] text-sm mb-4">
+                  Non-contact cleaning. Remove rust, paint, oil without chemicals. No damage to substrate.
+                </p>
+                <div className="flex items-center gap-3 text-xs text-[#94A3B8]">
+                  <span>100W - 500W</span>
+                  <span>|</span>
+                  <span>Air-Cooled</span>
+                  <span>|</span>
+                  <span>Non-Contact</span>
                 </div>
               </div>
             </Link>

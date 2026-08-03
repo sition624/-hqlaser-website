@@ -29,7 +29,7 @@ const productCategories = [
     desc: 'Non-contact surface cleaning. Remove rust, paint, oil, and contaminants.',
     image: '/images/products/pulse-laser-cleaner.jpg',
     models: ['HQ-CL100 100W Cleaner', 'HQ-CL200 200W Cleaner', 'HQ-CL300 300W Cleaner', 'HQ-CL500 500W Industrial'],
-    href: '#',
+    href: '/products/pulse-cleaning',
     accent: '#00D4FF',
   },
   {
@@ -37,7 +37,7 @@ const productCategories = [
     desc: 'Permanent marking & engraving for metals, plastics, and more.',
     image: '/images/products/laser-marking-machine.png',
     models: ['HQ-M20 Fiber Marker', 'HQ-M30 UV Marker', 'HQ-M50 CO2 Marker', 'HQ-FLY Flying Marker'],
-    href: '#',
+    href: '/contact',
     accent: '#00D4FF',
   },
 ];
