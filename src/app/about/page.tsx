@@ -1,31 +1,32 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Heqing CNC Equipment - 10+ years of laser equipment manufacturing. Professional fiber laser solutions for global markets.',
+  title: 'About Us | HQ Laser',
+  description: 'HQ Laser - R&D-driven laser equipment manufacturer since 2019. 18 patents, advanced testing lab, serving LG, CNOOC, Geely Auto and 2640+ clients across 80+ countries.',
 };
 
 const stats = [
-  { value: '10+', label: 'Years Experience' },
-  { value: '50+', label: 'Countries Served' },
-  { value: '5000+', label: 'Machines Delivered' },
-  { value: '200+', label: 'Team Members' },
+  { value: '18', label: 'Patents Held' },
+  { value: '80+', label: 'Countries Served' },
+  { value: '2640+', label: 'Clients Served' },
+  { value: '120+', label: 'Countries & Regions' },
 ];
 
 const milestones = [
-  { year: '2014', event: 'Company founded in Shandong, China' },
-  { year: '2016', event: 'Launched first fiber laser cutting machine' },
-  { year: '2018', event: 'Expanded to welding & cleaning product lines' },
-  { year: '2020', event: 'Developed revolutionary air-cooled welding technology' },
-  { year: '2022', event: 'Reached 3000+ machines delivered milestone' },
-  { year: '2024', event: 'Serving customers in 50+ countries worldwide' },
+  { year: '2019', event: 'Company founded in Shandong, China by R&D-focused founder' },
+  { year: '2020', event: 'Established R&D Design Center, filed first batch of patents' },
+  { year: '2021', event: 'Expanded product lines to cutting, welding, cleaning, and marking' },
+  { year: '2022', event: 'Served major clients including LG, CNOOC, Geely Auto' },
+  { year: '2023', event: 'Reached 18 patents, products exported to 80+ countries' },
+  { year: '2024', event: 'Became trusted laser solution provider for global markets' },
 ];
 
 const certifications = [
   { name: 'CE Certification', desc: 'European Conformity - Full compliance with EU safety standards' },
   { name: 'ISO 9001', desc: 'Quality Management System certified' },
-  { name: 'SGS Verified', desc: 'Factory audited and verified by SGS' },
   { name: 'FDA Registration', desc: 'Registered with US FDA for laser products' },
+  { name: 'TÜV Rheinland', desc: 'German TÜV Rheinland certified for product safety' },
+  { name: '18 Patents', desc: 'Authorized invention and utility model patents' },
 ];
 
 const shippingPhotos = [
@@ -47,12 +48,12 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
-              About <span className="gradient-text">Heqing</span>
+              About <span className="gradient-text">HQ Laser</span>
             </h1>
             <p className="text-lg text-[#CBD5E1] leading-relaxed">
-              Shandong Heqing CNC Equipment Co., Ltd. is a professional laser equipment manufacturer
-              with over 10 years of experience. We specialize in fiber laser cutting, welding, cleaning,
-              and marking machines for industrial applications worldwide.
+              R&D-driven laser equipment manufacturer since 2019. 18 patents, advanced testing lab
+              with laser power meters, spectrometers, and interferometers. Trusted by LG, CNOOC,
+              Geely Auto, and 2640+ clients across 80+ countries worldwide.
             </p>
           </div>
         </div>
@@ -83,19 +84,22 @@ export default function AboutPage() {
               </div>
               <div className="space-y-6 text-[#CBD5E1] leading-relaxed">
                 <p>
-                  Founded in 2014 in Shandong Province, China, Heqing CNC Equipment has grown from a small
-                  workshop into a leading laser equipment manufacturer serving customers across 50+ countries.
+                  Founded in 2019 in Shandong Province, China, HQ Laser was established by a founder with
+                  deep technical R&D background. From day one, we have been committed to research, design,
+                  production, and quality control — ensuring every machine meets the highest standards
+                  and becomes a product our customers trust.
                 </p>
                 <p>
-                  Our journey began with a clear mission: to make high-quality laser equipment accessible
-                  to manufacturers worldwide. We combine premium components from world-leading brands —
-                  Raycus, IPG, CypCut, PRECITEC — with our own engineering expertise to deliver machines
-                  that exceed expectations.
+                  Our company operates a dedicated R&D Design Center and has obtained 18 patents. We are
+                  equipped with advanced testing instruments including laser power meters, spectrometers,
+                  interferometers, and collimating lenses. This ensures every product design follows
+                  ergonomic principles and meets strict quality standards before leaving our factory.
                 </p>
                 <p>
-                  Today, our product range covers fiber laser cutting, welding, cleaning, and marking machines.
-                  Our latest innovation — the HQ26 air-cooled laser welder — represents a breakthrough
-                  in portable welding technology, eliminating the need for external chillers.
+                  Our products have served renowned enterprises and institutions including Korea LG,
+                  China National Offshore Oil Corporation (CNOOC), Geely Automobile, Haixi Group, and
+                  Shandong University laboratories. Today, our equipment has been exported to 80+ countries
+                  and regions worldwide, providing reliable laser solutions for global manufacturers.
                 </p>
               </div>
             </div>
