@@ -151,6 +151,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Quality Testing */}
+      <section className="py-24 bg-[#0A1628]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-12">
+            <div className="w-2 h-8 bg-[#00D4FF]" />
+            <h2 className="text-3xl font-bold text-white">Quality Testing</h2>
+          </div>
+          <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+            <div className="p-6 sm:p-8 border-b border-[#1E3A5F]">
+              <h3 className="text-xl font-bold text-white mb-2">Precision Measurement Equipment</h3>
+              <p className="text-[#94A3B8] text-sm">
+                US API laser interferometer for measuring positioning accuracy and repeatability. Every 0.01mm precision comes from our commitment to quality.
+              </p>
+            </div>
+            <div className="aspect-[16/9] overflow-hidden">
+              <img
+                src="/images/factory/quality-testing.png"
+                alt="Quality Testing Equipment"
+                className="w-full h-full object-contain bg-white"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Timeline */}
       <section className="py-24 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
