@@ -14,6 +14,12 @@ pnpm next build
 echo "Fixing static export file structure..."
 bash "${COZE_WORKSPACE_PATH}/scripts/fix-export.sh"
 
+# Copy .htaccess to out directory
+if [ -f "${COZE_WORKSPACE_PATH}/public/.htaccess" ]; then
+  cp "${COZE_WORKSPACE_PATH}/public/.htaccess" "${COZE_WORKSPACE_PATH}/out/.htaccess"
+  echo "Copied .htaccess to out directory"
+fi
+
 echo "Bundling server with tsup..."
 pnpm tsup src/server.ts --format cjs --platform node --target node20 --outDir dist --no-splitting --no-minify
 
