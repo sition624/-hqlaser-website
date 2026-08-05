@@ -3,4 +3,4 @@
 :HL["/images/products/hq26a-air-cooled-welder.png","image"]
 :HL["/images/products/pulse-laser-cleaner.jpg","image"]
 :HL["/images/products/laser-marking-machine.png","image"]
-0:{"buildId":"SOcbUztlOsCskkgFdQPx6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"WjgYrBnxwBmLRnAV2q0q7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
