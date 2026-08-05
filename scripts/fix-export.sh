@@ -29,11 +29,14 @@ move_to_folder "about.html" "about"
 move_to_folder "contact.html" "contact"
 move_to_folder "products.html" "products"
 
-# Move product detail pages
-move_to_folder "hq26a.html" "products/hq26a"
-move_to_folder "hq1530.html" "products/hq1530"
-move_to_folder "pulse-cleaning.html" "products/pulse-cleaning"
-move_to_folder "nitrogen-generator.html" "products/nitrogen-generator"
+# Move product detail pages from products folder to subfolders
+for product in hq26a hq1530 pulse-cleaning nitrogen-generator; do
+    if [ -f "${OUT_DIR}/products/${product}.html" ]; then
+        mkdir -p "${OUT_DIR}/products/${product}"
+        mv "${OUT_DIR}/products/${product}.html" "${OUT_DIR}/products/${product}/index.html"
+        echo "Moved products/${product}.html -> products/${product}/index.html"
+    fi
+done
 
 # Clean up __next.*.txt files (build artifacts)
 echo "Cleaning up build artifacts..."
