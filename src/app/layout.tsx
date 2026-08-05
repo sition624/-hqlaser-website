@@ -68,6 +68,11 @@ export const metadata: Metadata = {
   verification: {
     google: '', // Add your Google Search Console verification code here
   },
+  other: {
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black',
+    'format-detection': 'telephone=no',
+  },
 };
 
 export default function RootLayout({
