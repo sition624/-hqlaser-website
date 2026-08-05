@@ -1,8 +1,8 @@
-:HL["/_next/static/chunks/0c9e2667806a100e.css","style"]
+:HL["/_next/static/chunks/31d8bb1bea25b008.css","style"]
 :HL["/images/factory/building-exterior.png","image"]
 :HL["/images/factory/production-process.png","image"]
 :HL["/images/factory/testing-collimator.png","image"]
 :HL["/images/factory/testing-interferometer.png","image"]
 :HL["/images/factory/certifications.png","image"]
 :HL["/images/factory/testing-ballbar.png","image"]
-0:{"buildId":"XbUINPJVYD_1LliBauCax","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"about","paramType":null,"paramKey":"about","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"eqeEXPiit0f2j77O2w8zV","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"about","paramType":null,"paramKey":"about","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
