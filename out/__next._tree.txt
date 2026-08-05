@@ -1,6 +1,0 @@
-:HL["/_next/static/chunks/31d8bb1bea25b008.css","style"]
-:HL["/images/products/3015-single-platform-fiber-cutter.jpg","image"]
-:HL["/images/products/hq26a-air-cooled-welder.png","image"]
-:HL["/images/products/pulse-laser-cleaner.jpg","image"]
-:HL["/images/products/laser-marking-machine.png","image"]
-0:{"buildId":"WjgYrBnxwBmLRnAV2q0q7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

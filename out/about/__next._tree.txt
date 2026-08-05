@@ -1,8 +1,0 @@
-:HL["/_next/static/chunks/31d8bb1bea25b008.css","style"]
-:HL["/images/factory/building-exterior.png","image"]
-:HL["/images/factory/production-process.png","image"]
-:HL["/images/factory/testing-collimator.png","image"]
-:HL["/images/factory/testing-interferometer.png","image"]
-:HL["/images/factory/certifications.png","image"]
-:HL["/images/factory/testing-ballbar.png","image"]
-0:{"buildId":"WjgYrBnxwBmLRnAV2q0q7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"about","paramType":null,"paramKey":"about","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
