@@ -69,9 +69,17 @@ export const metadata: Metadata = {
     google: '', // Add your Google Search Console verification code here
   },
   other: {
+    // 微信浏览器兼容
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black',
     'format-detection': 'telephone=no',
+    // 微信特定 meta 标签
+    'x5-orientation': 'portrait',
+    'x5-fullscreen': 'true',
+    'x5-page-mode': 'app',
+    // 移动端优化
+    'mobile-web-app-capable': 'yes',
+    'application-name': 'Heqing Laser',
   },
 };
 
