@@ -34,10 +34,20 @@ export default function HeroLaserSpark() {
     if (!isDesktop) return;
     const video = videoRef.current;
     if (video) {
+      // Ensure video is muted (required for autoplay)
+      video.muted = true;
+      video.playsInline = true;
+      
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Silent fail - some browsers block autoplay
+        playPromise.catch((error) => {
+          console.log('Video autoplay blocked:', error);
+          // Try again after a short delay
+          setTimeout(() => {
+            video.play().catch(() => {
+              // Silent fail
+            });
+          }, 500);
         });
       }
     }
@@ -216,9 +226,16 @@ export default function HeroLaserSpark() {
           muted
           loop
           playsInline
+          controls={false}
           {...({ 'webkit-playsinline': 'true' } as Record<string, string>)}
           preload="auto"
           className="w-full h-full object-cover"
+          onCanPlay={() => {
+            const video = videoRef.current;
+            if (video && video.paused) {
+              video.play().catch(() => {});
+            }
+          }}
         />
       ) : mounted ? (
         // Mobile: Background image + Canvas sparks
