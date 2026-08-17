@@ -4,8 +4,8 @@ import OrganizationSchema from '@/components/OrganizationSchema';
 const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
 
 export const metadata: Metadata = {
-  title: 'About Us | HQ Laser',
-  description: 'HQ Laser - R&D-driven laser equipment manufacturer since 2019. 18 patents, advanced testing lab, serving LG, CNOOC, Geely Auto and 2640+ clients across 80+ countries.',
+  title: 'About HQ Laser | Design-Driven Laser Brand',
+  description: 'HQ Laser - Design-driven laser equipment brand with own R&D and assembly capabilities. 18 patents, serving 2640+ clients across 80+ countries.',
 };
 
 const stats = [
@@ -71,9 +71,9 @@ export default function AboutPage() {
               About <span className="gradient-text">HQ Laser</span>
             </h1>
             <p className="text-lg text-[#CBD5E1] leading-relaxed">
-              R&D-driven laser equipment manufacturer since 2019. 18 patents, advanced testing lab
-              with laser power meters, spectrometers, and interferometers. Trusted by LG, CNOOC,
-              Geely Auto, and 2640+ clients across 80+ countries worldwide.
+              Design-driven laser equipment brand with own R&D and assembly capabilities since 2019. 
+              18 patents, focused on handheld welders, compact cleaners, and desktop markers. 
+              Small batch customization, fast response, technical after-sales.
             </p>
           </div>
         </div>
@@ -105,15 +105,13 @@ export default function AboutPage() {
               <div className="space-y-6 text-[#CBD5E1] leading-relaxed">
                 <p>
                   Founded in 2019 in Shandong Province, China, HQ Laser was established by a founder with
-                  deep technical R&D background. From day one, we have been committed to research, design,
-                  production, and quality control — ensuring every machine meets the highest standards
-                  and becomes a product our customers trust.
+                  deep technical R&D background. From day one, we have been committed to design, research,
+                  and assembly — building a laser equipment brand with our own design language and quality standards.
                 </p>
                 <p>
-                  Our company operates a dedicated R&D Design Center and has obtained 18 patents. We are
-                  equipped with advanced testing instruments including laser power meters, spectrometers,
-                  interferometers, and collimating lenses. This ensures every product design follows
-                  ergonomic principles and meets strict quality standards before leaving our factory.
+                  Our company operates a dedicated R&D Design Center and has obtained 18 patents covering
+                  appearance design, machine structures, and control systems. We focus on handheld laser welders,
+                  compact cleaning machines, and desktop marking machines — products where design and user experience matter.
                 </p>
                 <p>
                   Our products have served renowned enterprises and institutions including Korea LG,
@@ -223,17 +221,17 @@ export default function AboutPage() {
       <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Why Choose <span className="gradient-text">Heqing</span></h2>
-            <p className="text-[#94A3B8] text-lg">What sets us apart from other manufacturers</p>
+            <h2 className="text-3xl font-bold text-white mb-4">Why Choose <span className="gradient-text">HQ Laser</span></h2>
+            <p className="text-[#94A3B8] text-lg">Design-driven brand with own R&D and assembly capabilities</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
-              { title: 'Factory-Direct Pricing', desc: 'No middlemen. Get the best value directly from the manufacturer with transparent pricing.' },
-              { title: 'Premium Components', desc: 'We only use world-class laser sources (Raycus/IPG), control systems (CypCut), and optics (PRECITEC).' },
-              { title: 'Rigorous Testing', desc: 'Every machine undergoes 72-hour burn-in testing before shipping. Zero tolerance for quality issues.' },
-              { title: 'Global After-Sales', desc: 'Remote support within 2 hours. On-site engineer dispatch to 50+ countries. Spare parts warehouse in key regions.' },
-              { title: 'Custom Solutions', desc: 'OEM/ODM services available. Custom work areas, power configurations, and automation integration.' },
-              { title: 'Fast Production', desc: 'Standard models ship in 7-15 days. Custom configurations in 20-30 days. No compromise on quality.' },
+              { title: 'Design-Driven', desc: 'Own design language with 18 patents. Appearance design and software optimization for better user experience.' },
+              { title: 'Small Batch Friendly', desc: 'MOQ 1 unit. Custom configurations welcome. We take orders that big factories won\'t accept.' },
+              { title: 'Fast Response', desc: '2-hour remote support. 7-day delivery for standard models. Engineers respond, not salespeople.' },
+              { title: 'Software Optimized', desc: 'English UI interface. User-friendly control system. Unified brand experience across all touchpoints.' },
+              { title: 'Technical After-Sales', desc: 'Engineers provide support, not just sales team. Remote diagnostics and video guidance available.' },
+              { title: 'Brand Consistency', desc: 'Unified packaging, manuals, and videos. Professional brand experience for your end customers.' },
             ].map((item) => (
               <div key={item.title} className="bg-[#0A1628] border border-[#1E3A5F] rounded-sm p-8 card-hover">
                 <div className="w-12 h-12 bg-[#1A2740] border border-[#3B82F6]/20 rounded-sm flex items-center justify-center mb-6">

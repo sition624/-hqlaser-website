@@ -6,8 +6,8 @@ import ProductSchema from '@/components/ProductSchema';
 const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
 
 export const metadata: Metadata = {
-  title: 'Heqing Laser - Fiber Laser Cutting, Welding, Cleaning & Marking Solutions',
-  description: 'Professional fiber laser equipment manufacturer. Cutting machines, welding machines, cleaning machines, and marking machines for global industrial applications.',
+  title: 'HQ Laser - Design-Driven Laser Equipment Brand',
+  description: 'Design-driven laser equipment brand with own R&D and assembly capabilities. Focused on handheld welders, compact cleaners, desktop markers. Small batch customization, fast response, technical after-sales.',
 };
 
 const productCategories = [
@@ -64,16 +64,16 @@ export default function HomePage() {
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
-                Precision Laser
+                Designed & Engineered
                 <br />
-                <span className="gradient-text">Solutions</span>
+                <span className="gradient-text">Laser Equipment</span>
                 <br />
-                for Industry
+                for Global Brands
               </h1>
               
               <p className="text-lg text-[#CBD5E1] leading-relaxed mb-10 max-w-lg">
-                From cutting to welding, cleaning to marking — we deliver high-performance 
-                fiber laser equipment built for demanding industrial applications worldwide.
+                Focused on handheld welders, compact cleaners, and desktop markers. 
+                Small batch customization, fast response, and technical after-sales support.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -165,10 +165,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Why <span className="gradient-text">Heqing</span>
+              Why <span className="gradient-text">HQ Laser</span>
             </h2>
             <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
-              Trusted by manufacturers across 80+ countries
+              Design-driven brand with own R&D and assembly capabilities
             </p>
           </div>
 
@@ -176,31 +176,11 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">18 Patents</h3>
-              <p className="text-[#94A3B8] text-sm">Independent R&D with 18 technology patents. Continuous innovation in laser equipment design.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">80+ Countries</h3>
-              <p className="text-[#94A3B8] text-sm">Products exported to 80+ countries and regions. Global service network with local support.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Quality Control</h3>
-              <p className="text-[#94A3B8] text-sm">6-step inspection process. Laser power meter, spectrometer, interferometer testing.</p>
+              <h3 className="text-lg font-bold text-white mb-2">Design-Driven</h3>
+              <p className="text-[#94A3B8] text-sm">Own design language with 18 patents. Appearance design and software optimization.</p>
             </div>
 
             <div className="text-center">
@@ -209,8 +189,28 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Fast Delivery</h3>
-              <p className="text-[#94A3B8] text-sm">Standard models ship within 7-15 days. Custom configurations in 20-30 days.</p>
+              <h3 className="text-lg font-bold text-white mb-2">Small Batch Friendly</h3>
+              <p className="text-[#94A3B8] text-sm">MOQ 1 unit. Custom configurations welcome. We take orders big factories won't.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Fast Response</h3>
+              <p className="text-[#94A3B8] text-sm">2-hour remote support. 7-day delivery for standard models. Engineers, not salespeople.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#1A2740] border border-[#3B82F6]/20 rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Brand Consistency</h3>
+              <p className="text-[#94A3B8] text-sm">Unified packaging, manuals, and videos. Professional brand experience for your customers.</p>
             </div>
           </div>
         </div>
