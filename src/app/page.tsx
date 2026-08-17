@@ -50,7 +50,7 @@ export default function HomePage() {
     <>
       <ProductSchema siteUrl={siteUrl} />
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center hero-gradient bg-grid overflow-hidden">
+      <section className="relative hero-gradient bg-grid overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-[#00D4FF]/5 rounded-full blur-3xl" />
@@ -106,9 +106,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Video */}
+            {/* Hero Image */}
             <div className="relative w-full flex items-center justify-center">
-              <div className="w-full max-w-xl">
+              <div className="w-full">
                 <HeroLaserSpark />
               </div>
             </div>
