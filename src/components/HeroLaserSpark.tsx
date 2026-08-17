@@ -18,7 +18,7 @@ export default function HeroLaserSpark() {
           alt="HQ Laser Equipment - Designed & Engineered"
           className="w-full h-auto object-contain"
           style={{
-            transform: 'rotate(90deg)',
+            transform: 'rotate(270deg)',
             maxHeight: '600px',
           }}
         />
