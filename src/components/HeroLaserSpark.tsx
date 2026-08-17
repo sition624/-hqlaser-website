@@ -215,7 +215,7 @@ export default function HeroLaserSpark() {
   }, [isDesktop]);
 
   return (
-    <div className="relative w-full aspect-video overflow-hidden rounded-sm">
+    <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
       {mounted && isDesktop ? (
         // Desktop: Video
         <video
