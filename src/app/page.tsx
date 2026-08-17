@@ -55,8 +55,8 @@ export default function HomePage() {
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-[#00D4FF]/5 rounded-full blur-3xl" />
         
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A2740] border border-[#1E3A5F] rounded-sm mb-8">
                 <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse" />
@@ -107,17 +107,15 @@ export default function HomePage() {
             </div>
 
             {/* Hero Image */}
-            <div className="relative w-full flex items-center justify-center">
-              <div className="w-full">
-                <HeroLaserSpark />
-              </div>
+            <div className="relative w-full">
+              <HeroLaserSpark />
             </div>
           </div>
         </div>
       </section>
 
       {/* Product Categories */}
-      <section className="py-24 bg-[#0A1628]">
+      <section className="py-16 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
