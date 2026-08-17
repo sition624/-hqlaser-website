@@ -10,7 +10,7 @@ export default function HeroLaserSpark() {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-sm bg-[#0F1B2D]">
+    <div className="relative w-full overflow-hidden bg-[#0F1B2D]">
       {mounted ? (
         // Design-focused product image - clean display
         <img
@@ -19,7 +19,6 @@ export default function HeroLaserSpark() {
           className="w-full h-auto object-contain"
           style={{
             transform: 'rotate(270deg)',
-            maxHeight: '600px',
           }}
         />
       ) : null}
