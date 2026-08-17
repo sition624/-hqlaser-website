@@ -10,16 +10,13 @@ export default function HeroLaserSpark() {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#0F1B2D]">
+    <div className="relative w-full bg-[#0F1B2D]">
       {mounted ? (
-        // Design-focused product image - clean display
+        // Design-focused product image - clean display (pre-rotated)
         <img
-          src="/images/laser-hero-design.jpg"
+          src="/images/laser-hero-rotated.jpg"
           alt="HQ Laser Equipment - Designed & Engineered"
-          className="w-full h-auto object-contain"
-          style={{
-            transform: 'rotate(270deg)',
-          }}
+          className="w-full h-auto"
         />
       ) : null}
     </div>
