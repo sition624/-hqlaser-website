@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: '', // Add your Google Search Console verification code here
+    google: 'google1de4a6d04423502b.html', // Google Search Console verification
   },
   other: {
     // 微信浏览器兼容
