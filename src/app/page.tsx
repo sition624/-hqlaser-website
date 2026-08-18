@@ -10,46 +10,12 @@ export const metadata: Metadata = {
   description: 'Design-driven laser equipment brand with own R&D and assembly capabilities. Focused on handheld welders, compact cleaners, desktop markers. Small batch customization, fast response, technical after-sales.',
 };
 
-const productCategories = [
-  {
-    name: 'Laser Cutting Machines',
-    desc: 'High-speed fiber laser cutting for sheets, tubes, and plates. From 1500W to 6000W.',
-    image: '/images/products/3015-single-platform-fiber-cutter.jpg',
-    models: ['HQ-1530 Fiber Laser Cutter', 'HQ-3015 Large Format Cutter', 'HQ-6020 Tube & Sheet Cutter', 'HQ-F6025 Fiber Tube Cutter'],
-    href: '/products/hq1530',
-    accent: '#3B82F6',
-  },
-  {
-    name: 'Laser Welding Machines',
-    desc: 'Handheld & automated laser welders. Revolutionary air-cooled technology.',
-    image: '/images/products/hq26a-air-cooled-welder.png',
-    models: ['HQ26-1000W Welder', 'HQ26-1200W Welder', 'HQ26-1500W Welder', 'HQ26-2000W Welder'],
-    href: '/products/hq26a',
-    accent: '#3B82F6',
-  },
-  {
-    name: 'Laser Cleaning Machines',
-    desc: 'Non-contact surface cleaning. Remove rust, paint, oil, and contaminants.',
-    image: '/images/products/pulse-laser-cleaner.jpg',
-    models: ['HQ-CL100 100W Cleaner', 'HQ-CL200 200W Cleaner', 'HQ-CL300 300W Cleaner', 'HQ-CL500 500W Industrial'],
-    href: '/products/pulse-cleaning',
-    accent: '#00D4FF',
-  },
-  {
-    name: 'Laser Marking Machines',
-    desc: 'Permanent marking & engraving for metals, plastics, and more.',
-    image: '/images/products/laser-marking-machine.png',
-    models: ['HQ-M20 Fiber Marker', 'HQ-M30 UV Marker', 'HQ-M50 CO2 Marker', 'HQ-FLY Flying Marker'],
-    href: '/contact',
-    accent: '#00D4FF',
-  },
-];
-
 export default function HomePage() {
   return (
     <>
       <ProductSchema siteUrl={siteUrl} />
-      {/* Hero Section */}
+      
+      {/* ===== 第一屏：Hero ===== */}
       <section className="relative hero-gradient bg-grid overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl" />
@@ -64,45 +30,33 @@ export default function HomePage() {
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
-                Designed & Engineered
+                Laser Machines,
                 <br />
-                <span className="gradient-text">Laser Equipment</span>
+                <span className="gradient-text">Designed Around</span>
                 <br />
-                for Global Brands
+                Real Applications
               </h1>
               
               <p className="text-lg text-[#CBD5E1] leading-relaxed mb-10 max-w-lg">
-                Focused on handheld welders, compact cleaners, and desktop markers. 
-                Small batch customization, fast response, and technical after-sales support.
+                We design and assemble practical laser equipment for manufacturers worldwide.
               </p>
+
+              {/* Product tags */}
+              <div className="flex flex-wrap gap-3 mb-10">
+                {['Laser Welding', 'Laser Marking', 'Laser Cleaning'].map((tag) => (
+                  <span key={tag} className="px-4 py-2 bg-[#1A2740] border border-[#1E3A5F] text-[#CBD5E1] text-sm font-medium rounded-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
               
               <div className="flex flex-wrap gap-4">
                 <Link href="/products" className="btn-primary">
-                  Explore Products
+                  Explore Our Machines
                 </Link>
                 <Link href="/contact" className="btn-outline">
-                  Request a Quote
+                  Talk to Us
                 </Link>
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-16 pt-8 border-t border-[#1E3A5F]">
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">80+</div>
-                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Countries Served</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">2640+</div>
-                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Clients Served</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">18</div>
-                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Patents Held</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">6+</div>
-                  <div className="text-xs sm:text-sm text-[#94A3B8] mt-1">Years Experience</div>
-                </div>
               </div>
             </div>
 
@@ -114,41 +68,123 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Product Categories */}
-      <section className="py-16 bg-[#0A1628]">
+      {/* ===== 第二屏：Design & Engineering ===== */}
+      <section className="py-24 bg-[#0F1B2D] border-y border-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Product <span className="gradient-text">Lines</span>
+              Designed In-House. <span className="gradient-text">Built for Real Work.</span>
             </h2>
             <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
-              Comprehensive laser solutions for every industrial application
+              We don&apos;t simply source machines and put our name on them. Our products are developed through our own design, engineering, assembly and testing process — allowing us to build laser equipment around real production needs.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {productCategories.map((cat) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: '01',
+                title: 'Product Design',
+                desc: 'We focus on practical details, usability and a clean, functional design.',
+                icon: 'M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01',
+              },
+              {
+                step: '02',
+                title: 'Engineering',
+                desc: 'Our team develops and refines the machine structure and configuration.',
+                icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+              },
+              {
+                step: '03',
+                title: 'In-House Assembly',
+                desc: 'We assemble and inspect our machines in-house.',
+                icon: 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z',
+              },
+              {
+                step: '04',
+                title: 'Application Testing',
+                desc: 'Every configuration is tested for real processing applications before delivery.',
+                icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
+              },
+            ].map((item) => (
+              <div key={item.step} className="bg-[#162032] border border-[#1E3A5F] rounded-sm p-8 card-hover">
+                <div className="text-5xl font-bold text-[#3B82F6]/20 mb-4">{item.step}</div>
+                <div className="w-12 h-12 mb-4 bg-[#1A2740] border border-[#3B82F6]/20 rounded-sm flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-[#94A3B8] text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/about" className="btn-outline">
+              See How We Build
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 第三屏：Core Products ===== */}
+      <section className="py-24 bg-[#0A1628]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Our Core Laser <span className="gradient-text">Solutions</span>
+            </h2>
+            <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
+              Focused products. Practical engineering. Built around specific applications.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Handheld Laser Welding',
+                desc: 'For metal fabrication, stainless steel, sheet metal and repair applications.',
+                image: '/images/products/hq26a-air-cooled-welder.png',
+                href: '/products/hq26a',
+                accent: '#3B82F6',
+              },
+              {
+                name: 'Desktop Laser Marking',
+                desc: 'Compact marking solutions for manufacturers who need precision without unnecessary complexity.',
+                image: '/images/products/laser-marking-machine.png',
+                href: '/contact',
+                accent: '#00D4FF',
+              },
+              {
+                name: 'Compact Laser Cleaning',
+                desc: 'Practical laser cleaning for surface preparation, rust removal and industrial maintenance.',
+                image: '/images/products/pulse-laser-cleaner.jpg',
+                href: '/products/pulse-cleaning',
+                accent: '#00D4FF',
+              },
+            ].map((product) => (
               <Link
-                key={cat.name}
-                href={cat.href}
+                key={product.name}
+                href={product.href}
                 className="card-hover group bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden"
               >
                 <div className="aspect-[4/3] bg-[#162032] relative overflow-hidden">
                   <img
-                    src={cat.image}
-                    alt={cat.name}
+                    src={product.image}
+                    alt={product.name}
                     className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#162032] via-transparent to-transparent" />
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundImage: `linear-gradient(to right, ${cat.accent}, #00D4FF)` }} />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity" style={{ backgroundImage: `linear-gradient(to right, ${product.accent}, #00D4FF)` }} />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 transition-colors" style={{ ['--hover-color' as string]: cat.accent }}>
-                    <span className="group-hover:text-[#3B82F6] transition-colors">{cat.name.replace(' Machines', '').replace('Laser ', 'Laser ')}</span>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    <span className="group-hover:text-[#3B82F6] transition-colors">{product.name}</span>
                   </h3>
-                  <p className="text-[#94A3B8] text-sm mb-4">{cat.desc}</p>
-                  <span className="text-sm font-semibold flex items-center gap-2 transition-colors" style={{ color: cat.accent }}>
-                    Learn More
+                  <p className="text-[#94A3B8] text-sm mb-4">{product.desc}</p>
+                  <span className="text-sm font-semibold flex items-center gap-2" style={{ color: product.accent }}>
+                    Explore {product.name.split(' ').pop()} Solutions
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
