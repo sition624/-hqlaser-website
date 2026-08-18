@@ -339,16 +339,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              See the Machine in <span className="gradient-text">Action</span>
+              See It Before You Buy It
             </h2>
             <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
               Don&apos;t just take our word for it. See how our machines perform on real materials and applications.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
+                videoId: 'yNKqPWh-hZM',
                 title: 'Stainless Steel Welding',
                 material: 'Stainless Steel',
                 thickness: '2.0 mm',
@@ -356,6 +357,7 @@ export default function HomePage() {
                 result: 'Clean weld with minimal post-processing',
               },
               {
+                videoId: 'OQIPy4A5XWg',
                 title: 'Aluminum Welding',
                 material: 'Aluminum',
                 thickness: '3.0 mm',
@@ -363,22 +365,47 @@ export default function HomePage() {
                 result: 'Smooth bead with excellent penetration',
               },
               {
-                title: 'Rust Removal',
+                videoId: 'hg14DxdRMDo',
+                title: 'Rust Removal Test',
                 material: 'Carbon Steel',
                 thickness: 'Surface',
                 machine: 'HQ-CL200 Cleaner',
                 result: 'Complete rust removal without damage',
               },
+              {
+                videoId: 'fh1Jn8Ko7TU',
+                title: 'Metal Marking Test',
+                material: 'Metal',
+                thickness: 'Various',
+                machine: 'Fiber Laser Marker',
+                result: 'Precise and permanent marking',
+              },
+              {
+                videoId: 'aTzTLW1X2aQ',
+                title: 'Deep Engraving Test',
+                material: 'Metal',
+                thickness: 'Deep',
+                machine: 'Fiber Laser Marker',
+                result: 'High-quality deep engraving',
+              },
+              {
+                videoId: '7IF62myLVdA',
+                title: 'Laser Cutting Test',
+                material: 'Metal',
+                thickness: 'Various',
+                machine: 'Laser Cutter',
+                result: 'Clean cuts with high precision',
+              },
             ].map((test) => (
               <div key={test.title} className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
-                <div className="aspect-video bg-[#1A2740] flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-16 h-16 text-[#3B82F6]/30 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <div className="text-[#94A3B8] text-xs">Video Coming Soon</div>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${test.videoId}`}
+                    title={test.title}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-white mb-4">{test.title}</h3>
