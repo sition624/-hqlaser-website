@@ -69,6 +69,8 @@ export const metadata: Metadata = {
     google: 'google1de4a6d04423502b.html', // Google Search Console verification
   },
   other: {
+    // Google Search Console verification
+    'google-site-verification': 'google1de4a6d04423502b.html',
     // 微信浏览器兼容
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black',
