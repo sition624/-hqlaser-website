@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import OrganizationSchema from '@/components/OrganizationSchema';
 
-const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
+const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.heqingcnc.com';
 
 export const metadata: Metadata = {
   title: {

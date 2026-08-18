@@ -10,8 +10,8 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({ siteUrl 
     '@type': 'Organization',
     name: 'Heqing Laser',
     alternateName: 'HQ Laser',
-    url: siteUrl || 'https://www.hqlaser.com',
-    logo: `${siteUrl || 'https://www.hqlaser.com'}/images/logo.png`,
+    url: siteUrl || 'https://www.heqingcnc.com',
+    logo: `${siteUrl || 'https://www.heqingcnc.com'}/images/logo.png`,
     description:
       'Professional laser equipment manufacturer specializing in fiber laser cutting, welding, cleaning, and marking machines.',
     foundingDate: '2019',

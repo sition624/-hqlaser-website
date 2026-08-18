@@ -5,7 +5,7 @@ interface ProductSchemaProps {
 }
 
 export const ProductSchema: React.FC<ProductSchemaProps> = ({ siteUrl }) => {
-  const baseUrl = siteUrl || 'https://www.hqlaser.com';
+  const baseUrl = siteUrl || 'https://www.heqingcnc.com';
 
   const products = [
     {

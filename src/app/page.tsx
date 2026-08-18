@@ -3,7 +3,7 @@ import Link from 'next/link';
 import HeroLaserSpark from '@/components/HeroLaserSpark';
 import ProductSchema from '@/components/ProductSchema';
 
-const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.hqlaser.com';
+const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.heqingcnc.com';
 
 export const metadata: Metadata = {
   title: 'HQ Laser - Design-Driven Laser Equipment Brand',
