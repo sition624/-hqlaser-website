@@ -113,7 +113,7 @@ export default function NitrogenGeneratorPage() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <a
-                  href="https://wa.me/8613210720012"
+                  href="https://wa.me/8618953316699"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-outline inline-flex items-center gap-2"
@@ -294,7 +294,7 @@ export default function NitrogenGeneratorPage() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="https://wa.me/8613210720012"
+              href="https://wa.me/8618953316699"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline inline-flex items-center gap-2"

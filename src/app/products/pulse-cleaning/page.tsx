@@ -231,7 +231,7 @@ export default function PulseCleaningPage() {
             <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
               Request a Quote <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="https://wa.me/86" target="_blank" rel="noopener noreferrer" className="btn-outline inline-flex items-center gap-2">
+            <a href="https://wa.me/8618953316699" target="_blank" rel="noopener noreferrer" className="btn-outline inline-flex items-center gap-2">
               Chat on WhatsApp
             </a>
           </div>
