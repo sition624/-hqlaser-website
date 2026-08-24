@@ -108,6 +108,9 @@ export default function Navbar() {
             <Link href="/about" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
               About Us
             </Link>
+            <Link href="/blog" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
+              Blog
+            </Link>
             <Link href="/contact" className="nav-link text-sm font-medium text-white hover:text-[#3B82F6] transition-colors">
               Contact
             </Link>
@@ -164,6 +167,9 @@ export default function Navbar() {
             </div>
             <Link href="/about" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>
               About Us
+            </Link>
+            <Link href="/blog" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>
+              Blog
             </Link>
             <Link href="/contact" className="block text-white font-medium py-2" onClick={() => setMobileOpen(false)}>
               Contact

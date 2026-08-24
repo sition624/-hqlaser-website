@@ -54,5 +54,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/handheld-laser-welder-guide-2026`,
+      lastModified: new Date('2026-08-24'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
