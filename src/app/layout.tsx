@@ -65,9 +65,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'google1de4a6d04423502b', // Google Search Console verification
-  },
   other: {
     // Google Search Console 验证
     'google-site-verification': 'google1de4a6d04423502b',
