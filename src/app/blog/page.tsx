@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pulse-laser-cleaning-guide-2026',
+    title: 'Pulse Laser Cleaning Machine: Complete Guide for Industrial Applications (2026)',
+    excerpt: 'Everything you need to know about pulsed laser cleaning technology — benefits, applications, how to choose, and HQ Laser solutions.',
+    date: 'August 2026',
+    category: 'Technical Guide',
+    readTime: '10 min read',
+  },
+  {
     slug: 'handheld-laser-welder-guide-2026',
     title: 'Handheld Laser Welder: The Complete Guide for 2026',
     excerpt: 'Everything you need to know about handheld laser welders — benefits, applications, how to choose the right machine, and expert tips from HQ Laser.',

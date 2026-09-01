@@ -66,5 +66,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/blog/pulse-laser-cleaning-guide-2026`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
