@@ -408,11 +408,37 @@ export default function BlogPost() {
               ))}
             </div>
 
+            <h4 className="text-xl font-bold text-white mb-4">Watch Our Test Videos</h4>
+            <div className="grid sm:grid-cols-3 gap-4 mb-6">
+              {[
+                { videoId: 'yNKqPWh-hZM', title: 'Metal Surface Cleaning' },
+                { videoId: 'OQIPy4A5XWg', title: 'Stone Surface Cleaning' },
+                { videoId: '7IF62myLVdA', title: 'Wood Surface Cleaning' },
+              ].map((video, i) => (
+                <div key={i} className="bg-[#162032] rounded-sm border border-[#1E3A5F] overflow-hidden">
+                  <div className="aspect-video">
+                    <iframe
+                      className="w-full h-full"
+                      src={`https://www.youtube.com/embed/${video.videoId}`}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="p-3">
+                    <p className="text-white text-sm font-medium">{video.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
             <Link 
-              href="/#machine-tests" 
+              href="https://www.youtube.com/@heqingcnc"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-[#0A2463] text-white font-medium rounded-sm hover:bg-[#3B82F6] transition-colors"
             >
-               Watch Our Test Videos
+               Watch More Videos on YouTube
             </Link>
           </section>
 
