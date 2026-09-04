@@ -238,6 +238,36 @@ export default function BlogPost() {
             </div>
           </section>
 
+          {/* Watch tube cutting video */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Watch Our Tube Cutting Test</h2>
+            <p className="text-[#CBD5E1] leading-relaxed mb-6">
+              Our HQ-PC bevel laser tube cutting machine cutting carbon steel round pipe — with automatic V-groove beveling for weld-ready edges, all in a single pass.
+            </p>
+            <div className="bg-[#162032] rounded-sm border border-[#1E3A5F] overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/CciuTF0ZS7o"
+                  title="HQ-PC Bevel Laser Tube Cutting Machine - Carbon Steel Round Pipe Cutting Test"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-white text-sm font-medium">HQ-PC Bevel Laser Tube Cutting — Carbon Steel Round Pipe</p>
+              </div>
+            </div>
+            <Link
+              href="https://www.youtube.com/@heqingcnc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 px-6 py-3 bg-[#0A2463] text-white font-medium rounded-sm hover:bg-[#3B82F6] transition-colors"
+            >
+               Watch More Videos on YouTube
+            </Link>
+          </section>
+
           {/* CTA */}
           <section className="bg-[#0F1B2D] border border-[#1E3A5F] rounded-sm p-8 sm:p-12 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Ready to Upgrade Your Cutting?</h2>
