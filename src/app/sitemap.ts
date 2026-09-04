@@ -72,5 +72,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/blog/fiber-laser-cutting-machine-guide-2026`,
+      lastModified: new Date('2026-09-04'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

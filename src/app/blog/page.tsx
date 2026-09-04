@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'fiber-laser-cutting-machine-guide-2026',
+    title: 'Fiber Laser Cutting Machine: Complete Guide for Metal Fabricators (2026)',
+    excerpt: 'Everything you need to know about fiber laser cutting machines — how they work, benefits vs plasma, how to choose power & configuration, and HQ Laser solutions.',
+    date: 'September 2026',
+    category: 'Technical Guide',
+    readTime: '12 min read',
+  },
+  {
     slug: 'pulse-laser-cleaning-guide-2026',
     title: 'Pulse Laser Cleaning Machine: Complete Guide for Industrial Applications (2026)',
     excerpt: 'Everything you need to know about pulsed laser cleaning technology — benefits, applications, how to choose, and HQ Laser solutions.',
