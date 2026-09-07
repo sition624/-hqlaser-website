@@ -49,8 +49,35 @@ const applications = [
 ];
 
 export default function HQ1530Page() {
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'HQ-1530 Fiber Laser Cutting Machine',
+    image: 'https://www.heqingcnc.com/images/products/3015-single-platform-fiber-cutter.jpg',
+    description: 'HQ-1530 high-speed fiber laser cutting machine with 1500x3000mm working area. 1500W/3000W/6000W power options, up to 120m/min rapid traverse.',
+    sku: 'HQ-1530',
+    brand: { '@type': 'Brand', name: 'HQ Laser' },
+    manufacturer: { '@type': 'Organization', name: 'Heqing Laser' },
+    category: 'Laser Cutting Machine',
+    url: 'https://www.heqingcnc.com/products/hq1530',
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: '10000',
+      highPrice: '45000',
+      offerCount: '3',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.heqingcnc.com/products/hq1530',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-20 bg-grid relative">
         <div className="absolute inset-0 hero-gradient" />

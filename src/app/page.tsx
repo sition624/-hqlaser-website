@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import HeroLaserSpark from '@/components/HeroLaserSpark';
-import ProductSchema from '@/components/ProductSchema';
-
-const siteUrl = process.env.COZE_PROJECT_DOMAIN_DEFAULT || 'https://www.heqingcnc.com';
 
 export const metadata: Metadata = {
   title: 'HQ Laser - Design-Driven Laser Equipment Brand',
@@ -13,8 +10,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <ProductSchema siteUrl={siteUrl} />
-      
       {/* ===== 01 Hero ===== */}
       <section className="relative hero-gradient bg-grid overflow-hidden">
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl" />
@@ -349,52 +344,52 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                videoId: 'yNKqPWh-hZM',
+                videoId: 'hg14DxdRMDo',
                 title: 'Stainless Steel Welding',
                 material: 'Stainless Steel',
-                thickness: '2.0 mm',
-                machine: 'HQ26A 1500W',
-                result: 'Clean weld with minimal post-processing',
-              },
-              {
-                videoId: 'OQIPy4A5XWg',
-                title: 'Aluminum Welding',
-                material: 'Aluminum',
-                thickness: '3.0 mm',
-                machine: 'HQ26A 2000W',
-                result: 'Smooth bead with excellent penetration',
-              },
-              {
-                videoId: 'hg14DxdRMDo',
-                title: 'Rust Removal Test',
-                material: 'Carbon Steel',
-                thickness: 'Surface',
-                machine: 'HQ-CL200 Cleaner',
-                result: 'Complete rust removal without damage',
+                thickness: 'Thin sheet',
+                machine: 'HQ26 Handheld Welder',
+                result: 'Clean bead, minimal post-processing',
               },
               {
                 videoId: 'fh1Jn8Ko7TU',
-                title: 'Metal Marking Test',
-                material: 'Metal',
-                thickness: 'Various',
-                machine: 'Fiber Laser Marker',
-                result: 'Precise and permanent marking',
+                title: 'Aluminum Welding',
+                material: 'Aluminum',
+                thickness: 'Thin sheet',
+                machine: 'HQ26 Handheld Welder',
+                result: 'Smooth weld with strong penetration',
               },
               {
                 videoId: 'aTzTLW1X2aQ',
-                title: 'Deep Engraving Test',
+                title: 'Carbon Steel Welding',
+                material: 'Carbon Steel',
+                thickness: 'Assembled parts',
+                machine: 'HQ26 Handheld Welder',
+                result: 'Solid weld on steel assemblies',
+              },
+              {
+                videoId: 'yNKqPWh-hZM',
+                title: 'Metal Surface Cleaning',
                 material: 'Metal',
-                thickness: 'Deep',
-                machine: 'Fiber Laser Marker',
-                result: 'High-quality deep engraving',
+                thickness: 'Surface',
+                machine: 'HQ Laser Cleaner',
+                result: 'Rust & oxide removed without damaging base metal',
+              },
+              {
+                videoId: 'OQIPy4A5XWg',
+                title: 'Stone Surface Cleaning',
+                material: 'Stone',
+                thickness: 'Surface',
+                machine: 'HQ Laser Cleaner',
+                result: 'Dirt & weathering removed, no abrasion',
               },
               {
                 videoId: '7IF62myLVdA',
-                title: 'Laser Cutting Test',
-                material: 'Metal',
-                thickness: 'Various',
-                machine: 'Laser Cutter',
-                result: 'Clean cuts with high precision',
+                title: 'Wood Surface Cleaning',
+                material: 'Wood',
+                thickness: 'Surface',
+                machine: 'HQ Laser Cleaner',
+                result: 'Old finish removed without chemicals',
               },
             ].map((test) => (
               <div key={test.title} className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden card-hover">
