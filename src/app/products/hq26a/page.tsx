@@ -79,17 +79,17 @@ export default function HQ26APage() {
                 <a href="#specs" className="btn-outline">View Specs</a>
               </div>
             </div>
-            <div className="relative hidden lg:block">
-              <div className="aspect-[4/3] bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
-                <img
-                  src="/images/products/hq26a-air-cooled-welder.png"
-                  alt="HQ26 Air-Cooled Laser Welder"
-                  className="w-full h-full object-contain p-6"
+            <div className="relative">
+              <div className="aspect-video bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/4UGWzwFtEEY"
+                  title="HQ26 Air-Cooled Laser Welder - Full Product Overview"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#3B82F6]/30" />
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#3B82F6]/30" />
               </div>
+              <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#00D4FF]/10" />
             </div>
           </div>
         </div>
@@ -212,6 +212,30 @@ export default function HQ26APage() {
                 <span className="text-sm font-medium text-[#94A3B8]">{app}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Video */}
+      <section className="py-20 bg-[#0F1B2D] border-y border-[#1E3A5F]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-2 h-8 bg-[#3B82F6]" />
+            <h2 className="text-2xl font-bold text-white">See It In Action</h2>
+          </div>
+          <p className="text-[#CBD5E1] mb-8">
+            Watch how the HQ26 welds on real materials — clean beads, smooth control, no post-processing.
+          </p>
+          <div className="bg-[#162032] border border-[#1E3A5F] rounded-sm overflow-hidden">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/gkV7V_2S4VU"
+                title="HQ26 Air-Cooled Laser Welder - Handheld Welding Demo"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>
